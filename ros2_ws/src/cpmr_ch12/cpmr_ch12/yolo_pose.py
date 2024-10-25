@@ -25,6 +25,7 @@ from kortex_api.autogen.messages import Base_pb2, BaseCyclic_pb2, Common_pb2
 # Maximum allowed waiting time during actions (in seconds)
 TIMEOUT_DURATION = 20
 base = None
+base_cyclic = None
 
 class YOLO_Pose(Node):
     _BODY_PARTS = ["NOSE", "LEFT_EYE", "RIGHT_EYE", "LEFT_EAR", "RIGHT_EAR", "LEFT_SHOULDER", "RIGHT_SHOULDER",
@@ -180,7 +181,41 @@ def move_right_arm(base):
     print("right")
 
 
+def example_cartesian_action_movement(base, base_cyclic):
+    
+    print("Starting Cartesian action movement ...")
+    action = Base_pb2.Action()
+    action.name = "Example Cartesian action movement"
+    action.application_data = ""
 
+    feedback = base_cyclic.RefreshFeedback()
+
+    cartesian_pose = action.reach_pose.target_pose
+    cartesian_pose.x = feedback.base.tool_pose_x      # (meters)
+    cartesian_pose.y = feedback.base.tool_pose_y   # (meters)
+    cartesian_pose.z = feedback.base.tool_pose_z    # (meters)
+    cartesian_pose.theta_x = feedback.base.tool_pose_theta_x + 30 # (degrees)
+    cartesian_pose.theta_y = feedback.base.tool_pose_theta_y # (degrees)
+    cartesian_pose.theta_z = feedback.base.tool_pose_theta_z # (degrees)
+
+    e = threading.Event()
+    notification_handle = base.OnNotificationActionTopic(
+        check_for_end_or_abort(e),
+        Base_pb2.NotificationOptions()
+    )
+
+    print("Executing action")
+    base.ExecuteAction(action)
+
+    print("Waiting for movement to finish ...")
+    finished = e.wait(TIMEOUT_DURATION)
+    base.Unsubscribe(notification_handle)
+
+    if finished:
+        print("Cartesian movement completed")
+    else:
+        print("Timeout on action notification wait")
+    return finished
 
 def main(args=None):
 
