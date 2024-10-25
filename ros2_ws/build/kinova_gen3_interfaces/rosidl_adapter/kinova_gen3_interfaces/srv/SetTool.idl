@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from kinova_gen3_interfaces/srv/SetTool.srv
+// generated code does not contain a copyright notice
+
+
+module kinova_gen3_interfaces {
+  module srv {
+    struct SetTool_Request {
+      float x;
+
+      float y;
+
+      float z;
+
+      float theta_x;
+
+      float theta_y;
+
+      float theta_z;
+    };
+    struct SetTool_Response {
+      boolean status;
+    };
+  };
+};

@@ -1,0 +1,29 @@
+running egg_info
+creating ../../build/kinova_gen3/kinova_gen3.egg-info
+writing ../../build/kinova_gen3/kinova_gen3.egg-info/PKG-INFO
+writing dependency_links to ../../build/kinova_gen3/kinova_gen3.egg-info/dependency_links.txt
+writing entry points to ../../build/kinova_gen3/kinova_gen3.egg-info/entry_points.txt
+writing requirements to ../../build/kinova_gen3/kinova_gen3.egg-info/requires.txt
+writing top-level names to ../../build/kinova_gen3/kinova_gen3.egg-info/top_level.txt
+writing manifest file '../../build/kinova_gen3/kinova_gen3.egg-info/SOURCES.txt'
+reading manifest file '../../build/kinova_gen3/kinova_gen3.egg-info/SOURCES.txt'
+writing manifest file '../../build/kinova_gen3/kinova_gen3.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build
+creating /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib
+creating /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib/kinova_gen3
+copying kinova_gen3/kinova_gen3_node.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib/kinova_gen3
+copying kinova_gen3/kinova_gen3_tester.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib/kinova_gen3
+copying kinova_gen3/__init__.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib/kinova_gen3
+copying kinova_gen3/utilities.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib/kinova_gen3
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/kinova_gen3-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/kinova_gen3/kinova_gen3.egg-info to /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/kinova_gen3-0.0.0-py3.10.egg-info
+running install_scripts
+Installing kinova_gen3_node script to /Users/mafu/miniforge3/envs/ros2/lib/kinova_gen3
+Installing kinova_gen3_tester script to /Users/mafu/miniforge3/envs/ros2/lib/kinova_gen3
+writing list of installed files to '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/install.log'

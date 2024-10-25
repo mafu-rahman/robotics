@@ -1,0 +1,31 @@
+[1.654s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/kinova_gen3': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/prefix_override:/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/install/kinova_gen3/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/mafu/miniforge3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/kinova_gen3 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/install.log --single-version-externally-managed install_data
+[2.202s] running egg_info
+[2.202s] creating ../../build/kinova_gen3/kinova_gen3.egg-info
+[2.247s] writing ../../build/kinova_gen3/kinova_gen3.egg-info/PKG-INFO
+[2.276s] writing dependency_links to ../../build/kinova_gen3/kinova_gen3.egg-info/dependency_links.txt
+[2.361s] writing entry points to ../../build/kinova_gen3/kinova_gen3.egg-info/entry_points.txt
+[2.419s] writing requirements to ../../build/kinova_gen3/kinova_gen3.egg-info/requires.txt
+[2.448s] writing top-level names to ../../build/kinova_gen3/kinova_gen3.egg-info/top_level.txt
+[2.448s] writing manifest file '../../build/kinova_gen3/kinova_gen3.egg-info/SOURCES.txt'
+[2.502s] reading manifest file '../../build/kinova_gen3/kinova_gen3.egg-info/SOURCES.txt'
+[2.502s] writing manifest file '../../build/kinova_gen3/kinova_gen3.egg-info/SOURCES.txt'
+[2.503s] running build
+[2.503s] running build_py
+[2.503s] creating /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build
+[2.503s] creating /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib
+[2.503s] creating /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib/kinova_gen3
+[2.503s] copying kinova_gen3/kinova_gen3_node.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib/kinova_gen3
+[2.503s] copying kinova_gen3/kinova_gen3_tester.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib/kinova_gen3
+[2.504s] copying kinova_gen3/__init__.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib/kinova_gen3
+[2.504s] copying kinova_gen3/utilities.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build/lib/kinova_gen3
+[2.505s] running install
+[2.508s] running install_lib
+[2.550s] running install_data
+[2.550s] running install_egg_info
+[2.592s] removing '/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/kinova_gen3-0.0.0-py3.10.egg-info' (and everything under it)
+[2.593s] Copying ../../build/kinova_gen3/kinova_gen3.egg-info to /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/kinova_gen3-0.0.0-py3.10.egg-info
+[2.595s] running install_scripts
+[2.709s] Installing kinova_gen3_node script to /Users/mafu/miniforge3/envs/ros2/lib/kinova_gen3
+[2.709s] Installing kinova_gen3_tester script to /Users/mafu/miniforge3/envs/ros2/lib/kinova_gen3
+[2.709s] writing list of installed files to '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/install.log'
+[2.749s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/kinova_gen3' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/prefix_override:/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/install/kinova_gen3/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/mafu/miniforge3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/kinova_gen3 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3/install.log --single-version-externally-managed install_data

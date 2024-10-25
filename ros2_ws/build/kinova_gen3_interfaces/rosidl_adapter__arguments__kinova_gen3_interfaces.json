@@ -1,0 +1,12 @@
+{
+  "package_name": "kinova_gen3_interfaces",
+  "non_idl_tuples": [
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/kinova_gen3_interfaces:srv/Status.srv",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/kinova_gen3_interfaces:srv/SetGripper.srv",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/kinova_gen3_interfaces:srv/GetGripper.srv",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/kinova_gen3_interfaces:srv/SetJoints.srv",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/kinova_gen3_interfaces:srv/GetJoints.srv",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/kinova_gen3_interfaces:srv/GetTool.srv",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/kinova_gen3_interfaces:srv/SetTool.srv"
+  ]
+}

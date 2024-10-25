@@ -1,0 +1,53 @@
+[5.426s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/cpmr_ch6': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/prefix_override:/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniforge3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch6 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/install.log --single-version-externally-managed install_data
+[6.459s] running egg_info
+[6.459s] creating ../../build/cpmr_ch6/cpmr_ch6.egg-info
+[6.505s] writing ../../build/cpmr_ch6/cpmr_ch6.egg-info/PKG-INFO
+[6.573s] writing dependency_links to ../../build/cpmr_ch6/cpmr_ch6.egg-info/dependency_links.txt
+[6.729s] writing entry points to ../../build/cpmr_ch6/cpmr_ch6.egg-info/entry_points.txt
+[6.877s] writing requirements to ../../build/cpmr_ch6/cpmr_ch6.egg-info/requires.txt
+[6.936s] writing top-level names to ../../build/cpmr_ch6/cpmr_ch6.egg-info/top_level.txt
+[6.939s] writing manifest file '../../build/cpmr_ch6/cpmr_ch6.egg-info/SOURCES.txt'
+[7.065s] reading manifest file '../../build/cpmr_ch6/cpmr_ch6.egg-info/SOURCES.txt'
+[7.066s] writing manifest file '../../build/cpmr_ch6/cpmr_ch6.egg-info/SOURCES.txt'
+[7.066s] running build
+[7.066s] running build_py
+[7.066s] creating /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build
+[7.066s] creating /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib
+[7.066s] creating /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6
+[7.067s] copying cpmr_ch6/__init__.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6
+[7.067s] copying cpmr_ch6/auto_drive_by_road.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6
+[7.068s] copying cpmr_ch6/drive_by_line.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6
+[7.068s] copying cpmr_ch6/auto_drive_by_line.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6
+[7.069s] copying cpmr_ch6/drive_by_road.py -> /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6
+[7.071s] running install
+[7.078s] running install_lib
+[7.187s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/__init__.py -> /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6
+[7.187s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/auto_drive_by_road.py -> /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6
+[7.187s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/drive_by_line.py -> /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6
+[7.190s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/auto_drive_by_line.py -> /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6
+[7.192s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/drive_by_road.py -> /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6
+[7.192s] byte-compiling /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6/__init__.py to __init__.cpython-310.pyc
+[7.193s] byte-compiling /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6/auto_drive_by_road.py to auto_drive_by_road.cpython-310.pyc
+[7.197s] byte-compiling /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6/drive_by_line.py to drive_by_line.cpython-310.pyc
+[7.200s] byte-compiling /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6/auto_drive_by_line.py to auto_drive_by_line.cpython-310.pyc
+[7.200s] byte-compiling /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6/drive_by_road.py to drive_by_road.cpython-310.pyc
+[7.200s] running install_data
+[7.200s] copying resource/cpmr_ch6 -> /Users/mafu/miniforge3/envs/ros2/share/ament_index/resource_index/packages
+[7.200s] copying package.xml -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch6
+[7.205s] copying launch/drive_by_line.launch.py -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch6
+[7.205s] copying launch/drive_by_road.launch.py -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch6
+[7.206s] copying launch/auto_drive_by_road.launch.py -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch6
+[7.206s] copying launch/auto_drive_by_line.launch.py -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch6
+[7.207s] copying urdf/scout-camera.urdf.xacro -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch6
+[7.207s] copying urdf/scout-line-follower.urdf.xacro -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch6
+[7.210s] copying urdf/colors.xacro -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch6
+[7.211s] running install_egg_info
+[7.316s] removing '/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6-3.1.0-py3.10.egg-info' (and everything under it)
+[7.317s] Copying ../../build/cpmr_ch6/cpmr_ch6.egg-info to /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch6-3.1.0-py3.10.egg-info
+[7.322s] running install_scripts
+[8.090s] Installing auto_drive_by_line script to /Users/mafu/miniforge3/envs/ros2/lib/cpmr_ch6
+[8.090s] Installing auto_drive_by_road script to /Users/mafu/miniforge3/envs/ros2/lib/cpmr_ch6
+[8.090s] Installing drive_by_line script to /Users/mafu/miniforge3/envs/ros2/lib/cpmr_ch6
+[8.090s] Installing drive_by_road script to /Users/mafu/miniforge3/envs/ros2/lib/cpmr_ch6
+[8.090s] writing list of installed files to '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/install.log'
+[8.097s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/src/cpmr_ch6' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/prefix_override:/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniforge3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch6 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/cpmr_ch6/install.log --single-version-externally-managed install_data

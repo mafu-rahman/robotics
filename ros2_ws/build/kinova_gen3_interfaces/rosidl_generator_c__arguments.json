@@ -1,0 +1,36 @@
+{
+  "package_name": "kinova_gen3_interfaces",
+  "output_dir": "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_generator_c/kinova_gen3_interfaces",
+  "template_dir": "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces:srv/Status.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces:srv/SetGripper.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces:srv/GetGripper.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces:srv/SetJoints.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces:srv/GetJoints.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces:srv/GetTool.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces:srv/SetTool.idl"
+  ],
+  "target_dependencies": [
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/rosidl_generator_c/__init__.py",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/Users/mafu/miniforge3/envs/ros2/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces/srv/Status.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces/srv/SetGripper.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces/srv/GetGripper.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces/srv/SetJoints.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces/srv/GetJoints.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces/srv/GetTool.idl",
+    "/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab5/CPMR3/ros2_ws/build/kinova_gen3_interfaces/rosidl_adapter/kinova_gen3_interfaces/srv/SetTool.idl"
+  ]
+}

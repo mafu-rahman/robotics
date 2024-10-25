@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from kinova_gen3_interfaces/srv/SetGripper.srv
+// generated code does not contain a copyright notice
+
+
+module kinova_gen3_interfaces {
+  module srv {
+    struct SetGripper_Request {
+      float value;
+    };
+    struct SetGripper_Response {
+      boolean status;
+    };
+  };
+};
