@@ -15,7 +15,9 @@ class MoveToGoal(Node):
         super().__init__('move_robot_to_goal')
         self.get_logger().info(f'{self.get_name()} created')
 
-        self._subscriber_keypoints = self.create_subscription(String, "/moveRobot", self.moveRobot ,1)
+        self._subscriber_keypoints_1 = self.create_subscription(String, "/moveRobot", self.moveRobot ,1)
+        self._subscriber_keypoints_2 = self.create_subscription(String, "/moveRobot", self.moveRobot ,1)
+
 
 
 
