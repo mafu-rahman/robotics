@@ -16,10 +16,6 @@ class MoveToGoal(Node):
         self.get_logger().info(f'{self.get_name()} created')
 
         self._subscriber_keypoints_1 = self.create_subscription(String, "/moveRobot", self.moveRobot ,1)
-        self._subscriber_keypoints_2 = self.create_subscription(String, "/moveRobot", self.moveRobot ,1)
-
-
-
 
     def moveRobot(self, msg):
         self.get_logger().info(f' {msg}')
