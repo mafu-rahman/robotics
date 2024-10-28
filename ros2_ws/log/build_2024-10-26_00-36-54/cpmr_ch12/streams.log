@@ -1,0 +1,46 @@
+[1.030s] Invoking command in '/Users/mafu/Desktop/robotics/ros2_ws/src/cpmr_ch12': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/prefix_override:/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/mafu/miniforge3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch12 build --build-base /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build install --record /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/install.log --single-version-externally-managed install_data
+[1.511s] running egg_info
+[1.545s] writing ../../build/cpmr_ch12/cpmr_ch12.egg-info/PKG-INFO
+[1.572s] writing dependency_links to ../../build/cpmr_ch12/cpmr_ch12.egg-info/dependency_links.txt
+[1.654s] writing entry points to ../../build/cpmr_ch12/cpmr_ch12.egg-info/entry_points.txt
+[1.706s] writing requirements to ../../build/cpmr_ch12/cpmr_ch12.egg-info/requires.txt
+[1.732s] writing top-level names to ../../build/cpmr_ch12/cpmr_ch12.egg-info/top_level.txt
+[1.778s] reading manifest file '../../build/cpmr_ch12/cpmr_ch12.egg-info/SOURCES.txt'
+[1.779s] writing manifest file '../../build/cpmr_ch12/cpmr_ch12.egg-info/SOURCES.txt'
+[1.779s] running build
+[1.779s] running build_py
+[1.779s] copying cpmr_ch12/yolo_pose.py -> /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12
+[1.780s] copying cpmr_ch12/robot_movement.py -> /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12
+[1.780s] copying cpmr_ch12/kinova_movement.py -> /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12
+[1.780s] running install
+[1.783s] running install_lib
+[1.819s] creating /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[1.819s] copying /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12/opencv_camera.py -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[1.819s] copying /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12/yolo_pose.py -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[1.819s] copying /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12/__init__.py -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[1.819s] copying /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12/robot_movement.py -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[1.819s] copying /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12/kinova_movement.py -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[1.820s] copying /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12/utilities.py -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[1.820s] byte-compiling /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12/opencv_camera.py to opencv_camera.cpython-310.pyc
+[1.821s] byte-compiling /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12/yolo_pose.py to yolo_pose.cpython-310.pyc
+[1.822s] byte-compiling /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12/__init__.py to __init__.cpython-310.pyc
+[1.822s] byte-compiling /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12/robot_movement.py to robot_movement.cpython-310.pyc
+[1.823s] byte-compiling /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12/kinova_movement.py to kinova_movement.cpython-310.pyc
+[1.823s] byte-compiling /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12/utilities.py to utilities.cpython-310.pyc
+[1.823s] running install_data
+[1.823s] creating /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/share/ament_index
+[1.823s] creating /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/share/ament_index/resource_index
+[1.824s] creating /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/share/ament_index/resource_index/packages
+[1.824s] copying resource/cpmr_ch12 -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/share/ament_index/resource_index/packages
+[1.824s] copying package.xml -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/share/cpmr_ch12
+[1.824s] copying launch/camera-robot.launch.py -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/share/cpmr_ch12
+[1.824s] copying launch/launch.py -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/share/cpmr_ch12
+[1.825s] copying urdf/scout-camera.urdf.xacro -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/share/cpmr_ch12
+[1.825s] copying urdf/colors.xacro -> /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/share/cpmr_ch12
+[1.825s] running install_egg_info
+[1.862s] Copying ../../build/cpmr_ch12/cpmr_ch12.egg-info to /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12-3.1.0-py3.10.egg-info
+[1.863s] running install_scripts
+[1.946s] Installing opencv_camera script to /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/cpmr_ch12
+[1.946s] Installing yolo_pose script to /Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/cpmr_ch12
+[1.946s] writing list of installed files to '/Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/install.log'
+[1.963s] Invoked command in '/Users/mafu/Desktop/robotics/ros2_ws/src/cpmr_ch12' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/prefix_override:/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /Users/mafu/miniforge3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch12 build --build-base /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/build install --record /Users/mafu/Desktop/robotics/ros2_ws/build/cpmr_ch12/install.log --single-version-externally-managed install_data

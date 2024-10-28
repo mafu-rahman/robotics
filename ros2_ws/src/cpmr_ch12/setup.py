@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'yolo_pose = cpmr_ch12.yolo_pose:main',
             'opencv_camera = cpmr_ch12.opencv_camera:main',
+            'robot_movement = cpmr_ch12.robot_movement:main'
         ],
     },
 )

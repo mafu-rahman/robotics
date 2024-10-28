@@ -4,7 +4,6 @@ import rclpy
 import cv2
 import datetime
 import numpy as np
-import pandas as pd
 import math
 from rclpy.node import Node
 from ultralytics import YOLO
@@ -17,19 +16,17 @@ from ultralytics.engine.results import Results, Keypoints
 from ament_index_python.packages import get_package_share_directory
 
 import time
-import threading
-from kortex_api.autogen.client_stubs.BaseClientRpc import BaseClient
-from kortex_api.autogen.client_stubs.BaseCyclicClientRpc import BaseCyclicClient
-from kortex_api.autogen.messages import Base_pb2, BaseCyclic_pb2, Common_pb2
+from std_msgs.msg import String
+
 
 # Maximum allowed waiting time during actions (in seconds)
 TIMEOUT_DURATION = 20
-base = None
 
 class YOLO_Pose(Node):
     _BODY_PARTS = ["NOSE", "LEFT_EYE", "RIGHT_EYE", "LEFT_EAR", "RIGHT_EAR", "LEFT_SHOULDER", "RIGHT_SHOULDER",
                    "LEFT_ELBOW", "RIGHT_ELBOW", "LEFT_WRIST", "RIGHT_WRIST", "LEFT_HIP", "RIGHT_HIP", "LEFT_KNEE",
                    "RIGHT_KNEE", "LEFT_ANKLE", "RIGHT_ANKLE"]
+    
     def __init__(self):
         super().__init__('pose_node')
 
@@ -57,31 +54,13 @@ class YOLO_Pose(Node):
         # subs
         self._sub = self.create_subscription(Image, self._camera_topic, self._camera_callback, 1) 
 
+        # pubs
+        self._publisher = self.create_publisher(String, "/moveRobot", 1)
 
-        # sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-        sys.path.insert(0, os.path.dirname(__file__))
-
-        import utilities
-
-        # Parse arguments
-        args = utilities.parseConnectionArguments()
-        
-        # Create connection to the device and get the router
-        with utilities.DeviceConnection.createTcpConnection(args) as router:
-            # Create required services
-            base = BaseClient(router)
-            base_cyclic = BaseCyclicClient(router)
-            # Example core
-            success = True
-
-
-        move_to_home_position(base)
-        
 
 
         
     def parse_keypoints(self, results: Results):
-
         keypoints_list = []
 
         for points in results.keypoints:        
@@ -94,6 +73,7 @@ class YOLO_Pose(Node):
 
         return keypoints_list
     
+
     def _camera_callback(self, data):
         #self.get_logger().info(f'{self.get_name()} camera callback')
         img = self._bridge.imgmsg_to_cv2(data)
@@ -114,71 +94,69 @@ class YOLO_Pose(Node):
             self.get_logger().info(f'{self.get_name()}  boxes are too small')
             return
 
+    
+        left_shoulder = None # 5
+        left_wrist = None # 9
+        right_shoulder = None # 6
+        right_wrist = None  # 10
+
         if results.keypoints:
             keypoints = self.parse_keypoints(results)
-
-            if(keypoints[i][0] == 3):
-                move_left_arm(base)
-
-            
-            
-
             if len(keypoints) > 0:
                 for i in range(len(keypoints)):
-                    #self.get_logger().info(f'{self.get_name()}  {YOLO_Pose._BODY_PARTS[keypoints[i][0]]} {keypoints[i]}')
-                    print(""+ keypoints[i][0])
-                    #[yolo_pose-2] [INFO] [1729877391.879420439] [yolo_pose]: yolo_pose  LEFT_EAR [3, tensor(979.9934), tensor(542.4229), tensor(0.8584)]
+                    coordinates = [ keypoints[i][1], keypoints[i][2], keypoints[i][3] ]
+
+                    #left side
+                    if(keypoints[i][0] == 5):
+                        left_shoulder = coordinates
+                    elif(keypoints[i][0] == 9):
+                        left_wrist = coordinates
+                    
+                    #right side
+                    elif(keypoints[i][0] == 6):
+                        right_shoulder = coordinates
+                    elif(keypoints[i][0] == 10):
+                        right_wrist = coordinates
+
+                    # both hands
+                    elif(keypoints[i][0] == 9):
+                        left_wrist = coordinates
+                    elif(keypoints[i][0] == 10):
+                        right_wrist = coordinates
+                
+
+                # Both hands up
+                if right_wrist and left_wrist:
+                    if((right_wrist[1] < right_shoulder[1]) and (left_wrist[1] < left_shoulder[1])):
+                        msg = String()
+                        msg.data = "5"
+                        
+                        self._publisher.publish(msg)
+                    
+                # Left Hand
+                elif left_shoulder and left_wrist:
+                    if(left_wrist[1] < left_shoulder[1]):
+                        self.publish("Left Hand Up")
+                    else:
+                        self.publish("Left Hand Down")
+                    
+                
+                # Right Hand
+                elif right_shoulder and right_wrist:
+                    if(right_wrist[1] < right_shoulder[1]):
+                        self.publish("Right Hand Up")
+                    else:
+                        self.publish("Right Hand Down")
+                                           
 
                 # Visualize results on frame        
                 annotated_frame = results[0].plot()
                 cv2.imshow('Results', annotated_frame)
                 cv2.waitKey(1)
-    
-
-def move_to_home_position(base):
-    # Make sure the arm is in Single Level Servoing mode
-    base_servo_mode = Base_pb2.ServoingModeInformation()
-    base_servo_mode.servoing_mode = Base_pb2.SINGLE_LEVEL_SERVOING
-    base.SetServoingMode(base_servo_mode)
-    
-    # Move arm to ready position
-    print("Moving the arm to a safe position")
-    action_type = Base_pb2.RequestedActionType()
-    action_type.action_type = Base_pb2.REACH_JOINT_ANGLES
-    action_list = base.ReadAllActions(action_type)
-    action_handle = None
-    for action in action_list.action_list:
-        if action.name == "Home":
-            action_handle = action.handle
-
-    if action_handle == None:
-        print("Can't reach safe position. Exiting")
-        return False
-
-    e = threading.Event()
-    notification_handle = base.OnNotificationActionTopic(
-        check_for_end_or_abort(e),
-        Base_pb2.NotificationOptions()
-    )
-
-    base.ExecuteActionFromReference(action_handle)
-    finished = e.wait(TIMEOUT_DURATION)
-    base.Unsubscribe(notification_handle)
-
-    if finished:
-        print("Safe position reached")
-    else:
-        print("Timeout on action notification wait")
-    return finished
 
 
-def move_left_arm(base):
-    print("left")
-
-
-def move_right_arm(base):
-    print("right")
-
+    def publish(self, keypoints):
+        self.get_logger().info(f' {keypoints}')
 
 
 
