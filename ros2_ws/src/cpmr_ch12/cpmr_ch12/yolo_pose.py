@@ -124,30 +124,35 @@ class YOLO_Pose(Node):
                     elif(keypoints[i][0] == 10):
                         right_wrist = coordinates
                 
+                msg = String()
 
                 # Both hands up
                 if right_wrist and left_wrist:
                     if((right_wrist[1] < right_shoulder[1]) and (left_wrist[1] < left_shoulder[1])):
-                        msg = String()
+                        self.publish("Both Hands Up")
                         msg.data = "5"
-                        
-                        self._publisher.publish(msg)
                     
                 # Left Hand
                 elif left_shoulder and left_wrist:
                     if(left_wrist[1] < left_shoulder[1]):
                         self.publish("Left Hand Up")
+                        msg.data = "1"
                     else:
                         self.publish("Left Hand Down")
-                    
-                
+                        msg.data = "2"
+                        
+
                 # Right Hand
                 elif right_shoulder and right_wrist:
                     if(right_wrist[1] < right_shoulder[1]):
                         self.publish("Right Hand Up")
+                        msg.data = "3"
                     else:
                         self.publish("Right Hand Down")
-                                           
+                        msg.data = "4"
+
+                #publish message
+                self._publisher.publish(msg)                   
 
                 # Visualize results on frame        
                 annotated_frame = results[0].plot()
