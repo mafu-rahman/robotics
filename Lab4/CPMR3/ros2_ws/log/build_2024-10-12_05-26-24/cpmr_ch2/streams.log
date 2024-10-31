@@ -1,0 +1,38 @@
+[0.399s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/src/cpmr_ch2': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch2 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/install.log --single-version-externally-managed install_data
+[0.492s] /Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.492s]   warnings.warn(msg)
+[0.542s] running egg_info
+[0.549s] writing ../../build/cpmr_ch2/cpmr_ch2.egg-info/PKG-INFO
+[0.549s] writing dependency_links to ../../build/cpmr_ch2/cpmr_ch2.egg-info/dependency_links.txt
+[0.550s] writing entry points to ../../build/cpmr_ch2/cpmr_ch2.egg-info/entry_points.txt
+[0.550s] writing requirements to ../../build/cpmr_ch2/cpmr_ch2.egg-info/requires.txt
+[0.550s] writing top-level names to ../../build/cpmr_ch2/cpmr_ch2.egg-info/top_level.txt
+[0.565s] reading manifest file '../../build/cpmr_ch2/cpmr_ch2.egg-info/SOURCES.txt'
+[0.565s] writing manifest file '../../build/cpmr_ch2/cpmr_ch2.egg-info/SOURCES.txt'
+[0.566s] running build
+[0.566s] running build_py
+[0.566s] copying cpmr_ch2/drive_to_goal.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/build/lib/cpmr_ch2
+[0.566s] copying cpmr_ch2/build_map.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/build/lib/cpmr_ch2
+[0.566s] copying cpmr_ch2/__init__.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/build/lib/cpmr_ch2
+[0.566s] copying cpmr_ch2/add_obstacle.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/build/lib/cpmr_ch2
+[0.567s] copying cpmr_ch2/destroy_map.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/build/lib/cpmr_ch2
+[0.567s] running install
+[0.570s] running install_lib
+[0.579s] running install_data
+[0.580s] copying resource/cpmr_ch2 -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/share/ament_index/resource_index/packages
+[0.580s] copying package.xml -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2
+[0.580s] copying launch/destroy_map.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2
+[0.580s] copying launch/drive_robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2
+[0.581s] copying launch/build_map.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2
+[0.581s] copying launch/gazebo.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2
+[0.581s] copying maps/default.json -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2
+[0.581s] running install_egg_info
+[0.589s] removing '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.11/site-packages/cpmr_ch2-3.1.0-py3.11.egg-info' (and everything under it)
+[0.590s] Copying ../../build/cpmr_ch2/cpmr_ch2.egg-info to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.11/site-packages/cpmr_ch2-3.1.0-py3.11.egg-info
+[0.591s] running install_scripts
+[0.647s] Installing add_obstacle script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/lib/cpmr_ch2
+[0.647s] Installing build_map script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/lib/cpmr_ch2
+[0.647s] Installing destroy_map script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/lib/cpmr_ch2
+[0.647s] Installing drive_to_goal script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/lib/cpmr_ch2
+[0.647s] writing list of installed files to '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/install.log'
+[0.661s] Invoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/src/cpmr_ch2' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch2 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch2/install.log --single-version-externally-managed install_data

@@ -1,0 +1,28 @@
+[0.044s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/gazebo_dev': CONDA_PROMPT_MODIFIER=(ros_env) SHLVL=2 _=/Users/mafu/miniconda3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros_env/bin/cmake /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/src/gazebo_ros_pkgs/gazebo_dev -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/gazebo_dev
+[0.624s] CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.624s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.624s]   CMake.
+[0.624s] 
+[0.624s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.625s]   CMake that the project does not need compatibility with older versions.
+[0.626s] 
+[0.626s] 
+[0.626s] CMake Error at CMakeLists.txt:4 (find_package):
+[0.626s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.626s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.626s]   CMake did not find one.
+[0.626s] 
+[0.626s]   Could not find a package configuration file provided by "catkin" with any
+[0.626s]   of the following names:
+[0.626s] 
+[0.626s]     catkinConfig.cmake
+[0.626s]     catkin-config.cmake
+[0.626s] 
+[0.626s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.626s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.626s]   provides a separate development package or SDK, be sure it has been
+[0.626s]   installed.
+[0.626s] 
+[0.626s] 
+[0.626s] -- Configuring incomplete, errors occurred!
+[0.731s] Invoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/gazebo_dev' returned '1': CONDA_PROMPT_MODIFIER=(ros_env) SHLVL=2 _=/Users/mafu/miniconda3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros_env/bin/cmake /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/src/gazebo_ros_pkgs/gazebo_dev -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/gazebo_dev

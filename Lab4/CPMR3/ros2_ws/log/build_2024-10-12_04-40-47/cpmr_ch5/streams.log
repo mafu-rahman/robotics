@@ -1,0 +1,72 @@
+[1.393s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/src/cpmr_ch5': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch5 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/install.log --single-version-externally-managed install_data
+[1.633s] running egg_info
+[1.633s] creating ../../build/cpmr_ch5/cpmr_ch5.egg-info
+[1.634s] writing ../../build/cpmr_ch5/cpmr_ch5.egg-info/PKG-INFO
+[1.634s] writing dependency_links to ../../build/cpmr_ch5/cpmr_ch5.egg-info/dependency_links.txt
+[1.635s] writing entry points to ../../build/cpmr_ch5/cpmr_ch5.egg-info/entry_points.txt
+[1.635s] writing requirements to ../../build/cpmr_ch5/cpmr_ch5.egg-info/requires.txt
+[1.635s] writing top-level names to ../../build/cpmr_ch5/cpmr_ch5.egg-info/top_level.txt
+[1.637s] writing manifest file '../../build/cpmr_ch5/cpmr_ch5.egg-info/SOURCES.txt'
+[1.639s] reading manifest file '../../build/cpmr_ch5/cpmr_ch5.egg-info/SOURCES.txt'
+[1.639s] writing manifest file '../../build/cpmr_ch5/cpmr_ch5.egg-info/SOURCES.txt'
+[1.639s] running build
+[1.639s] running build_py
+[1.640s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build
+[1.640s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib
+[1.640s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[1.640s] copying cpmr_ch5/aruco_target.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[1.641s] copying cpmr_ch5/opencv_camera.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[1.642s] copying cpmr_ch5/view_camera.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[1.642s] copying cpmr_ch5/good_features.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[1.642s] copying cpmr_ch5/__init__.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[1.642s] copying cpmr_ch5/harris_corners.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[1.642s] copying cpmr_ch5/canny_edges.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[1.642s] copying cpmr_ch5/drive.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[1.644s] copying cpmr_ch5/opencv_camera_calibrated.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[1.645s] running install
+[1.646s] running install_lib
+[1.646s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5
+[1.646s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/aruco_target.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5
+[1.647s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/opencv_camera.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5
+[1.647s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/view_camera.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5
+[1.647s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/good_features.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5
+[1.647s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/__init__.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5
+[1.647s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/harris_corners.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5
+[1.647s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/canny_edges.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5
+[1.647s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/drive.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5
+[1.647s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/opencv_camera_calibrated.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5
+[1.649s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5/aruco_target.py to aruco_target.cpython-311.pyc
+[1.651s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5/opencv_camera.py to opencv_camera.cpython-311.pyc
+[1.651s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5/view_camera.py to view_camera.cpython-311.pyc
+[1.652s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5/good_features.py to good_features.cpython-311.pyc
+[1.652s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5/__init__.py to __init__.cpython-311.pyc
+[1.653s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5/harris_corners.py to harris_corners.cpython-311.pyc
+[1.653s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5/canny_edges.py to canny_edges.cpython-311.pyc
+[1.653s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5/drive.py to drive.cpython-311.pyc
+[1.654s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5/opencv_camera_calibrated.py to opencv_camera_calibrated.cpython-311.pyc
+[1.654s] running install_data
+[1.654s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/ament_index
+[1.654s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/ament_index/resource_index
+[1.654s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/ament_index/resource_index/packages
+[1.654s] copying resource/cpmr_ch5 -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/ament_index/resource_index/packages
+[1.655s] copying package.xml -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[1.655s] copying launch/camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[1.655s] copying launch/good-features-camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[1.655s] copying launch/aruco-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[1.656s] copying launch/view-camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[1.656s] copying launch/harris-corners-camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[1.656s] copying launch/canny-edges-camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[1.657s] copying urdf/scout-camera.urdf.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[1.657s] copying urdf/colors.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[1.658s] running install_egg_info
+[1.659s] Copying ../../build/cpmr_ch5/cpmr_ch5.egg-info to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.11/site-packages/cpmr_ch5-3.1.0-py3.11.egg-info
+[1.660s] running install_scripts
+[1.700s] Installing aruco_target script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[1.700s] Installing canny_edges script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[1.701s] Installing drive script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[1.701s] Installing good_features script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[1.701s] Installing harris_corners script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[1.701s] Installing opencv_camera script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[1.701s] Installing opencv_camera_calibrated script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[1.701s] Installing view_camera script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[1.701s] writing list of installed files to '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab4/CPMR3/ros2_ws/build/cpmr_ch5/install.log'
