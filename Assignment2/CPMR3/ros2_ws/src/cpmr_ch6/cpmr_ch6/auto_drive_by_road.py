@@ -25,7 +25,12 @@ class AutoDriveByLine(Node):
         self.declare_parameter('cmd', "/cmd_vel")
         self.declare_parameter('odom', "/odom")
         self.declare_parameter('rate', 10)
-        self.declare_parameter('model', "road-follower.keras") # added extension to .keras
+        
+        # Added more models
+        self.declare_parameter('model', "road-follower.keras") # added extension .keras
+        #self.declare_parameter('model', "road-follower-2.keras") # added extension .keras
+        #self.declare_parameter('model', "road-follower-3.keras") # added extension .keras
+
         self.declare_parameter('x_vel', 0.2)
         self.declare_parameter('theta_vel', 0.2)
         self.declare_parameter('image_size', 28)
