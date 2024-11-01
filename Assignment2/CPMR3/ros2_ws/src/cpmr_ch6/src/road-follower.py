@@ -4,19 +4,13 @@
 #
 from packaging import version
 import tensorflow as tf
-from keras.models import Sequential
-from keras.layers.convolutional import Conv2D, MaxPooling2D 
-from keras.layers.core import Activation, Flatten, Dense
-from keras import backend as K
-from keras.preprocessing.image import ImageDataGenerator
-if version.parse(tf.__version__) < version.parse("2.9.0"):
-    from keras.preprocessing.image import img_to_array
-else:
-    from tensorflow.keras.utils import img_to_array
+
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Activation, Flatten, Dense
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.utils import img_to_array, to_categorical
 from tensorflow.keras.optimizers import Adam
-from sklearn.model_selection import train_test_split
-from tensorflow.keras.utils import to_categorical
-from keras.callbacks import TensorBoard
+from tensorflow.keras.callbacks import TensorBoard
 from imutils import paths
 import numpy as np
 import argparse
@@ -24,6 +18,9 @@ import random
 import cv2
 import os
 from datetime import datetime
+
+from sklearn.model_selection import train_test_split
+
 
 class LeNet:
   @staticmethod
@@ -103,7 +100,7 @@ BS = 32
 # initialize the model
 print("[INFO] compiling model...")
 model = LeNet.build(width=28, height=28, depth=3, classes=3)
-opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
+opt = Adam(learning_rate=INIT_LR)
 model.compile(loss="binary_crossentropy", optimizer=opt,
     metrics=["accuracy"])
  
@@ -116,5 +113,5 @@ H = model.fit(trainX, trainY, batch_size=BS,
  
 # save the model to disk
 print("[INFO] serializing network...")
-model.save("model")
+model.save("model.keras")
 

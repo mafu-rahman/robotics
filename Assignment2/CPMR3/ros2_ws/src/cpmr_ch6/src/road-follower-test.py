@@ -4,14 +4,14 @@ if version.parse(tf.__version__) < version.parse("2.9.0"):
     from keras.preprocessing.image import img_to_array
 else:
     from tensorflow.keras.utils import img_to_array
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from imutils import paths
 import numpy as np
 import cv2
 import random
 
 
-model = load_model("road-follower")
+model = load_model("road-follower.keras")
 dataset = './trainImages/' 
 imagePaths = sorted(list(paths.list_images(dataset)))
 
