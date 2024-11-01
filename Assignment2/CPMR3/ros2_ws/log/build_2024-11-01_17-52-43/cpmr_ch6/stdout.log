@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/cpmr_ch6/cpmr_ch6.egg-info/PKG-INFO
+writing dependency_links to ../../build/cpmr_ch6/cpmr_ch6.egg-info/dependency_links.txt
+writing entry points to ../../build/cpmr_ch6/cpmr_ch6.egg-info/entry_points.txt
+writing requirements to ../../build/cpmr_ch6/cpmr_ch6.egg-info/requires.txt
+writing top-level names to ../../build/cpmr_ch6/cpmr_ch6.egg-info/top_level.txt
+reading manifest file '../../build/cpmr_ch6/cpmr_ch6.egg-info/SOURCES.txt'
+writing manifest file '../../build/cpmr_ch6/cpmr_ch6.egg-info/SOURCES.txt'
+running build
+running build_py
+copying cpmr_ch6/drive_by_road.py -> /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6
+running install
+running install_lib
+copying /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/drive_by_road.py -> /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages/cpmr_ch6
+byte-compiling /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages/cpmr_ch6/drive_by_road.py to drive_by_road.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages/cpmr_ch6-3.1.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/cpmr_ch6/cpmr_ch6.egg-info to /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages/cpmr_ch6-3.1.0-py3.10.egg-info
+running install_scripts
+Installing auto_drive_by_line script to /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/lib/cpmr_ch6
+Installing auto_drive_by_road script to /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/lib/cpmr_ch6
+Installing drive_by_line script to /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/lib/cpmr_ch6
+Installing drive_by_road script to /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/lib/cpmr_ch6
+writing list of installed files to '/Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/build/cpmr_ch6/install.log'
