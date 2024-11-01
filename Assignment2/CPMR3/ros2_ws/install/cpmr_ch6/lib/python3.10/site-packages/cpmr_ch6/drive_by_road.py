@@ -24,7 +24,7 @@ class DriveByRoad(Node):
         self.declare_parameter('odom', "/odom")
         self.declare_parameter('rate', 10)
         self.declare_parameter('output', "output")
-        self.declare_parameter('x_vel', 0.5)
+        self.declare_parameter('x_vel', 0.2)
         self.declare_parameter('theta_vel', 0.2)
         self.declare_parameter('image_size', 28)
 
