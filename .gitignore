@@ -4,3 +4,7 @@
 .DS_Store
 /Assignment2/CPMR3/ros2_ws/output
 /Assignment2/CPMR3/ros2_ws/src/cpmr_ch6/src/trainImages
+/Assignment2/CPMR3/ros2_ws/src/cpmr_ch6/src/logs
+/Assignment2/CPMR3/ros2_ws/build
+/Assignment2/CPMR3/ros2_ws/install
+/Assignment2/CPMR3/ros2_ws/log
