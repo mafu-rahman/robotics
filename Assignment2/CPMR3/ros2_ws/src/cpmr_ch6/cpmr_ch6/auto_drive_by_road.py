@@ -2,14 +2,11 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # disable information messages
 from packaging import version
 import tensorflow as tf
-if version.parse(tf.__version__) < version.parse("2.9.0"):
-    from keras.preprocessing.image import img_to_array
-else:
-    from tensorflow.keras.utils import img_to_array
-from keras.models import load_model
+from tensorflow.keras.utils import img_to_array
+from tensorflow.keras.models import load_model
 import math
 import numpy as np
-from keras.models import load_model
+
 import cv2
 from cv_bridge import CvBridge, CvBridgeError
 import rclpy
@@ -28,7 +25,7 @@ class AutoDriveByLine(Node):
         self.declare_parameter('cmd', "/cmd_vel")
         self.declare_parameter('odom', "/odom")
         self.declare_parameter('rate', 10)
-        self.declare_parameter('model', "road-follower")
+        self.declare_parameter('model', "road-follower.keras") # added extension to .keras
         self.declare_parameter('x_vel', 0.2)
         self.declare_parameter('theta_vel', 0.2)
         self.declare_parameter('image_size', 28)
