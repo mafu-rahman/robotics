@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing cpmr_ch11.egg-info/PKG-INFO
+writing dependency_links to cpmr_ch11.egg-info/dependency_links.txt
+writing requirements to cpmr_ch11.egg-info/requires.txt
+writing top-level names to cpmr_ch11.egg-info/top_level.txt
+reading manifest file 'cpmr_ch11.egg-info/SOURCES.txt'
+writing manifest file 'cpmr_ch11.egg-info/SOURCES.txt'
+running build_ext
+Creating /opt/miniconda3/envs/ros3/lib/python3.10/site-packages/cpmr-ch11.egg-link (link to .)
+
+Installed /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch11
+running symlink_data
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch11/resource/cpmr_ch11 -> /opt/miniconda3/envs/ros3/share/ament_index/resource_index/packages
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch11/package.xml -> /opt/miniconda3/envs/ros3/share/cpmr_ch11
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch11/launch/chairs.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch11
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch11/urdf/wheelchair.urdf.xacro -> /opt/miniconda3/envs/ros3/share/cpmr_ch11
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch11/urdf/emptychair.obj -> /opt/miniconda3/envs/ros3/share/cpmr_ch11
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch11/urdf/emptychair.obj.orig -> /opt/miniconda3/envs/ros3/share/cpmr_ch11
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch11/urdf/colors.xacro -> /opt/miniconda3/envs/ros3/share/cpmr_ch11

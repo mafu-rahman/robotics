@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+cpmr_ch12/__init__.py
+cpmr_ch12/opencv_camera.py
+cpmr_ch12/yolo_pose.py
+cpmr_ch12.egg-info/PKG-INFO
+cpmr_ch12.egg-info/SOURCES.txt
+cpmr_ch12.egg-info/dependency_links.txt
+cpmr_ch12.egg-info/requires.txt
+cpmr_ch12.egg-info/top_level.txt
+cpmr_ch12.egg-info/zip-safe
+launch/camera-robot.launch.py
+resource/cpmr_ch12
+urdf/colors.xacro
+urdf/scout-camera.urdf.xacro

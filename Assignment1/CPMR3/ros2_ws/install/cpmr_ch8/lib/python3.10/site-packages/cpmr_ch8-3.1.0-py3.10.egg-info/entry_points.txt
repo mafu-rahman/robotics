@@ -1,0 +1,3 @@
+[console_scripts]
+fsm = cpmr_ch8.fsm:main
+view_camera = cpmr_ch8.view_camera:main

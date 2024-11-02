@@ -1,0 +1,26 @@
+[4.753s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_apb': CONDA_PROMPT_MODIFIER=(ros3) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /opt/miniconda3/envs/ros3/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data
+[5.845s] running egg_info
+[5.924s] writing ../../build/cpmr_apb/cpmr_apb.egg-info/PKG-INFO
+[5.982s] writing dependency_links to ../../build/cpmr_apb/cpmr_apb.egg-info/dependency_links.txt
+[6.127s] writing entry points to ../../build/cpmr_apb/cpmr_apb.egg-info/entry_points.txt
+[6.272s] writing requirements to ../../build/cpmr_apb/cpmr_apb.egg-info/requires.txt
+[6.336s] writing top-level names to ../../build/cpmr_apb/cpmr_apb.egg-info/top_level.txt
+[6.432s] reading manifest file '../../build/cpmr_apb/cpmr_apb.egg-info/SOURCES.txt'
+[6.434s] writing manifest file '../../build/cpmr_apb/cpmr_apb.egg-info/SOURCES.txt'
+[6.434s] running build
+[6.434s] running build_py
+[6.438s] running install
+[6.441s] running install_lib
+[6.547s] running install_data
+[6.549s] copying resource/cpmr_apb -> /opt/miniconda3/envs/ros3/share/ament_index/resource_index/packages
+[6.550s] copying package.xml -> /opt/miniconda3/envs/ros3/share/cpmr_apb
+[6.551s] copying launch/gazebo.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_apb
+[6.551s] copying urdf/blockrobot.urdf -> /opt/miniconda3/envs/ros3/share/cpmr_apb
+[6.553s] running install_egg_info
+[6.674s] removing '/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/cpmr_apb-3.1.0-py3.10.egg-info' (and everything under it)
+[6.674s] Copying ../../build/cpmr_apb/cpmr_apb.egg-info to /opt/miniconda3/envs/ros3/lib/python3.10/site-packages/cpmr_apb-3.1.0-py3.10.egg-info
+[6.691s] running install_scripts
+[6.901s] Installing depopulate_world script to /opt/miniconda3/envs/ros3/lib/cpmr_apb
+[6.901s] Installing populate_world script to /opt/miniconda3/envs/ros3/lib/cpmr_apb
+[6.901s] writing list of installed files to '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_apb/install.log'
+[7.485s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_apb' returned '0': CONDA_PROMPT_MODIFIER=(ros3) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /opt/miniconda3/envs/ros3/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data

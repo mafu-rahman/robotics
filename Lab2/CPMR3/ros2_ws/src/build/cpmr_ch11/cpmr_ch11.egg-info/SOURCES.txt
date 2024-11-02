@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+cpmr_ch11/__init__.py
+cpmr_ch11.egg-info/PKG-INFO
+cpmr_ch11.egg-info/SOURCES.txt
+cpmr_ch11.egg-info/dependency_links.txt
+cpmr_ch11.egg-info/requires.txt
+cpmr_ch11.egg-info/top_level.txt
+cpmr_ch11.egg-info/zip-safe
+launch/chairs.launch.py
+resource/cpmr_ch11
+urdf/colors.xacro
+urdf/emptychair.obj
+urdf/emptychair.obj.orig
+urdf/wheelchair.urdf.xacro

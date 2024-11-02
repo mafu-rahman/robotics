@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_ros/task/ament_python/build.py", line 102, in build
+    return await extension.build(additional_hooks=additional_hooks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/build.py", line 94, in build
+    available_commands = await self._get_available_commands(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/build.py", line 192, in _get_available_commands
+    output = await check_output(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/subprocess.py", line 129, in check_output
+    assert not rc, f'Expected {args} to pass: {stderr_data}'
+AssertionError: Expected ['/Library/Frameworks/Python.framework/Versions/3.12/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', '--help-commands'] to pass: Traceback (most recent call last):
+  File "/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_ch11/setup.py", line 3, in <module>
+    from setuptools import find_packages, setup
+  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/setuptools/__init__.py", line 14, in <module>
+    import setuptools.version
+  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2178, in <module>
+    register_finder(pkgutil.ImpImporter, find_on_path)
+                    ^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pkgutil' has no attribute 'ImpImporter'. Did you mean: 'zipimporter'?
+

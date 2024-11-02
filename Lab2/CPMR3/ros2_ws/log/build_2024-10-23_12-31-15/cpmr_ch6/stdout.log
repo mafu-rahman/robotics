@@ -1,0 +1,42 @@
+running egg_info
+writing ../../build/cpmr_ch6/cpmr_ch6.egg-info/PKG-INFO
+writing dependency_links to ../../build/cpmr_ch6/cpmr_ch6.egg-info/dependency_links.txt
+writing entry points to ../../build/cpmr_ch6/cpmr_ch6.egg-info/entry_points.txt
+writing requirements to ../../build/cpmr_ch6/cpmr_ch6.egg-info/requires.txt
+writing top-level names to ../../build/cpmr_ch6/cpmr_ch6.egg-info/top_level.txt
+reading manifest file '../../build/cpmr_ch6/cpmr_ch6.egg-info/SOURCES.txt'
+writing manifest file '../../build/cpmr_ch6/cpmr_ch6.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6
+copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/__init__.py -> /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6
+copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/auto_drive_by_road.py -> /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6
+copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/drive_by_line.py -> /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6
+copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/auto_drive_by_line.py -> /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6
+copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/build/lib/cpmr_ch6/drive_by_road.py -> /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6
+byte-compiling /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6/__init__.py to __init__.cpython-311.pyc
+byte-compiling /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6/auto_drive_by_road.py to auto_drive_by_road.cpython-311.pyc
+byte-compiling /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6/drive_by_line.py to drive_by_line.cpython-311.pyc
+byte-compiling /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6/auto_drive_by_line.py to auto_drive_by_line.cpython-311.pyc
+byte-compiling /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6/drive_by_road.py to drive_by_road.cpython-311.pyc
+running install_data
+copying resource/cpmr_ch6 -> /Users/mafu/miniforge3/envs/ros_env/share/ament_index/resource_index/packages
+creating /Users/mafu/miniforge3/envs/ros_env/share/cpmr_ch6
+copying package.xml -> /Users/mafu/miniforge3/envs/ros_env/share/cpmr_ch6
+copying launch/drive_by_line.launch.py -> /Users/mafu/miniforge3/envs/ros_env/share/cpmr_ch6
+copying launch/drive_by_road.launch.py -> /Users/mafu/miniforge3/envs/ros_env/share/cpmr_ch6
+copying launch/auto_drive_by_road.launch.py -> /Users/mafu/miniforge3/envs/ros_env/share/cpmr_ch6
+copying launch/auto_drive_by_line.launch.py -> /Users/mafu/miniforge3/envs/ros_env/share/cpmr_ch6
+copying urdf/scout-camera.urdf.xacro -> /Users/mafu/miniforge3/envs/ros_env/share/cpmr_ch6
+copying urdf/scout-line-follower.urdf.xacro -> /Users/mafu/miniforge3/envs/ros_env/share/cpmr_ch6
+copying urdf/colors.xacro -> /Users/mafu/miniforge3/envs/ros_env/share/cpmr_ch6
+running install_egg_info
+Copying ../../build/cpmr_ch6/cpmr_ch6.egg-info to /Users/mafu/miniforge3/envs/ros_env/lib/python3.11/site-packages/cpmr_ch6-3.1.0-py3.11.egg-info
+running install_scripts
+Installing auto_drive_by_line script to /Users/mafu/miniforge3/envs/ros_env/lib/cpmr_ch6
+Installing auto_drive_by_road script to /Users/mafu/miniforge3/envs/ros_env/lib/cpmr_ch6
+Installing drive_by_line script to /Users/mafu/miniforge3/envs/ros_env/lib/cpmr_ch6
+Installing drive_by_road script to /Users/mafu/miniforge3/envs/ros_env/lib/cpmr_ch6
+writing list of installed files to '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/install.log'

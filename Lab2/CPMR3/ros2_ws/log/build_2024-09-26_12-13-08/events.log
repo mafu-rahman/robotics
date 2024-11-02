@@ -1,0 +1,31 @@
+[0.000000] (-) TimerEvent: {}
+[0.000047] (cpmr_apb) JobQueued: {'identifier': 'cpmr_apb', 'dependencies': OrderedDict()}
+[0.000087] (cpmr_ch11) JobQueued: {'identifier': 'cpmr_ch11', 'dependencies': OrderedDict()}
+[0.000150] (cpmr_ch12) JobQueued: {'identifier': 'cpmr_ch12', 'dependencies': OrderedDict()}
+[0.000180] (cpmr_ch2) JobQueued: {'identifier': 'cpmr_ch2', 'dependencies': OrderedDict()}
+[0.000192] (cpmr_ch4) JobQueued: {'identifier': 'cpmr_ch4', 'dependencies': OrderedDict()}
+[0.000309] (cpmr_ch5) JobQueued: {'identifier': 'cpmr_ch5', 'dependencies': OrderedDict()}
+[0.000347] (cpmr_ch6) JobQueued: {'identifier': 'cpmr_ch6', 'dependencies': OrderedDict()}
+[0.000418] (cpmr_ch7) JobQueued: {'identifier': 'cpmr_ch7', 'dependencies': OrderedDict()}
+[0.000471] (cpmr_ch8) JobQueued: {'identifier': 'cpmr_ch8', 'dependencies': OrderedDict()}
+[0.000493] (cpmr_apb) JobStarted: {'identifier': 'cpmr_apb'}
+[0.009635] (cpmr_ch11) JobStarted: {'identifier': 'cpmr_ch11'}
+[0.015067] (cpmr_ch12) JobStarted: {'identifier': 'cpmr_ch12'}
+[0.019648] (cpmr_ch2) JobStarted: {'identifier': 'cpmr_ch2'}
+[0.024225] (cpmr_ch4) JobStarted: {'identifier': 'cpmr_ch4'}
+[0.028930] (cpmr_ch5) JobStarted: {'identifier': 'cpmr_ch5'}
+[0.033656] (cpmr_ch6) JobStarted: {'identifier': 'cpmr_ch6'}
+[0.038828] (cpmr_ch7) JobStarted: {'identifier': 'cpmr_ch7'}
+[0.104948] (-) TimerEvent: {}
+[0.210200] (-) TimerEvent: {}
+[0.245981] (cpmr_apb) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_ros/task/ament_python/build.py", line 51, in build\n    setup_py_data = get_setup_data(self.context.pkg, env)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/python/__init__.py", line 20, in get_setup_data\n    return dict(pkg.metadata[key](env))\n                ^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_ros/package_augmentation/ros_ament_python.py", line 57, in getter\n    return get_setup_information(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 241, in get_setup_information\n    _setup_information_cache[hashable_env] = _get_setup_information(\n                                             ^^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 281, in _get_setup_information\n    result = subprocess.run(\n             ^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.11/subprocess.py", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'/Users/mafu/miniconda3/envs/ros2/bin/python3.11\', \'-c\', "import sys;from setuptools.extern.packaging.specifiers import SpecifierSet;from distutils.core import run_setup;dist = run_setup(    \'setup.py\', script_args=(\'--dry-run\',), stop_after=\'config\');skip_keys = (\'cmdclass\', \'distclass\', \'ext_modules\', \'metadata\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\'_\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\'metadata\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\'license_files\', \'provides_extras\')};sys.stdout.buffer.write(repr(data).encode(\'utf-8\'))"]\' returned non-zero exit status 1.\n'}
+[0.246829] (cpmr_apb) JobEnded: {'identifier': 'cpmr_apb', 'rc': 1}
+[0.247100] (cpmr_ch7) JobEnded: {'identifier': 'cpmr_ch7', 'rc': 'SIGINT'}
+[0.247240] (cpmr_ch11) JobEnded: {'identifier': 'cpmr_ch11', 'rc': 'SIGINT'}
+[0.247365] (cpmr_ch12) JobEnded: {'identifier': 'cpmr_ch12', 'rc': 'SIGINT'}
+[0.247489] (cpmr_ch5) JobEnded: {'identifier': 'cpmr_ch5', 'rc': 'SIGINT'}
+[0.247605] (cpmr_ch6) JobEnded: {'identifier': 'cpmr_ch6', 'rc': 'SIGINT'}
+[0.247721] (cpmr_ch4) JobEnded: {'identifier': 'cpmr_ch4', 'rc': 'SIGINT'}
+[0.247831] (cpmr_ch2) JobEnded: {'identifier': 'cpmr_ch2', 'rc': 'SIGINT'}
+[0.259588] (cpmr_ch8) JobSkipped: {'identifier': 'cpmr_ch8'}
+[0.259603] (-) EventReactorShutdown: {}

@@ -1,0 +1,11 @@
+[0.000000] (-) TimerEvent: {}
+[0.000254] (-) JobUnselected: {'identifier': 'cpmr_apb'}
+[0.000322] (-) JobUnselected: {'identifier': 'cpmr_ch11'}
+[0.000352] (-) JobUnselected: {'identifier': 'cpmr_ch12'}
+[0.000364] (-) JobUnselected: {'identifier': 'cpmr_ch2'}
+[0.000388] (-) JobUnselected: {'identifier': 'cpmr_ch4'}
+[0.000422] (-) JobUnselected: {'identifier': 'cpmr_ch5'}
+[0.000444] (-) JobUnselected: {'identifier': 'cpmr_ch6'}
+[0.000471] (-) JobUnselected: {'identifier': 'cpmr_ch7'}
+[0.000483] (-) JobUnselected: {'identifier': 'cpmr_ch8'}
+[0.000563] (-) EventReactorShutdown: {}

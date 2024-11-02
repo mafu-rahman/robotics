@@ -1,0 +1,27 @@
+running develop
+/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing cpmr_ch2.egg-info/PKG-INFO
+writing dependency_links to cpmr_ch2.egg-info/dependency_links.txt
+writing entry points to cpmr_ch2.egg-info/entry_points.txt
+writing requirements to cpmr_ch2.egg-info/requires.txt
+writing top-level names to cpmr_ch2.egg-info/top_level.txt
+reading manifest file 'cpmr_ch2.egg-info/SOURCES.txt'
+writing manifest file 'cpmr_ch2.egg-info/SOURCES.txt'
+running build_ext
+Creating /opt/miniconda3/envs/ros3/lib/python3.10/site-packages/cpmr-ch2.egg-link (link to .)
+Installing add_obstacle script to /opt/miniconda3/envs/ros3/lib/cpmr_ch2
+Installing build_map script to /opt/miniconda3/envs/ros3/lib/cpmr_ch2
+Installing destroy_map script to /opt/miniconda3/envs/ros3/lib/cpmr_ch2
+Installing drive_to_goal script to /opt/miniconda3/envs/ros3/lib/cpmr_ch2
+
+Installed /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2
+running symlink_data
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/resource/cpmr_ch2 -> /opt/miniconda3/envs/ros3/share/ament_index/resource_index/packages
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/package.xml -> /opt/miniconda3/envs/ros3/share/cpmr_ch2
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/launch/destroy_map.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch2
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/launch/drive_robot.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch2
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/launch/build_map.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch2
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/launch/gazebo.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch2
+symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/maps/default.json -> /opt/miniconda3/envs/ros3/share/cpmr_ch2

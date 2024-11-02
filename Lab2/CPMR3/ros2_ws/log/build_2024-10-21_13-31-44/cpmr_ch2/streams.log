@@ -1,0 +1,44 @@
+[3.516s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/src/cpmr_ch2': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/prefix_override:/opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/homebrew/Caskroom/miniforge/base/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch2 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/install.log --single-version-externally-managed install_data
+[3.989s] /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[3.990s]   warnings.warn(msg)
+[4.352s] running egg_info
+[4.398s] writing ../../build/cpmr_ch2/cpmr_ch2.egg-info/PKG-INFO
+[4.417s] writing dependency_links to ../../build/cpmr_ch2/cpmr_ch2.egg-info/dependency_links.txt
+[4.426s] writing entry points to ../../build/cpmr_ch2/cpmr_ch2.egg-info/entry_points.txt
+[4.433s] writing requirements to ../../build/cpmr_ch2/cpmr_ch2.egg-info/requires.txt
+[4.433s] writing top-level names to ../../build/cpmr_ch2/cpmr_ch2.egg-info/top_level.txt
+[4.528s] reading manifest file '../../build/cpmr_ch2/cpmr_ch2.egg-info/SOURCES.txt'
+[4.532s] writing manifest file '../../build/cpmr_ch2/cpmr_ch2.egg-info/SOURCES.txt'
+[4.536s] running build
+[4.536s] running build_py
+[4.538s] running install
+[4.551s] running install_lib
+[4.603s] creating /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2
+[4.603s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/build/lib/cpmr_ch2/drive_to_goal.py -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2
+[4.607s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/build/lib/cpmr_ch2/build_map.py -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2
+[4.609s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/build/lib/cpmr_ch2/__init__.py -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2
+[4.611s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/build/lib/cpmr_ch2/add_obstacle.py -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2
+[4.613s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/build/lib/cpmr_ch2/destroy_map.py -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2
+[4.615s] byte-compiling /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2/drive_to_goal.py to drive_to_goal.cpython-311.pyc
+[4.622s] byte-compiling /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2/build_map.py to build_map.cpython-311.pyc
+[4.625s] byte-compiling /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2/__init__.py to __init__.cpython-311.pyc
+[4.628s] byte-compiling /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2/add_obstacle.py to add_obstacle.cpython-311.pyc
+[4.632s] byte-compiling /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2/destroy_map.py to destroy_map.cpython-311.pyc
+[4.634s] running install_data
+[4.635s] copying resource/cpmr_ch2 -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/share/ament_index/resource_index/packages
+[4.636s] creating /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/share/cpmr_ch2
+[4.636s] copying package.xml -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/share/cpmr_ch2
+[4.637s] copying launch/destroy_map.launch.py -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/share/cpmr_ch2
+[4.638s] copying launch/drive_robot.launch.py -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/share/cpmr_ch2
+[4.639s] copying launch/build_map.launch.py -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/share/cpmr_ch2
+[4.640s] copying launch/gazebo.launch.py -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/share/cpmr_ch2
+[4.642s] copying maps/default.json -> /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/share/cpmr_ch2
+[4.643s] running install_egg_info
+[4.698s] Copying ../../build/cpmr_ch2/cpmr_ch2.egg-info to /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/cpmr_ch2-3.1.0-py3.11.egg-info
+[4.706s] running install_scripts
+[5.035s] Installing add_obstacle script to /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/cpmr_ch2
+[5.035s] Installing build_map script to /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/cpmr_ch2
+[5.036s] Installing destroy_map script to /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/cpmr_ch2
+[5.036s] Installing drive_to_goal script to /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/cpmr_ch2
+[5.037s] writing list of installed files to '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/install.log'
+[5.512s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/src/cpmr_ch2' returned '0': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/prefix_override:/opt/homebrew/Caskroom/miniforge/base/envs/ros_env/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/homebrew/Caskroom/miniforge/base/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/homebrew/Caskroom/miniforge/base/envs/ros_env/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch2 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch2/install.log --single-version-externally-managed install_data

@@ -1,0 +1,32 @@
+[0.054s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/gazebo_dev': CONDA_PROMPT_MODIFIER=(ros2) SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/cmake /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/gazebo_ros_pkgs/gazebo_dev -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/gazebo_dev
+[4.645s] -- The C compiler identification is Clang 17.0.6
+[4.821s] -- The CXX compiler identification is Clang 17.0.6
+[4.822s] -- Detecting C compiler ABI info
+[5.386s] -- Detecting C compiler ABI info - done
+[5.390s] -- Check for working C compiler: /Users/mafu/miniconda3/envs/ros2/bin/arm64-apple-darwin20.0.0-clang - skipped
+[5.391s] -- Detecting C compile features
+[5.391s] -- Detecting C compile features - done
+[5.403s] -- Detecting CXX compiler ABI info
+[5.678s] -- Detecting CXX compiler ABI info - done
+[5.681s] -- Check for working CXX compiler: /Users/mafu/miniconda3/envs/ros2/bin/arm64-apple-darwin20.0.0-clang++ - skipped
+[5.682s] -- Detecting CXX compile features
+[5.687s] -- Detecting CXX compile features - done
+[5.745s] CMake Error at CMakeLists.txt:4 (find_package):
+[5.746s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[5.746s]   asked CMake to find a package configuration file provided by "catkin", but
+[5.746s]   CMake did not find one.
+[5.746s] 
+[5.746s]   Could not find a package configuration file provided by "catkin" with any
+[5.746s]   of the following names:
+[5.746s] 
+[5.746s]     catkinConfig.cmake
+[5.746s]     catkin-config.cmake
+[5.746s] 
+[5.746s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[5.746s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[5.746s]   provides a separate development package or SDK, be sure it has been
+[5.747s]   installed.
+[5.747s] 
+[5.747s] 
+[5.747s] -- Configuring incomplete, errors occurred!
+[5.757s] Invoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/gazebo_dev' returned '1': CONDA_PROMPT_MODIFIER=(ros2) SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/cmake /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/gazebo_ros_pkgs/gazebo_dev -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/gazebo_dev

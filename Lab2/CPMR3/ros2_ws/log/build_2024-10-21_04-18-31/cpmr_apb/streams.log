@@ -1,0 +1,49 @@
+[2.961s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/opt/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros2/bin/python3.11 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/build
+[3.363s] /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[3.363s]   warnings.warn(msg)
+[3.718s] running develop
+[3.719s] /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[3.719s] !!
+[3.719s] 
+[3.719s]         ********************************************************************************
+[3.720s]         Please avoid running ``setup.py`` and ``easy_install``.
+[3.720s]         Instead, use pypa/build, pypa/installer or other
+[3.720s]         standards-based tools.
+[3.720s] 
+[3.720s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[3.720s]         ********************************************************************************
+[3.720s] 
+[3.720s] !!
+[3.720s]   easy_install.initialize_options(self)
+[4.769s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/opt/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros2/bin/python3.11 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/build
+[4.772s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/src/cpmr_apb': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/opt/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros2/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data --force
+[5.127s] /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[5.127s]   warnings.warn(msg)
+[5.412s] running egg_info
+[5.452s] writing ../../build/cpmr_apb/cpmr_apb.egg-info/PKG-INFO
+[5.461s] writing dependency_links to ../../build/cpmr_apb/cpmr_apb.egg-info/dependency_links.txt
+[5.462s] writing entry points to ../../build/cpmr_apb/cpmr_apb.egg-info/entry_points.txt
+[5.463s] writing requirements to ../../build/cpmr_apb/cpmr_apb.egg-info/requires.txt
+[5.463s] writing top-level names to ../../build/cpmr_apb/cpmr_apb.egg-info/top_level.txt
+[5.566s] reading manifest file '../../build/cpmr_apb/cpmr_apb.egg-info/SOURCES.txt'
+[5.571s] writing manifest file '../../build/cpmr_apb/cpmr_apb.egg-info/SOURCES.txt'
+[5.571s] running build
+[5.571s] running build_py
+[5.571s] running install
+[5.576s] running install_lib
+[5.616s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb/depopulate.py -> /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/cpmr_apb
+[5.616s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb/__init__.py -> /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/cpmr_apb
+[5.616s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb/populate.py -> /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/cpmr_apb
+[5.618s] running install_data
+[5.620s] copying resource/cpmr_apb -> /opt/miniconda3/envs/ros2/share/ament_index/resource_index/packages
+[5.623s] copying package.xml -> /opt/miniconda3/envs/ros2/share/cpmr_apb
+[5.623s] copying launch/gazebo.launch.py -> /opt/miniconda3/envs/ros2/share/cpmr_apb
+[5.624s] copying urdf/blockrobot.urdf -> /opt/miniconda3/envs/ros2/share/cpmr_apb
+[5.626s] running install_egg_info
+[5.675s] removing '/opt/miniconda3/envs/ros2/lib/python3.11/site-packages/cpmr_apb-3.1.0-py3.11.egg-info' (and everything under it)
+[5.677s] Copying ../../build/cpmr_apb/cpmr_apb.egg-info to /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/cpmr_apb-3.1.0-py3.11.egg-info
+[5.685s] running install_scripts
+[5.996s] Installing depopulate_world script to /opt/miniconda3/envs/ros2/lib/cpmr_apb
+[5.996s] Installing populate_world script to /opt/miniconda3/envs/ros2/lib/cpmr_apb
+[5.996s] writing list of installed files to '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/install.log'
+[6.097s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/src/cpmr_apb' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/opt/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros2/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data --force

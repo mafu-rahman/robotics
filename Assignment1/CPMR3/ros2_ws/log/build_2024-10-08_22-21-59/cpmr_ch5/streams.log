@@ -1,0 +1,26 @@
+[4.961s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/src/cpmr_ch5': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch5 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/build/cpmr_ch5/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/build/cpmr_ch5/install.log --single-version-externally-managed install_data
+[5.919s] running egg_info
+[5.995s] writing ../../build/cpmr_ch5/cpmr_ch5.egg-info/PKG-INFO
+[6.060s] writing dependency_links to ../../build/cpmr_ch5/cpmr_ch5.egg-info/dependency_links.txt
+[6.223s] writing entry points to ../../build/cpmr_ch5/cpmr_ch5.egg-info/entry_points.txt
+[6.350s] writing requirements to ../../build/cpmr_ch5/cpmr_ch5.egg-info/requires.txt
+[6.391s] writing top-level names to ../../build/cpmr_ch5/cpmr_ch5.egg-info/top_level.txt
+[6.489s] reading manifest file '../../build/cpmr_ch5/cpmr_ch5.egg-info/SOURCES.txt'
+[6.490s] writing manifest file '../../build/cpmr_ch5/cpmr_ch5.egg-info/SOURCES.txt'
+[6.496s] running build
+[6.496s] running build_py
+[6.496s] running install
+[6.501s] running install_lib
+[6.549s] running install_data
+[6.549s] running install_egg_info
+[6.617s] removing '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5-3.1.0-py3.10.egg-info' (and everything under it)
+[6.619s] Copying ../../build/cpmr_ch5/cpmr_ch5.egg-info to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5-3.1.0-py3.10.egg-info
+[6.622s] running install_scripts
+[6.807s] Installing aruco_target script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[6.807s] Installing canny_edges script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[6.807s] Installing good_features script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[6.807s] Installing harris_corners script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[6.808s] Installing opencv_camera script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[6.808s] Installing view_camera script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[6.808s] writing list of installed files to '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/build/cpmr_ch5/install.log'
+[7.313s] Invoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/src/cpmr_ch5' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch5 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/build/cpmr_ch5/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Assignment1/CPMR3/ros2_ws/build/cpmr_ch5/install.log --single-version-externally-managed install_data

@@ -1,0 +1,13 @@
+CMake Error at /Users/mafu/miniconda3/envs/ros2/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+  Could NOT find Python3 (missing: Python3_NumPy_INCLUDE_DIRS NumPy) (found
+  version "3.12.6")
+Call Stack (most recent call first):
+  /Users/mafu/miniconda3/envs/ros2/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:600 (_FPHSA_FAILURE_MESSAGE)
+  /Users/mafu/miniconda3/envs/ros2/share/cmake-3.26/Modules/FindPython/Support.cmake:3766 (find_package_handle_standard_args)
+  /Users/mafu/miniconda3/envs/ros2/share/cmake-3.26/Modules/FindPython3.cmake:551 (include)
+  /Users/mafu/miniconda3/envs/ros2/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:24 (find_package)
+  /Users/mafu/miniconda3/envs/ros2/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /Users/mafu/miniconda3/envs/ros2/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:70 (rosidl_generate_interfaces)
+
+

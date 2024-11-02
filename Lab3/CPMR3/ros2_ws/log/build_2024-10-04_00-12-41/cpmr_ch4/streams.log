@@ -1,0 +1,25 @@
+[4.520s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_ch4': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch4/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch4 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch4/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch4/install.log --single-version-externally-managed install_data
+[5.435s] running egg_info
+[5.500s] writing ../../build/cpmr_ch4/cpmr_ch4.egg-info/PKG-INFO
+[5.563s] writing dependency_links to ../../build/cpmr_ch4/cpmr_ch4.egg-info/dependency_links.txt
+[5.754s] writing entry points to ../../build/cpmr_ch4/cpmr_ch4.egg-info/entry_points.txt
+[5.941s] writing requirements to ../../build/cpmr_ch4/cpmr_ch4.egg-info/requires.txt
+[6.014s] writing top-level names to ../../build/cpmr_ch4/cpmr_ch4.egg-info/top_level.txt
+[6.088s] reading manifest file '../../build/cpmr_ch4/cpmr_ch4.egg-info/SOURCES.txt'
+[6.089s] writing manifest file '../../build/cpmr_ch4/cpmr_ch4.egg-info/SOURCES.txt'
+[6.089s] running build
+[6.090s] running build_py
+[6.090s] copying cpmr_ch4/collect_lidar.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch4/build/lib/cpmr_ch4
+[6.090s] running install
+[6.094s] running install_lib
+[6.169s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch4/build/lib/cpmr_ch4/collect_lidar.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages/cpmr_ch4
+[6.170s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages/cpmr_ch4/collect_lidar.py to collect_lidar.cpython-310.pyc
+[6.172s] running install_data
+[6.173s] running install_egg_info
+[6.241s] removing '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages/cpmr_ch4-3.1.0-py3.10.egg-info' (and everything under it)
+[6.243s] Copying ../../build/cpmr_ch4/cpmr_ch4.egg-info to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages/cpmr_ch4-3.1.0-py3.10.egg-info
+[6.245s] running install_scripts
+[6.937s] Installing collect_lidar script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch4/lib/cpmr_ch4
+[6.937s] Installing make_wall script to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch4/lib/cpmr_ch4
+[6.937s] writing list of installed files to '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch4/install.log'
+[6.952s] Invoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_ch4' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch4/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch4 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch4/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch4/install.log --single-version-externally-managed install_data

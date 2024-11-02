@@ -1,0 +1,43 @@
+[4.525s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_apb': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data
+[5.536s] running egg_info
+[5.536s] creating ../../build/cpmr_apb/cpmr_apb.egg-info
+[5.640s] writing ../../build/cpmr_apb/cpmr_apb.egg-info/PKG-INFO
+[5.700s] writing dependency_links to ../../build/cpmr_apb/cpmr_apb.egg-info/dependency_links.txt
+[5.862s] writing entry points to ../../build/cpmr_apb/cpmr_apb.egg-info/entry_points.txt
+[5.957s] writing requirements to ../../build/cpmr_apb/cpmr_apb.egg-info/requires.txt
+[6.021s] writing top-level names to ../../build/cpmr_apb/cpmr_apb.egg-info/top_level.txt
+[6.023s] writing manifest file '../../build/cpmr_apb/cpmr_apb.egg-info/SOURCES.txt'
+[6.113s] reading manifest file '../../build/cpmr_apb/cpmr_apb.egg-info/SOURCES.txt'
+[6.113s] writing manifest file '../../build/cpmr_apb/cpmr_apb.egg-info/SOURCES.txt'
+[6.113s] running build
+[6.114s] running build_py
+[6.114s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build
+[6.115s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build/lib
+[6.115s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb
+[6.116s] copying cpmr_apb/depopulate.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb
+[6.116s] copying cpmr_apb/__init__.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb
+[6.116s] copying cpmr_apb/populate.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb
+[6.117s] running install
+[6.119s] running install_lib
+[6.187s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb
+[6.187s] copying /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb/depopulate.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb
+[6.187s] copying /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb/__init__.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb
+[6.188s] copying /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb/populate.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb
+[6.191s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb/depopulate.py to depopulate.cpython-310.pyc
+[6.194s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb/__init__.py to __init__.cpython-310.pyc
+[6.196s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb/populate.py to populate.cpython-310.pyc
+[6.197s] running install_data
+[6.197s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/ament_index
+[6.198s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/ament_index/resource_index
+[6.198s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/ament_index/resource_index/packages
+[6.199s] copying resource/cpmr_apb -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/ament_index/resource_index/packages
+[6.199s] copying package.xml -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb
+[6.199s] copying launch/gazebo.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb
+[6.199s] copying urdf/blockrobot.urdf -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb
+[6.199s] running install_egg_info
+[6.275s] Copying ../../build/cpmr_apb/cpmr_apb.egg-info to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb-3.1.0-py3.10.egg-info
+[6.281s] running install_scripts
+[6.879s] Installing depopulate_world script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/cpmr_apb
+[6.879s] Installing populate_world script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/cpmr_apb
+[6.879s] writing list of installed files to '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/install.log'
+[6.898s] Invoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_apb' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data

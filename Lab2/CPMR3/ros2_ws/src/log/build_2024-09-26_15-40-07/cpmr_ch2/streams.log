@@ -1,0 +1,33 @@
+[4.305s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2/build --no-deps symlink_data
+[5.037s] running develop
+[5.038s] /Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.038s]   warnings.warn(
+[5.441s] running egg_info
+[5.441s] creating cpmr_ch2.egg-info
+[5.517s] writing cpmr_ch2.egg-info/PKG-INFO
+[5.564s] writing dependency_links to cpmr_ch2.egg-info/dependency_links.txt
+[5.697s] writing entry points to cpmr_ch2.egg-info/entry_points.txt
+[5.774s] writing requirements to cpmr_ch2.egg-info/requires.txt
+[5.815s] writing top-level names to cpmr_ch2.egg-info/top_level.txt
+[5.815s] writing manifest file 'cpmr_ch2.egg-info/SOURCES.txt'
+[5.890s] reading manifest file 'cpmr_ch2.egg-info/SOURCES.txt'
+[5.890s] writing manifest file 'cpmr_ch2.egg-info/SOURCES.txt'
+[5.937s] running build_ext
+[5.937s] Creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/lib/python3.10/site-packages/cpmr-ch2.egg-link (link to .)
+[5.938s] Installing add_obstacle script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/lib/cpmr_ch2
+[5.938s] Installing build_map script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/lib/cpmr_ch2
+[5.939s] Installing destroy_map script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/lib/cpmr_ch2
+[5.940s] Installing drive_to_goal script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/lib/cpmr_ch2
+[5.940s] 
+[5.940s] Installed /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2
+[5.940s] running symlink_data
+[5.941s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/share/ament_index
+[5.941s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/share/ament_index/resource_index
+[5.942s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/share/ament_index/resource_index/packages
+[5.942s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2/resource/cpmr_ch2 -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/share/ament_index/resource_index/packages
+[5.942s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2/package.xml -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/share/cpmr_ch2
+[5.943s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2/launch/destroy_map.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/share/cpmr_ch2
+[5.943s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2/launch/drive_robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/share/cpmr_ch2
+[5.943s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2/launch/build_map.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/share/cpmr_ch2
+[5.943s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2/launch/gazebo.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/share/cpmr_ch2
+[5.943s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch2/maps/default.json -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch2/share/cpmr_ch2

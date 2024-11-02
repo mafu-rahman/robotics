@@ -1,0 +1,36 @@
+[4.851s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_ch5': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniforge3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch5 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch5/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch5/install.log --single-version-externally-managed install_data
+[5.972s] running egg_info
+[6.042s] writing ../../build/cpmr_ch5/cpmr_ch5.egg-info/PKG-INFO
+[6.090s] writing dependency_links to ../../build/cpmr_ch5/cpmr_ch5.egg-info/dependency_links.txt
+[6.293s] writing entry points to ../../build/cpmr_ch5/cpmr_ch5.egg-info/entry_points.txt
+[6.412s] writing requirements to ../../build/cpmr_ch5/cpmr_ch5.egg-info/requires.txt
+[6.459s] writing top-level names to ../../build/cpmr_ch5/cpmr_ch5.egg-info/top_level.txt
+[6.595s] reading manifest file '../../build/cpmr_ch5/cpmr_ch5.egg-info/SOURCES.txt'
+[6.595s] writing manifest file '../../build/cpmr_ch5/cpmr_ch5.egg-info/SOURCES.txt'
+[6.595s] running build
+[6.595s] running build_py
+[6.595s] running install
+[6.603s] running install_lib
+[6.698s] running install_data
+[6.698s] copying resource/cpmr_ch5 -> /Users/mafu/miniforge3/envs/ros2/share/ament_index/resource_index/packages
+[6.699s] copying package.xml -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch5
+[6.724s] copying launch/camera-robot.launch.py -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch5
+[6.724s] copying launch/good-features-camera-robot.launch.py -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch5
+[6.724s] copying launch/aruco-robot.launch.py -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch5
+[6.724s] copying launch/view-camera-robot.launch.py -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch5
+[6.724s] copying launch/harris-corners-camera-robot.launch.py -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch5
+[6.726s] copying launch/canny-edges-camera-robot.launch.py -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch5
+[6.730s] copying urdf/scout-camera.urdf.xacro -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch5
+[6.730s] copying urdf/colors.xacro -> /Users/mafu/miniforge3/envs/ros2/share/cpmr_ch5
+[6.730s] running install_egg_info
+[6.826s] removing '/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch5-3.1.0-py3.10.egg-info' (and everything under it)
+[6.827s] Copying ../../build/cpmr_ch5/cpmr_ch5.egg-info to /Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/cpmr_ch5-3.1.0-py3.10.egg-info
+[6.829s] running install_scripts
+[7.454s] Installing aruco_target script to /Users/mafu/miniforge3/envs/ros2/lib/cpmr_ch5
+[7.454s] Installing canny_edges script to /Users/mafu/miniforge3/envs/ros2/lib/cpmr_ch5
+[7.454s] Installing good_features script to /Users/mafu/miniforge3/envs/ros2/lib/cpmr_ch5
+[7.454s] Installing harris_corners script to /Users/mafu/miniforge3/envs/ros2/lib/cpmr_ch5
+[7.455s] Installing opencv_camera script to /Users/mafu/miniforge3/envs/ros2/lib/cpmr_ch5
+[7.455s] Installing view_camera script to /Users/mafu/miniforge3/envs/ros2/lib/cpmr_ch5
+[7.455s] writing list of installed files to '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch5/install.log'
+[7.466s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_ch5' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/Users/mafu/miniforge3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniforge3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch5 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch5/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch5/install.log --single-version-externally-managed install_data

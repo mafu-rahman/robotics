@@ -1,0 +1,21 @@
+[4.812s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_ch7': CONDA_PROMPT_MODIFIER=(ros3) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch7/prefix_override:/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch7/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /opt/miniconda3/envs/ros3/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch7 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch7/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch7/install.log --single-version-externally-managed install_data
+[5.792s] running egg_info
+[5.884s] writing ../../build/cpmr_ch7/cpmr_ch7.egg-info/PKG-INFO
+[5.944s] writing dependency_links to ../../build/cpmr_ch7/cpmr_ch7.egg-info/dependency_links.txt
+[6.090s] writing entry points to ../../build/cpmr_ch7/cpmr_ch7.egg-info/entry_points.txt
+[6.221s] writing requirements to ../../build/cpmr_ch7/cpmr_ch7.egg-info/requires.txt
+[6.275s] writing top-level names to ../../build/cpmr_ch7/cpmr_ch7.egg-info/top_level.txt
+[6.378s] reading manifest file '../../build/cpmr_ch7/cpmr_ch7.egg-info/SOURCES.txt'
+[6.379s] writing manifest file '../../build/cpmr_ch7/cpmr_ch7.egg-info/SOURCES.txt'
+[6.379s] running build
+[6.379s] running build_py
+[6.379s] running install
+[6.383s] running install_lib
+[6.481s] running install_data
+[6.481s] running install_egg_info
+[6.578s] removing '/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/cpmr_ch7-3.1.0-py3.10.egg-info' (and everything under it)
+[6.578s] Copying ../../build/cpmr_ch7/cpmr_ch7.egg-info to /opt/miniconda3/envs/ros3/lib/python3.10/site-packages/cpmr_ch7-3.1.0-py3.10.egg-info
+[6.580s] running install_scripts
+[6.788s] Installing build_map script to /opt/miniconda3/envs/ros3/lib/cpmr_ch7
+[6.789s] writing list of installed files to '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch7/install.log'
+[6.846s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_ch7' returned '0': CONDA_PROMPT_MODIFIER=(ros3) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch7/prefix_override:/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch7/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/usr/bin/env /opt/miniconda3/envs/ros3/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch7 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch7/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch7/install.log --single-version-externally-managed install_data

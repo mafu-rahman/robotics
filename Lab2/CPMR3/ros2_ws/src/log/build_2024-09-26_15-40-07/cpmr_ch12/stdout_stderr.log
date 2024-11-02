@@ -1,0 +1,25 @@
+running develop
+/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating cpmr_ch12.egg-info
+writing cpmr_ch12.egg-info/PKG-INFO
+writing dependency_links to cpmr_ch12.egg-info/dependency_links.txt
+writing requirements to cpmr_ch12.egg-info/requires.txt
+writing top-level names to cpmr_ch12.egg-info/top_level.txt
+writing manifest file 'cpmr_ch12.egg-info/SOURCES.txt'
+reading manifest file 'cpmr_ch12.egg-info/SOURCES.txt'
+writing manifest file 'cpmr_ch12.egg-info/SOURCES.txt'
+running build_ext
+Creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/lib/python3.10/site-packages/cpmr-ch12.egg-link (link to .)
+
+Installed /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12
+running symlink_data
+creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/ament_index
+creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/ament_index/resource_index
+creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/ament_index/resource_index/packages
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/resource/cpmr_ch12 -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/ament_index/resource_index/packages
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/package.xml -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/cpmr_ch12
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/launch/camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/cpmr_ch12
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/urdf/scout-camera.urdf.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/cpmr_ch12
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/urdf/colors.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/cpmr_ch12

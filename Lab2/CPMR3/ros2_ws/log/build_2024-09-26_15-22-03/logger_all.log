@@ -1,0 +1,523 @@
+[0.219s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/Users/mafu/miniconda3/envs/ros2/bin/colcon', 'build'][0m
+[0.219s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x101a29450>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x101a28e80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x101a28e80>>)[0m
+[0.364s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.364s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.364s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.364s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.364s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.364s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.364s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws'
+[0.364s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.364s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.364s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.364s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.364s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.364s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.364s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.364s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.364s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.390s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[0.390s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[0.390s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[0.390s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[0.390s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[0.390s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_apb) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_apb) by extension 'ignore'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_apb) by extension 'ignore_ament_install'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_apb) by extensions ['colcon_pkg']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_apb) by extension 'colcon_pkg'
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_apb) by extensions ['colcon_meta']
+[0.391s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_apb) by extension 'colcon_meta'
+[0.392s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_apb) by extensions ['ros']
+[0.392s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_apb) by extension 'ros'
+[0.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cpmr_apb' with type 'ros.ament_python' and name 'cpmr_apb'[0m
+[0.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch11) by extensions ['ignore', 'ignore_ament_install']
+[0.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch11) by extension 'ignore'
+[0.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch11) by extension 'ignore_ament_install'
+[0.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch11) by extensions ['colcon_pkg']
+[0.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch11) by extension 'colcon_pkg'
+[0.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch11) by extensions ['colcon_meta']
+[0.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch11) by extension 'colcon_meta'
+[0.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch11) by extensions ['ros']
+[0.394s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch11) by extension 'ros'
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cpmr_ch11' with type 'ros.ament_python' and name 'cpmr_ch11'[0m
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch12) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch12) by extension 'ignore'
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch12) by extension 'ignore_ament_install'
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch12) by extensions ['colcon_pkg']
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch12) by extension 'colcon_pkg'
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch12) by extensions ['colcon_meta']
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch12) by extension 'colcon_meta'
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch12) by extensions ['ros']
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch12) by extension 'ros'
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cpmr_ch12' with type 'ros.ament_python' and name 'cpmr_ch12'[0m
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch2) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch2) by extension 'ignore'
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch2) by extension 'ignore_ament_install'
+[0.395s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch2) by extensions ['colcon_pkg']
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch2) by extension 'colcon_pkg'
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch2) by extensions ['colcon_meta']
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch2) by extension 'colcon_meta'
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch2) by extensions ['ros']
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch2) by extension 'ros'
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cpmr_ch2' with type 'ros.ament_python' and name 'cpmr_ch2'[0m
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch4) by extensions ['ignore', 'ignore_ament_install']
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch4) by extension 'ignore'
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch4) by extension 'ignore_ament_install'
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch4) by extensions ['colcon_pkg']
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch4) by extension 'colcon_pkg'
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch4) by extensions ['colcon_meta']
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch4) by extension 'colcon_meta'
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch4) by extensions ['ros']
+[0.396s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch4) by extension 'ros'
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cpmr_ch4' with type 'ros.ament_python' and name 'cpmr_ch4'[0m
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch5) by extensions ['ignore', 'ignore_ament_install']
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch5) by extension 'ignore'
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch5) by extension 'ignore_ament_install'
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch5) by extensions ['colcon_pkg']
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch5) by extension 'colcon_pkg'
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch5) by extensions ['colcon_meta']
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch5) by extension 'colcon_meta'
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch5) by extensions ['ros']
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch5) by extension 'ros'
+[0.397s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cpmr_ch5' with type 'ros.ament_python' and name 'cpmr_ch5'[0m
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch6) by extensions ['ignore', 'ignore_ament_install']
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch6) by extension 'ignore'
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch6) by extension 'ignore_ament_install'
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch6) by extensions ['colcon_pkg']
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch6) by extension 'colcon_pkg'
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch6) by extensions ['colcon_meta']
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch6) by extension 'colcon_meta'
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch6) by extensions ['ros']
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch6) by extension 'ros'
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cpmr_ch6' with type 'ros.ament_python' and name 'cpmr_ch6'[0m
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch7) by extensions ['ignore', 'ignore_ament_install']
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch7) by extension 'ignore'
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch7) by extension 'ignore_ament_install'
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch7) by extensions ['colcon_pkg']
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch7) by extension 'colcon_pkg'
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch7) by extensions ['colcon_meta']
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch7) by extension 'colcon_meta'
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch7) by extensions ['ros']
+[0.398s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch7) by extension 'ros'
+[0.399s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cpmr_ch7' with type 'ros.ament_python' and name 'cpmr_ch7'[0m
+[0.399s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch8) by extensions ['ignore', 'ignore_ament_install']
+[0.399s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch8) by extension 'ignore'
+[0.399s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch8) by extension 'ignore_ament_install'
+[0.399s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch8) by extensions ['colcon_pkg']
+[0.399s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch8) by extension 'colcon_pkg'
+[0.400s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch8) by extensions ['colcon_meta']
+[0.400s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch8) by extension 'colcon_meta'
+[0.400s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch8) by extensions ['ros']
+[0.400s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/cpmr_ch8) by extension 'ros'
+[0.400s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/cpmr_ch8' with type 'ros.ament_python' and name 'cpmr_ch8'[0m
+[0.400s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.400s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.400s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.400s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.400s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.420s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_apb' build argument 'cmake_args' from command line to 'None'
+[0.420s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_apb' build argument 'cmake_target' from command line to 'None'
+[0.420s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_apb' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.420s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_apb' build argument 'cmake_clean_cache' from command line to 'False'
+[0.420s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_apb' build argument 'cmake_clean_first' from command line to 'False'
+[0.420s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_apb' build argument 'cmake_force_configure' from command line to 'False'
+[0.420s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_apb' build argument 'ament_cmake_args' from command line to 'None'
+[0.420s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_apb' build argument 'catkin_cmake_args' from command line to 'None'
+[0.420s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_apb' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.420s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'cpmr_apb' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb', 'merge_install': False, 'path': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_apb', 'symlink_install': False, 'test_result_base': None}[0m
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch11' build argument 'cmake_args' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch11' build argument 'cmake_target' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch11' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch11' build argument 'cmake_clean_cache' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch11' build argument 'cmake_clean_first' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch11' build argument 'cmake_force_configure' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch11' build argument 'ament_cmake_args' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch11' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch11' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'cpmr_ch11' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch11', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11', 'merge_install': False, 'path': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch11', 'symlink_install': False, 'test_result_base': None}[0m
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch12' build argument 'cmake_args' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch12' build argument 'cmake_target' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch12' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch12' build argument 'cmake_clean_cache' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch12' build argument 'cmake_clean_first' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch12' build argument 'cmake_force_configure' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch12' build argument 'ament_cmake_args' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch12' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch12' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'cpmr_ch12' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch12', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12', 'merge_install': False, 'path': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch12', 'symlink_install': False, 'test_result_base': None}[0m
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch2' build argument 'cmake_args' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch2' build argument 'cmake_target' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch2' build argument 'cmake_clean_first' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch2' build argument 'cmake_force_configure' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch2' build argument 'ament_cmake_args' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.421s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'cpmr_ch2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2', 'merge_install': False, 'path': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch2', 'symlink_install': False, 'test_result_base': None}[0m
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch4' build argument 'cmake_args' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch4' build argument 'cmake_target' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch4' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch4' build argument 'cmake_clean_cache' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch4' build argument 'cmake_clean_first' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch4' build argument 'cmake_force_configure' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch4' build argument 'ament_cmake_args' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch4' build argument 'catkin_cmake_args' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch4' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'cpmr_ch4' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch4', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4', 'merge_install': False, 'path': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch4', 'symlink_install': False, 'test_result_base': None}[0m
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch5' build argument 'cmake_args' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch5' build argument 'cmake_target' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch5' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch5' build argument 'cmake_clean_cache' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch5' build argument 'cmake_clean_first' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch5' build argument 'cmake_force_configure' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch5' build argument 'ament_cmake_args' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch5' build argument 'catkin_cmake_args' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch5' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'cpmr_ch5' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch5', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5', 'merge_install': False, 'path': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch5', 'symlink_install': False, 'test_result_base': None}[0m
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch6' build argument 'cmake_args' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch6' build argument 'cmake_target' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch6' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch6' build argument 'cmake_clean_cache' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch6' build argument 'cmake_clean_first' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch6' build argument 'cmake_force_configure' from command line to 'False'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch6' build argument 'ament_cmake_args' from command line to 'None'
+[0.422s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch6' build argument 'catkin_cmake_args' from command line to 'None'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch6' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'cpmr_ch6' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch6', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6', 'merge_install': False, 'path': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch6', 'symlink_install': False, 'test_result_base': None}[0m
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch7' build argument 'cmake_args' from command line to 'None'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch7' build argument 'cmake_target' from command line to 'None'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch7' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch7' build argument 'cmake_clean_cache' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch7' build argument 'cmake_clean_first' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch7' build argument 'cmake_force_configure' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch7' build argument 'ament_cmake_args' from command line to 'None'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch7' build argument 'catkin_cmake_args' from command line to 'None'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch7' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'cpmr_ch7' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch7', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7', 'merge_install': False, 'path': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch7', 'symlink_install': False, 'test_result_base': None}[0m
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch8' build argument 'cmake_args' from command line to 'None'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch8' build argument 'cmake_target' from command line to 'None'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch8' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch8' build argument 'cmake_clean_cache' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch8' build argument 'cmake_clean_first' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch8' build argument 'cmake_force_configure' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch8' build argument 'ament_cmake_args' from command line to 'None'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch8' build argument 'catkin_cmake_args' from command line to 'None'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'cpmr_ch8' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.423s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'cpmr_ch8' with the following arguments: {'ament_cmake_args': None, 'build_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch8', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8', 'merge_install': False, 'path': '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch8', 'symlink_install': False, 'test_result_base': None}[0m
+[0.423s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.424s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.424s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_apb' with build type 'ament_python'
+[0.424s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_apb', 'ament_prefix_path')
+[0.427s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.427s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/hook/ament_prefix_path.ps1'
+[0.428s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/hook/ament_prefix_path.dsv'
+[0.428s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/hook/ament_prefix_path.sh'
+[0.429s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.429s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.437s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch11' with build type 'ament_python'
+[0.437s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch11', 'ament_prefix_path')
+[0.437s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/hook/ament_prefix_path.ps1'
+[0.438s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/hook/ament_prefix_path.dsv'
+[0.439s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/hook/ament_prefix_path.sh'
+[0.439s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.439s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.444s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch12' with build type 'ament_python'
+[0.444s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch12', 'ament_prefix_path')
+[0.445s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/hook/ament_prefix_path.ps1'
+[0.445s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/hook/ament_prefix_path.dsv'
+[0.446s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/hook/ament_prefix_path.sh'
+[0.446s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.446s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.451s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch2' with build type 'ament_python'
+[0.451s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch2', 'ament_prefix_path')
+[0.451s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/hook/ament_prefix_path.ps1'
+[0.452s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/hook/ament_prefix_path.dsv'
+[0.452s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/hook/ament_prefix_path.sh'
+[0.452s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.452s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.457s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch4' with build type 'ament_python'
+[0.457s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch4', 'ament_prefix_path')
+[0.457s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/hook/ament_prefix_path.ps1'
+[0.458s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/hook/ament_prefix_path.dsv'
+[0.458s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/hook/ament_prefix_path.sh'
+[0.458s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.458s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.463s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch5' with build type 'ament_python'
+[0.464s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch5', 'ament_prefix_path')
+[0.464s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/hook/ament_prefix_path.ps1'
+[0.465s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/hook/ament_prefix_path.dsv'
+[0.465s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/hook/ament_prefix_path.sh'
+[0.465s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.465s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.469s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch6' with build type 'ament_python'
+[0.470s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch6', 'ament_prefix_path')
+[0.470s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/hook/ament_prefix_path.ps1'
+[0.471s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/hook/ament_prefix_path.dsv'
+[0.471s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/hook/ament_prefix_path.sh'
+[0.471s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.471s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.476s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch7' with build type 'ament_python'
+[0.476s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch7', 'ament_prefix_path')
+[0.476s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/hook/ament_prefix_path.ps1'
+[0.477s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/hook/ament_prefix_path.dsv'
+[0.477s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/hook/ament_prefix_path.sh'
+[0.477s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.477s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.902s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_apb'
+[0.902s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.902s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.346s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch11'
+[1.347s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.347s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[1.778s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch12'
+[1.778s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.779s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[2.208s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch2'
+[2.208s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.208s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[2.621s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch4'
+[2.621s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.621s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[3.029s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch5'
+[3.029s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.029s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[3.440s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch6'
+[3.440s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.440s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[3.864s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch7'
+[3.864s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.864s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[5.269s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch11': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch11/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch11 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch11/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch11/install.log --single-version-externally-managed install_data[0m
+[5.292s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch12': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch12/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch12 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch12/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch12/install.log --single-version-externally-managed install_data[0m
+[5.304s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch2': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch2/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch2 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch2/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch2/install.log --single-version-externally-managed install_data[0m
+[5.325s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch5': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch5 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch5/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch5/install.log --single-version-externally-managed install_data[0m
+[5.358s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_apb': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data[0m
+[5.367s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch4': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch4/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch4 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch4/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch4/install.log --single-version-externally-managed install_data[0m
+[5.388s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch7': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch7/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch7 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch7/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch7/install.log --single-version-externally-managed install_data[0m
+[5.434s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch6': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch6/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch6 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch6/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch6/install.log --single-version-externally-managed install_data[0m
+[7.255s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch11' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch11/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch11 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch11/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch11/install.log --single-version-externally-managed install_data[0m
+[7.260s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11' for CMake module files
+[7.265s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11' for CMake config files
+[7.267s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/lib'
+[7.267s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/bin'
+[7.267s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/lib/pkgconfig/cpmr_ch11.pc'
+[7.267s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/lib/python3.10/site-packages'
+[7.267s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch11', 'pythonpath')
+[7.267s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/hook/pythonpath.ps1'
+[7.268s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/hook/pythonpath.dsv'
+[7.268s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/hook/pythonpath.sh'
+[7.269s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/bin'
+[7.269s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cpmr_ch11)
+[7.269s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/package.ps1'
+[7.270s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/package.dsv'
+[7.275s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/package.sh'
+[7.276s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/package.bash'
+[7.277s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/cpmr_ch11/package.zsh'
+[7.278s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch11/share/colcon-core/packages/cpmr_ch11)
+[7.281s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch8' with build type 'ament_python'
+[7.282s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch8', 'ament_prefix_path')
+[7.282s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/hook/ament_prefix_path.ps1'
+[7.283s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/hook/ament_prefix_path.dsv'
+[7.284s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/hook/ament_prefix_path.sh'
+[7.284s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.284s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[7.302s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2' for CMake module files
+[7.303s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch2' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch2/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch2 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch2/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch2/install.log --single-version-externally-managed install_data[0m
+[7.304s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2' for CMake config files
+[7.305s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/lib'
+[7.305s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/bin'
+[7.305s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/lib/pkgconfig/cpmr_ch2.pc'
+[7.307s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.10/site-packages'
+[7.307s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch2', 'pythonpath')
+[7.307s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/hook/pythonpath.ps1'
+[7.309s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/hook/pythonpath.dsv'
+[7.315s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/hook/pythonpath.sh'
+[7.315s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/bin'
+[7.315s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cpmr_ch2)
+[7.315s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/package.ps1'
+[7.316s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/package.dsv'
+[7.317s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/package.sh'
+[7.318s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/package.bash'
+[7.319s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/cpmr_ch2/package.zsh'
+[7.319s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch2/share/colcon-core/packages/cpmr_ch2)
+[7.322s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12' for CMake module files
+[7.324s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12' for CMake config files
+[7.325s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch12' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch12/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch12 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch12/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch12/install.log --single-version-externally-managed install_data[0m
+[7.326s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/lib'
+[7.328s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/bin'
+[7.328s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/lib/pkgconfig/cpmr_ch12.pc'
+[7.329s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages'
+[7.329s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch12', 'pythonpath')
+[7.330s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/hook/pythonpath.ps1'
+[7.331s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/hook/pythonpath.dsv'
+[7.332s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/hook/pythonpath.sh'
+[7.333s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/bin'
+[7.333s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cpmr_ch12)
+[7.333s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/package.ps1'
+[7.333s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/package.dsv'
+[7.334s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/package.sh'
+[7.334s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/package.bash'
+[7.334s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12/package.zsh'
+[7.335s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch12/share/colcon-core/packages/cpmr_ch12)
+[7.823s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch8'
+[7.824s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.824s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[7.829s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4' for CMake module files
+[7.830s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4' for CMake config files
+[7.831s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch4' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch4/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch4 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch4/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch4/install.log --single-version-externally-managed install_data[0m
+[7.832s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/lib'
+[7.832s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/bin'
+[7.832s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/lib/pkgconfig/cpmr_ch4.pc'
+[7.832s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages'
+[7.832s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch4', 'pythonpath')
+[7.832s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/hook/pythonpath.ps1'
+[7.833s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/hook/pythonpath.dsv'
+[7.833s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/hook/pythonpath.sh'
+[7.833s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/bin'
+[7.833s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cpmr_ch4)
+[7.834s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/package.ps1'
+[7.834s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/package.dsv'
+[7.834s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/package.sh'
+[7.834s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/package.bash'
+[7.835s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/cpmr_ch4/package.zsh'
+[7.835s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch4/share/colcon-core/packages/cpmr_ch4)
+[7.835s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6' for CMake module files
+[7.836s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch6' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch6/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch6 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch6/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch6/install.log --single-version-externally-managed install_data[0m
+[7.836s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6' for CMake config files
+[7.836s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/lib'
+[7.837s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/bin'
+[7.837s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/lib/pkgconfig/cpmr_ch6.pc'
+[7.837s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages'
+[7.837s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch6', 'pythonpath')
+[7.837s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/hook/pythonpath.ps1'
+[7.837s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/hook/pythonpath.dsv'
+[7.837s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/hook/pythonpath.sh'
+[7.838s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/bin'
+[7.838s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cpmr_ch6)
+[7.838s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/package.ps1'
+[7.838s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/package.dsv'
+[7.838s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/package.sh'
+[7.839s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/package.bash'
+[7.839s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/package.zsh'
+[7.839s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch6/share/colcon-core/packages/cpmr_ch6)
+[7.839s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb' for CMake module files
+[7.840s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_apb' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data[0m
+[7.840s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb' for CMake config files
+[7.841s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib'
+[7.841s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/bin'
+[7.841s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/pkgconfig/cpmr_apb.pc'
+[7.841s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages'
+[7.841s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_apb', 'pythonpath')
+[7.841s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/hook/pythonpath.ps1'
+[7.841s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/hook/pythonpath.dsv'
+[7.841s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/hook/pythonpath.sh'
+[7.842s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/bin'
+[7.842s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cpmr_apb)
+[7.842s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/package.ps1'
+[7.842s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/package.dsv'
+[7.842s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/package.sh'
+[7.843s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/package.bash'
+[7.843s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb/package.zsh'
+[7.843s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_apb/share/colcon-core/packages/cpmr_apb)
+[7.843s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5' for CMake module files
+[7.844s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch5' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch5 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch5/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch5/install.log --single-version-externally-managed install_data[0m
+[7.844s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5' for CMake config files
+[7.845s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/lib'
+[7.845s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/bin'
+[7.845s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/lib/pkgconfig/cpmr_ch5.pc'
+[7.845s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages'
+[7.845s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch5', 'pythonpath')
+[7.845s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/hook/pythonpath.ps1'
+[7.845s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/hook/pythonpath.dsv'
+[7.845s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/hook/pythonpath.sh'
+[7.846s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/bin'
+[7.846s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cpmr_ch5)
+[7.846s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/package.ps1'
+[7.846s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/package.dsv'
+[7.847s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/package.sh'
+[7.847s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/package.bash'
+[7.847s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5/package.zsh'
+[7.847s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch5/share/colcon-core/packages/cpmr_ch5)
+[7.848s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7' for CMake module files
+[7.848s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch7' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch7/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch7 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch7/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch7/install.log --single-version-externally-managed install_data[0m
+[7.848s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7' for CMake config files
+[7.849s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/lib'
+[7.849s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/bin'
+[7.849s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/lib/pkgconfig/cpmr_ch7.pc'
+[7.849s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/lib/python3.10/site-packages'
+[7.849s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch7', 'pythonpath')
+[7.849s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/hook/pythonpath.ps1'
+[7.850s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/hook/pythonpath.dsv'
+[7.850s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/hook/pythonpath.sh'
+[7.850s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/bin'
+[7.850s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cpmr_ch7)
+[7.850s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/package.ps1'
+[7.851s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/package.dsv'
+[7.851s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/package.sh'
+[7.851s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/package.bash'
+[7.851s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/cpmr_ch7/package.zsh'
+[7.852s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch7/share/colcon-core/packages/cpmr_ch7)
+[8.439s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch8': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch8/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch8 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch8/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch8/install.log --single-version-externally-managed install_data[0m
+[9.371s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8' for CMake module files
+[9.372s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/cpmr_ch8' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch8/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch8 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch8/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/build/cpmr_ch8/install.log --single-version-externally-managed install_data[0m
+[9.372s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8' for CMake config files
+[9.373s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/lib'
+[9.373s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/bin'
+[9.373s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/lib/pkgconfig/cpmr_ch8.pc'
+[9.373s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages'
+[9.373s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('cpmr_ch8', 'pythonpath')
+[9.373s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/hook/pythonpath.ps1'
+[9.374s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/hook/pythonpath.dsv'
+[9.374s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/hook/pythonpath.sh'
+[9.374s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/bin'
+[9.374s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(cpmr_ch8)
+[9.374s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/package.ps1'
+[9.375s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/package.dsv'
+[9.375s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/package.sh'
+[9.375s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/package.bash'
+[9.375s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/cpmr_ch8/package.zsh'
+[9.375s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/cpmr_ch8/share/colcon-core/packages/cpmr_ch8)
+[9.376s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[9.376s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[9.376s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[9.376s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[9.379s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[9.379s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.notify_send': Not used on non-Linux systems
+[9.379s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.379s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'terminal_notifier'
+[9.431s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[9.431s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/local_setup.ps1'
+[9.432s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/_local_setup_util_ps1.py'
+[9.434s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/setup.ps1'
+[9.436s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/local_setup.sh'
+[9.436s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/_local_setup_util_sh.py'
+[9.437s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/setup.sh'
+[9.438s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/local_setup.bash'
+[9.439s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/setup.bash'
+[9.440s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/local_setup.zsh'
+[9.441s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/install/setup.zsh'

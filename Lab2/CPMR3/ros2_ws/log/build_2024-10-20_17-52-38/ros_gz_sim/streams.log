@@ -1,0 +1,51 @@
+[0.056s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/ros_gz_sim': CONDA_PROMPT_MODIFIER=(ros_env) SHLVL=2 _=/opt/miniconda3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros_env/bin/cmake /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/src/ros_gz/ros_gz_sim -DCMAKE_INSTALL_PREFIX=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/ros_gz_sim
+[4.630s] -- The C compiler identification is Clang 17.0.6
+[6.434s] -- The CXX compiler identification is Clang 17.0.6
+[6.475s] -- Detecting C compiler ABI info
+[6.859s] -- Detecting C compiler ABI info - done
+[6.863s] -- Check for working C compiler: /opt/miniconda3/envs/ros_env/bin/arm64-apple-darwin20.0.0-clang - skipped
+[6.864s] -- Detecting C compile features
+[6.865s] -- Detecting C compile features - done
+[6.901s] -- Detecting CXX compiler ABI info
+[7.104s] -- Detecting CXX compiler ABI info - done
+[7.111s] -- Check for working CXX compiler: /opt/miniconda3/envs/ros_env/bin/arm64-apple-darwin20.0.0-clang++ - skipped
+[7.111s] -- Detecting CXX compile features
+[7.112s] -- Detecting CXX compile features - done
+[7.140s] -- Found ament_cmake: 1.3.7 (/opt/miniconda3/envs/ros_env/share/ament_cmake/cmake)
+[8.288s] -- Found Python3: /opt/miniconda3/envs/ros_env/bin/python3.11 (found version "3.11.8") found components: Interpreter 
+[8.586s] -- Found rclcpp: 16.0.8 (/opt/miniconda3/envs/ros_env/share/rclcpp/cmake)
+[8.738s] -- Found rosidl_generator_c: 3.1.5 (/opt/miniconda3/envs/ros_env/share/rosidl_generator_c/cmake)
+[8.761s] -- Found rosidl_adapter: 3.1.5 (/opt/miniconda3/envs/ros_env/share/rosidl_adapter/cmake)
+[8.788s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/miniconda3/envs/ros_env/share/rosidl_generator_cpp/cmake)
+[8.829s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.892s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.296s] -- Checking for module 'yaml-0.1'
+[10.459s] --   Found yaml-0.1, version 0.2.5
+[10.894s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/miniconda3/envs/ros_env/share/rmw_implementation_cmake/cmake)
+[10.908s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/miniconda3/envs/ros_env/share/rmw_cyclonedds_cpp/cmake)
+[10.991s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[11.022s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[11.216s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[11.217s] -- Found Threads: TRUE  
+[11.351s] -- Found std_msgs: 4.2.3 (/opt/miniconda3/envs/ros_env/share/std_msgs/cmake)
+[11.382s] -- Looking for ignition-math6 -- found version 6.15.1
+[11.396s] -- Searching for dependencies of ignition-math6
+[11.413s] CMake Error at CMakeLists.txt:81 (find_package):
+[11.413s]   By not providing "Findignition-transport11.cmake" in CMAKE_MODULE_PATH this
+[11.413s]   project has asked CMake to find a package configuration file provided by
+[11.413s]   "ignition-transport11", but CMake did not find one.
+[11.413s] 
+[11.413s]   Could not find a package configuration file provided by
+[11.413s]   "ignition-transport11" with any of the following names:
+[11.413s] 
+[11.413s]     ignition-transport11Config.cmake
+[11.413s]     ignition-transport11-config.cmake
+[11.413s] 
+[11.413s]   Add the installation prefix of "ignition-transport11" to CMAKE_PREFIX_PATH
+[11.413s]   or set "ignition-transport11_DIR" to a directory containing one of the
+[11.413s]   above files.  If "ignition-transport11" provides a separate development
+[11.413s]   package or SDK, be sure it has been installed.
+[11.413s] 
+[11.413s] 
+[11.413s] -- Configuring incomplete, errors occurred!
+[11.417s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/ros_gz_sim' returned '1': CONDA_PROMPT_MODIFIER=(ros_env) SHLVL=2 _=/opt/miniconda3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros_env/bin/cmake /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/src/ros_gz/ros_gz_sim -DCMAKE_INSTALL_PREFIX=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/ros_gz_sim

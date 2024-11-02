@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating cpmr_apb.egg-info
+writing cpmr_apb.egg-info/PKG-INFO
+writing dependency_links to cpmr_apb.egg-info/dependency_links.txt
+writing entry points to cpmr_apb.egg-info/entry_points.txt
+writing requirements to cpmr_apb.egg-info/requires.txt
+writing top-level names to cpmr_apb.egg-info/top_level.txt
+writing manifest file 'cpmr_apb.egg-info/SOURCES.txt'
+reading manifest file 'cpmr_apb.egg-info/SOURCES.txt'
+writing manifest file 'cpmr_apb.egg-info/SOURCES.txt'
+running build_ext
+Creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_apb/lib/python3.10/site-packages/cpmr-apb.egg-link (link to .)
+Installing depopulate_world script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_apb/lib/cpmr_apb
+Installing populate_world script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_apb/lib/cpmr_apb
+
+Installed /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_apb
+running symlink_data
+creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_apb/share/ament_index
+creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_apb/share/ament_index/resource_index
+creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_apb/share/ament_index/resource_index/packages
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_apb/resource/cpmr_apb -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_apb/share/ament_index/resource_index/packages
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_apb/package.xml -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_apb/share/cpmr_apb
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_apb/launch/gazebo.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_apb/share/cpmr_apb
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_apb/urdf/blockrobot.urdf -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_apb/share/cpmr_apb

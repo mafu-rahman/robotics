@@ -1,0 +1,35 @@
+[4.279s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/build --no-deps symlink_data
+[5.143s] running develop
+[5.143s] /Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.143s]   warnings.warn(
+[5.578s] running egg_info
+[5.578s] creating cpmr_ch4.egg-info
+[5.635s] writing cpmr_ch4.egg-info/PKG-INFO
+[5.671s] writing dependency_links to cpmr_ch4.egg-info/dependency_links.txt
+[5.792s] writing entry points to cpmr_ch4.egg-info/entry_points.txt
+[5.871s] writing requirements to cpmr_ch4.egg-info/requires.txt
+[5.915s] writing top-level names to cpmr_ch4.egg-info/top_level.txt
+[5.915s] writing manifest file 'cpmr_ch4.egg-info/SOURCES.txt'
+[5.975s] reading manifest file 'cpmr_ch4.egg-info/SOURCES.txt'
+[5.975s] writing manifest file 'cpmr_ch4.egg-info/SOURCES.txt'
+[6.016s] running build_ext
+[6.016s] Creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/lib/python3.10/site-packages/cpmr-ch4.egg-link (link to .)
+[6.017s] Installing collect_lidar script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/lib/cpmr_ch4
+[6.017s] 
+[6.017s] Installed /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4
+[6.017s] running symlink_data
+[6.017s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/ament_index
+[6.017s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/ament_index/resource_index
+[6.017s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/ament_index/resource_index/packages
+[6.017s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/resource/cpmr_ch4 -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/ament_index/resource_index/packages
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/package.xml -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/launch/lidar-collector.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/launch/bumper-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/launch/sonar-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/launch/laser-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/launch/imu-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/urdf/scout-bumper.urdf.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/urdf/scout-sonar.urdf.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/urdf/scout-laser.urdf.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/urdf/scout-imu.urdf.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4
+[6.018s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch4/urdf/colors.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch4/share/cpmr_ch4

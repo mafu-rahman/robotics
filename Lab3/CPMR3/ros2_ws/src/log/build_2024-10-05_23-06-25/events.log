@@ -1,0 +1,32 @@
+[0.000000] (-) TimerEvent: {}
+[0.000179] (cpmr_apb) JobQueued: {'identifier': 'cpmr_apb', 'dependencies': OrderedDict()}
+[0.000295] (cpmr_ch11) JobQueued: {'identifier': 'cpmr_ch11', 'dependencies': OrderedDict()}
+[0.000469] (cpmr_ch12) JobQueued: {'identifier': 'cpmr_ch12', 'dependencies': OrderedDict()}
+[0.000498] (cpmr_ch2) JobQueued: {'identifier': 'cpmr_ch2', 'dependencies': OrderedDict()}
+[0.000512] (cpmr_ch4) JobQueued: {'identifier': 'cpmr_ch4', 'dependencies': OrderedDict()}
+[0.000528] (cpmr_ch5) JobQueued: {'identifier': 'cpmr_ch5', 'dependencies': OrderedDict()}
+[0.000539] (cpmr_ch6) JobQueued: {'identifier': 'cpmr_ch6', 'dependencies': OrderedDict()}
+[0.000549] (cpmr_ch7) JobQueued: {'identifier': 'cpmr_ch7', 'dependencies': OrderedDict()}
+[0.000558] (cpmr_ch8) JobQueued: {'identifier': 'cpmr_ch8', 'dependencies': OrderedDict()}
+[0.000567] (cpmr_apb) JobStarted: {'identifier': 'cpmr_apb'}
+[0.018483] (cpmr_ch11) JobStarted: {'identifier': 'cpmr_ch11'}
+[0.025517] (cpmr_ch12) JobStarted: {'identifier': 'cpmr_ch12'}
+[0.033379] (cpmr_ch2) JobStarted: {'identifier': 'cpmr_ch2'}
+[0.039078] (cpmr_ch4) JobStarted: {'identifier': 'cpmr_ch4'}
+[0.043863] (cpmr_ch5) JobStarted: {'identifier': 'cpmr_ch5'}
+[0.050970] (cpmr_ch6) JobStarted: {'identifier': 'cpmr_ch6'}
+[0.056351] (cpmr_ch7) JobStarted: {'identifier': 'cpmr_ch7'}
+[0.101545] (-) TimerEvent: {}
+[0.208495] (-) TimerEvent: {}
+[0.286666] (cpmr_ch11) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_ros/task/ament_python/build.py", line 102, in build\n    return await extension.build(additional_hooks=additional_hooks)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/build.py", line 94, in build\n    available_commands = await self._get_available_commands(\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/build.py", line 192, in _get_available_commands\n    output = await check_output(\n             ^^^^^^^^^^^^^^^^^^^\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/subprocess.py", line 129, in check_output\n    assert not rc, f\'Expected {args} to pass: {stderr_data}\'\nAssertionError: Expected [\'/Library/Frameworks/Python.framework/Versions/3.12/bin/python3\', \'-W\', \'ignore:setup.py install is deprecated\', \'setup.py\', \'--help-commands\'] to pass: Traceback (most recent call last):\n  File "/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_ch11/setup.py", line 3, in <module>\n    from setuptools import find_packages, setup\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/setuptools/__init__.py", line 14, in <module>\n    import setuptools.version\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>\n    import pkg_resources\n  File "/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/pkg_resources/__init__.py", line 2178, in <module>\n    register_finder(pkgutil.ImpImporter, find_on_path)\n                    ^^^^^^^^^^^^^^^^^^^\nAttributeError: module \'pkgutil\' has no attribute \'ImpImporter\'. Did you mean: \'zipimporter\'?\n\n'}
+[0.289034] (cpmr_ch11) JobEnded: {'identifier': 'cpmr_ch11', 'rc': 1}
+[0.290301] (cpmr_apb) JobEnded: {'identifier': 'cpmr_apb', 'rc': 'SIGINT'}
+[0.293542] (cpmr_ch2) JobEnded: {'identifier': 'cpmr_ch2', 'rc': 'SIGINT'}
+[0.299979] (cpmr_ch4) JobEnded: {'identifier': 'cpmr_ch4', 'rc': 'SIGINT'}
+[0.304955] (cpmr_ch12) JobEnded: {'identifier': 'cpmr_ch12', 'rc': 'SIGINT'}
+[0.309209] (-) TimerEvent: {}
+[0.348161] (cpmr_ch5) JobEnded: {'identifier': 'cpmr_ch5', 'rc': 'SIGINT'}
+[0.354293] (cpmr_ch6) JobEnded: {'identifier': 'cpmr_ch6', 'rc': 'SIGINT'}
+[0.354863] (cpmr_ch7) JobEnded: {'identifier': 'cpmr_ch7', 'rc': 'SIGINT'}
+[0.355749] (cpmr_ch8) JobSkipped: {'identifier': 'cpmr_ch8'}
+[0.355770] (-) EventReactorShutdown: {}

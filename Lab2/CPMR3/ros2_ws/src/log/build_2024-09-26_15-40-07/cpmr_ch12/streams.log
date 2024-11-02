@@ -1,0 +1,26 @@
+[4.301s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/build --no-deps symlink_data
+[5.025s] running develop
+[5.025s] /Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.025s]   warnings.warn(
+[5.469s] running egg_info
+[5.470s] creating cpmr_ch12.egg-info
+[5.519s] writing cpmr_ch12.egg-info/PKG-INFO
+[5.571s] writing dependency_links to cpmr_ch12.egg-info/dependency_links.txt
+[5.767s] writing requirements to cpmr_ch12.egg-info/requires.txt
+[5.806s] writing top-level names to cpmr_ch12.egg-info/top_level.txt
+[5.806s] writing manifest file 'cpmr_ch12.egg-info/SOURCES.txt'
+[5.876s] reading manifest file 'cpmr_ch12.egg-info/SOURCES.txt'
+[5.876s] writing manifest file 'cpmr_ch12.egg-info/SOURCES.txt'
+[5.920s] running build_ext
+[5.920s] Creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/lib/python3.10/site-packages/cpmr-ch12.egg-link (link to .)
+[5.923s] 
+[5.923s] Installed /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12
+[5.924s] running symlink_data
+[5.924s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/ament_index
+[5.924s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/ament_index/resource_index
+[5.924s] creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/ament_index/resource_index/packages
+[5.925s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/resource/cpmr_ch12 -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/ament_index/resource_index/packages
+[5.925s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/package.xml -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/cpmr_ch12
+[5.925s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/launch/camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/cpmr_ch12
+[5.925s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/urdf/scout-camera.urdf.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/cpmr_ch12
+[5.927s] symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch12/urdf/colors.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch12/share/cpmr_ch12

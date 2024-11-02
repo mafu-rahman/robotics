@@ -1,0 +1,31 @@
+[5.183s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6': CONDA_PROMPT_MODIFIER=(ros3) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/prefix_override:/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/miniconda3/envs/ros3/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros3/bin/python3.10 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/build --no-deps symlink_data --force
+[6.238s] running develop
+[6.238s] /opt/miniconda3/envs/ros3/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[6.238s]   warnings.warn(
+[7.189s] running egg_info
+[7.301s] writing cpmr_ch6.egg-info/PKG-INFO
+[7.360s] writing dependency_links to cpmr_ch6.egg-info/dependency_links.txt
+[7.599s] writing entry points to cpmr_ch6.egg-info/entry_points.txt
+[7.708s] writing requirements to cpmr_ch6.egg-info/requires.txt
+[8.425s] writing top-level names to cpmr_ch6.egg-info/top_level.txt
+[8.425s] reading manifest file 'cpmr_ch6.egg-info/SOURCES.txt'
+[8.425s] writing manifest file 'cpmr_ch6.egg-info/SOURCES.txt'
+[8.426s] running build_ext
+[8.426s] Creating /opt/miniconda3/envs/ros3/lib/python3.10/site-packages/cpmr-ch6.egg-link (link to .)
+[8.426s] Installing auto_drive_by_line script to /opt/miniconda3/envs/ros3/lib/cpmr_ch6
+[8.426s] Installing auto_drive_by_road script to /opt/miniconda3/envs/ros3/lib/cpmr_ch6
+[8.426s] Installing drive_by_line script to /opt/miniconda3/envs/ros3/lib/cpmr_ch6
+[8.426s] Installing drive_by_road script to /opt/miniconda3/envs/ros3/lib/cpmr_ch6
+[8.426s] 
+[8.426s] Installed /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6
+[8.426s] running symlink_data
+[8.426s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/resource/cpmr_ch6 -> /opt/miniconda3/envs/ros3/share/ament_index/resource_index/packages
+[8.426s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/package.xml -> /opt/miniconda3/envs/ros3/share/cpmr_ch6
+[8.426s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/launch/drive_by_line.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch6
+[8.426s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/launch/drive_by_road.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch6
+[8.426s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/launch/auto_drive_by_road.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch6
+[8.427s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/launch/auto_drive_by_line.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch6
+[8.427s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/urdf/scout-camera.urdf.xacro -> /opt/miniconda3/envs/ros3/share/cpmr_ch6
+[8.427s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/urdf/scout-line-follower.urdf.xacro -> /opt/miniconda3/envs/ros3/share/cpmr_ch6
+[8.427s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/urdf/colors.xacro -> /opt/miniconda3/envs/ros3/share/cpmr_ch6
+[8.436s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6' returned '0': CONDA_PROMPT_MODIFIER=(ros3) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/prefix_override:/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/miniconda3/envs/ros3/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros3/bin/python3.10 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch6/build --no-deps symlink_data --force

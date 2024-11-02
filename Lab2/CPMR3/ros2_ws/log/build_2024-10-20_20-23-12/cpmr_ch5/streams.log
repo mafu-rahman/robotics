@@ -1,0 +1,34 @@
+[5.144s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5': CONDA_PROMPT_MODIFIER=(ros3) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/miniconda3/envs/ros3/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros3/bin/python3.10 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/build --no-deps symlink_data --force
+[6.320s] running develop
+[6.334s] /opt/miniconda3/envs/ros3/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[6.334s]   warnings.warn(
+[7.313s] running egg_info
+[7.392s] writing cpmr_ch5.egg-info/PKG-INFO
+[7.444s] writing dependency_links to cpmr_ch5.egg-info/dependency_links.txt
+[7.700s] writing entry points to cpmr_ch5.egg-info/entry_points.txt
+[8.437s] writing requirements to cpmr_ch5.egg-info/requires.txt
+[8.438s] writing top-level names to cpmr_ch5.egg-info/top_level.txt
+[8.438s] reading manifest file 'cpmr_ch5.egg-info/SOURCES.txt'
+[8.438s] writing manifest file 'cpmr_ch5.egg-info/SOURCES.txt'
+[8.438s] running build_ext
+[8.438s] Creating /opt/miniconda3/envs/ros3/lib/python3.10/site-packages/cpmr-ch5.egg-link (link to .)
+[8.438s] Installing aruco_target script to /opt/miniconda3/envs/ros3/lib/cpmr_ch5
+[8.438s] Installing canny_edges script to /opt/miniconda3/envs/ros3/lib/cpmr_ch5
+[8.438s] Installing good_features script to /opt/miniconda3/envs/ros3/lib/cpmr_ch5
+[8.438s] Installing harris_corners script to /opt/miniconda3/envs/ros3/lib/cpmr_ch5
+[8.438s] Installing opencv_camera script to /opt/miniconda3/envs/ros3/lib/cpmr_ch5
+[8.439s] Installing view_camera script to /opt/miniconda3/envs/ros3/lib/cpmr_ch5
+[8.439s] 
+[8.439s] Installed /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5
+[8.439s] running symlink_data
+[8.439s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/resource/cpmr_ch5 -> /opt/miniconda3/envs/ros3/share/ament_index/resource_index/packages
+[8.439s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/package.xml -> /opt/miniconda3/envs/ros3/share/cpmr_ch5
+[8.439s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/launch/camera-robot.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch5
+[8.440s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/launch/good-features-camera-robot.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch5
+[8.440s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/launch/aruco-robot.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch5
+[8.440s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/launch/view-camera-robot.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch5
+[8.440s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/launch/harrs-corners-camera-robot.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch5
+[8.440s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/launch/canny-edges-camera-robot.launch.py -> /opt/miniconda3/envs/ros3/share/cpmr_ch5
+[8.440s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/urdf/scout-camera.urdf.xacro -> /opt/miniconda3/envs/ros3/share/cpmr_ch5
+[8.440s] symbolically linking /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/urdf/colors.xacro -> /opt/miniconda3/envs/ros3/share/cpmr_ch5
+[8.463s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5' returned '0': CONDA_PROMPT_MODIFIER=(ros3) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/opt/miniconda3/envs/ros3/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/miniconda3/envs/ros3/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros3/bin/python3.10 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch5/build --no-deps symlink_data --force

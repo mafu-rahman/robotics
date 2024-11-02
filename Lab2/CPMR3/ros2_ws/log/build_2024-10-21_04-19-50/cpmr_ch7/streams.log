@@ -1,0 +1,31 @@
+[2.887s] Invoking command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/src/cpmr_ch7': CONDA_PROMPT_MODIFIER=(ros3) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch7/prefix_override:/opt/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_ch7/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros2/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch7 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch7/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch7/install.log --single-version-externally-managed install_data
+[3.333s] /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[3.333s]   warnings.warn(msg)
+[3.626s] running egg_info
+[3.670s] writing ../../build/cpmr_ch7/cpmr_ch7.egg-info/PKG-INFO
+[3.683s] writing dependency_links to ../../build/cpmr_ch7/cpmr_ch7.egg-info/dependency_links.txt
+[3.685s] writing entry points to ../../build/cpmr_ch7/cpmr_ch7.egg-info/entry_points.txt
+[3.685s] writing requirements to ../../build/cpmr_ch7/cpmr_ch7.egg-info/requires.txt
+[3.685s] writing top-level names to ../../build/cpmr_ch7/cpmr_ch7.egg-info/top_level.txt
+[3.771s] reading manifest file '../../build/cpmr_ch7/cpmr_ch7.egg-info/SOURCES.txt'
+[3.777s] writing manifest file '../../build/cpmr_ch7/cpmr_ch7.egg-info/SOURCES.txt'
+[3.777s] running build
+[3.777s] running build_py
+[3.779s] running install
+[3.787s] running install_lib
+[3.833s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch7/build/lib/cpmr_ch7/build_map.py -> /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/cpmr_ch7
+[3.834s] copying /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch7/build/lib/cpmr_ch7/__init__.py -> /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/cpmr_ch7
+[3.836s] running install_data
+[3.836s] copying resource/cpmr_ch7 -> /opt/miniconda3/envs/ros2/share/ament_index/resource_index/packages
+[3.840s] copying package.xml -> /opt/miniconda3/envs/ros2/share/cpmr_ch7
+[3.840s] copying launch/map-world.launch.py -> /opt/miniconda3/envs/ros2/share/cpmr_ch7
+[3.843s] copying urdf/scout-laser.urdf.xacro -> /opt/miniconda3/envs/ros2/share/cpmr_ch7
+[3.845s] copying urdf/colors.xacro -> /opt/miniconda3/envs/ros2/share/cpmr_ch7
+[3.846s] copying gazebo/mapping.world -> /opt/miniconda3/envs/ros2/share/cpmr_ch7
+[3.848s] running install_egg_info
+[3.921s] removing '/opt/miniconda3/envs/ros2/lib/python3.11/site-packages/cpmr_ch7-3.1.0-py3.11.egg-info' (and everything under it)
+[3.924s] Copying ../../build/cpmr_ch7/cpmr_ch7.egg-info to /opt/miniconda3/envs/ros2/lib/python3.11/site-packages/cpmr_ch7-3.1.0-py3.11.egg-info
+[3.928s] running install_scripts
+[4.196s] Installing build_map script to /opt/miniconda3/envs/ros2/lib/cpmr_ch7
+[4.196s] writing list of installed files to '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch7/install.log'
+[4.607s] Invoked command in '/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/src/cpmr_ch7' returned '0': CONDA_PROMPT_MODIFIER=(ros3) PYTHONPATH=/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch7/prefix_override:/opt/miniconda3/envs/ros2/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/install/cpmr_ch7/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/opt/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /opt/miniconda3/envs/ros2/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch7 build --build-base /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch7/build install --record /Users/mafu/Library/CloudStorage/GoogleDrive-mafu@my.yorku.ca/Other computers/My Laptop/E:/0.2 Fall 2024/EECS_4421_Robotics/Labs/Lab2/CPMR3/ros2_ws/build/cpmr_ch7/install.log --single-version-externally-managed install_data

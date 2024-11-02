@@ -1,0 +1,41 @@
+[4.574s] Invoking command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_ch12': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch12 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/install.log --single-version-externally-managed install_data
+[5.413s] running egg_info
+[5.418s] creating ../../build/cpmr_ch12/cpmr_ch12.egg-info
+[5.475s] writing ../../build/cpmr_ch12/cpmr_ch12.egg-info/PKG-INFO
+[5.505s] writing dependency_links to ../../build/cpmr_ch12/cpmr_ch12.egg-info/dependency_links.txt
+[5.752s] writing requirements to ../../build/cpmr_ch12/cpmr_ch12.egg-info/requires.txt
+[5.789s] writing top-level names to ../../build/cpmr_ch12/cpmr_ch12.egg-info/top_level.txt
+[5.790s] writing manifest file '../../build/cpmr_ch12/cpmr_ch12.egg-info/SOURCES.txt'
+[5.866s] reading manifest file '../../build/cpmr_ch12/cpmr_ch12.egg-info/SOURCES.txt'
+[5.866s] writing manifest file '../../build/cpmr_ch12/cpmr_ch12.egg-info/SOURCES.txt'
+[5.866s] running build
+[5.866s] running build_py
+[5.866s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build
+[5.866s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build/lib
+[5.867s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12
+[5.867s] copying cpmr_ch12/opencv_camera.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12
+[5.867s] copying cpmr_ch12/yolo_pose.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12
+[5.867s] copying cpmr_ch12/__init__.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12
+[5.871s] running install
+[5.871s] running install_lib
+[5.928s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[5.928s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12/opencv_camera.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[5.929s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12/yolo_pose.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[5.929s] copying /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build/lib/cpmr_ch12/__init__.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12
+[5.930s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12/opencv_camera.py to opencv_camera.cpython-310.pyc
+[5.931s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12/yolo_pose.py to yolo_pose.cpython-310.pyc
+[5.931s] byte-compiling /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12/__init__.py to __init__.cpython-310.pyc
+[5.932s] running install_data
+[5.932s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/share/ament_index
+[5.933s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/share/ament_index/resource_index
+[5.933s] creating /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/share/ament_index/resource_index/packages
+[5.933s] copying resource/cpmr_ch12 -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/share/ament_index/resource_index/packages
+[5.933s] copying package.xml -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12
+[5.933s] copying launch/camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12
+[5.934s] copying urdf/scout-camera.urdf.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12
+[5.934s] copying urdf/colors.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/share/cpmr_ch12
+[5.934s] running install_egg_info
+[6.020s] Copying ../../build/cpmr_ch12/cpmr_ch12.egg-info to /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages/cpmr_ch12-3.1.0-py3.10.egg-info
+[6.023s] running install_scripts
+[6.187s] writing list of installed files to '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/install.log'
+[6.704s] Invoked command in '/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/src/cpmr_ch12' returned '0': CONDA_PROMPT_MODIFIER=(ros2) PYTHONPATH=/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/prefix_override:/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniconda3/envs/ros2/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x52 /Users/mafu/miniconda3/envs/ros2/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch12 build --build-base /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/build install --record /Users/mafu/Desktop/EECS_4421_Robotics/Labs/Lab3/CPMR3/ros2_ws/build/cpmr_ch12/install.log --single-version-externally-managed install_data

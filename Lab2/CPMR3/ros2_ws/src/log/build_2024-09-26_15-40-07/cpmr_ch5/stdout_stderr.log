@@ -1,0 +1,37 @@
+running develop
+/Users/mafu/miniconda3/envs/ros2/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating cpmr_ch5.egg-info
+writing cpmr_ch5.egg-info/PKG-INFO
+writing dependency_links to cpmr_ch5.egg-info/dependency_links.txt
+writing entry points to cpmr_ch5.egg-info/entry_points.txt
+writing requirements to cpmr_ch5.egg-info/requires.txt
+writing top-level names to cpmr_ch5.egg-info/top_level.txt
+writing manifest file 'cpmr_ch5.egg-info/SOURCES.txt'
+reading manifest file 'cpmr_ch5.egg-info/SOURCES.txt'
+writing manifest file 'cpmr_ch5.egg-info/SOURCES.txt'
+running build_ext
+Creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/lib/python3.10/site-packages/cpmr-ch5.egg-link (link to .)
+Installing aruco_target script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/lib/cpmr_ch5
+Installing canny_edges script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/lib/cpmr_ch5
+Installing good_features script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/lib/cpmr_ch5
+Installing harris_corners script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/lib/cpmr_ch5
+Installing opencv_camera script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/lib/cpmr_ch5
+Installing view_camera script to /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/lib/cpmr_ch5
+
+Installed /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5
+running symlink_data
+creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/ament_index
+creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/ament_index/resource_index
+creating /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/ament_index/resource_index/packages
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5/resource/cpmr_ch5 -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/ament_index/resource_index/packages
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5/package.xml -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/cpmr_ch5
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5/launch/camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/cpmr_ch5
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5/launch/good-features-camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/cpmr_ch5
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5/launch/aruco-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/cpmr_ch5
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5/launch/view-camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/cpmr_ch5
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5/launch/harrs-corners-camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/cpmr_ch5
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5/launch/canny-edges-camera-robot.launch.py -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/cpmr_ch5
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5/urdf/scout-camera.urdf.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/cpmr_ch5
+symbolically linking /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/build/cpmr_ch5/urdf/colors.xacro -> /Users/mafu/Desktop/EECS_4421_Robotics/CPMR3/ros2_ws/src/install/cpmr_ch5/share/cpmr_ch5
