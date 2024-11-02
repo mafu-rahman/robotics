@@ -53,6 +53,6 @@ H = model.fit(trainX, trainY, batch_size=BS,
  
 # save the model to disk
 print("[INFO] serializing network...")
-model.save("line-follower")
+model.save("line-follower.keras")
 
 

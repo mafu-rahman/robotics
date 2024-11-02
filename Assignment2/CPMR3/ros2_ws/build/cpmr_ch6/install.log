@@ -12,6 +12,7 @@
 /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/package.xml
 /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/drive_by_line.launch.py
 /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/drive_by_road.launch.py
+/Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/launch.py
 /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/auto_drive_by_road.launch.py
 /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/auto_drive_by_line.launch.py
 /Users/mafu/Desktop/robotics/Assignment2/CPMR3/ros2_ws/install/cpmr_ch6/share/cpmr_ch6/scout-camera.urdf.xacro

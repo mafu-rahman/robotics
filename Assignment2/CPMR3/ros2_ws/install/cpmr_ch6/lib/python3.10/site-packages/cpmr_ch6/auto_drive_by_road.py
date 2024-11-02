@@ -27,12 +27,12 @@ class AutoDriveByLine(Node):
         self.declare_parameter('rate', 10)
         
         # Added more models
-        self.declare_parameter('model', "road-follower.keras") # added extension .keras
+        #self.declare_parameter('model', "road-follower.keras") # added extension .keras
         #self.declare_parameter('model', "road-follower-2.keras") # added extension .keras
-        #self.declare_parameter('model', "road-follower-3.keras") # added extension .keras
+        self.declare_parameter('model', "road-follower-3.keras") # added extension .keras
 
-        self.declare_parameter('x_vel', 0.2)
-        self.declare_parameter('theta_vel', 0.2)
+        self.declare_parameter('x_vel', 1.0)
+        self.declare_parameter('theta_vel', 1.0)
         self.declare_parameter('image_size', 28)
 
 
@@ -49,6 +49,24 @@ class AutoDriveByLine(Node):
 
         self._bridge = CvBridge()
         self._auto_driving = False
+
+# Changes by Mahfuz Rahman
+
+        self._odom_data = []  # List to store odometry data
+        self.create_subscription(Odometry, self.get_parameter('odom').get_parameter_value().string_value, self._odom_callback, 1)
+
+
+    def _odom_callback(self, msg):
+        # Capture position and orientation from the odometry message
+        position = msg.pose.pose.position
+        orientation = msg.pose.pose.orientation
+        self._odom_data.append((position.x, position.y, orientation.z))
+
+    def save_odom_data(self, filename):
+        with open(filename, 'w') as f:
+            for pos in self._odom_data:
+                f.write(f"{pos[0]}, {pos[1]}\n")
+        self.get_logger().info(f"Odometry data saved to {filename}")
 
     def _image_callback(self, msg):
         image = self._bridge.imgmsg_to_cv2(msg, "bgr8") 
@@ -112,6 +130,8 @@ def main(args=None):
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
+    
+    node.save_odom_data("database.csv")
     rclpy.shutdown()
 
 if __name__ == '__main__':

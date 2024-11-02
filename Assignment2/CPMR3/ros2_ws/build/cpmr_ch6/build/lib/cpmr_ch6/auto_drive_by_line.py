@@ -22,7 +22,7 @@ class AutoDriveByLine(Node):
         self.declare_parameter('cmd', "/cmd_vel")
         self.declare_parameter('odom', "/odom")
         self.declare_parameter('rate', 10)
-        self.declare_parameter('model', "line-follower")
+        self.declare_parameter('model', "line-follower.keras")
         self.declare_parameter('x_vel', 0.2)
         self.declare_parameter('theta_vel', 0.2)
         self.declare_parameter('height', 0.25)
