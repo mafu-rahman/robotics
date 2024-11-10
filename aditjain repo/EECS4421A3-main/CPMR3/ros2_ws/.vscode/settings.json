@@ -1,0 +1,30 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch7/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch11/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages",
+        "/home/aditjain/ros2_ws/install/standardTask/lib/python3.10/site-packages",
+        "/home/aditjain/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch7/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch2/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_ch11/lib/python3.10/site-packages",
+        "/home/aditjain/EECS4421/A1/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages",
+        "/home/aditjain/ros2_ws/install/standardTask/lib/python3.10/site-packages",
+        "/home/aditjain/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
