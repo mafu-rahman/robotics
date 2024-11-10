@@ -68,7 +68,7 @@ class Subsumption(Node):
             resp.message = "Architecture running"
         else:
             self.get_logger().info(f'subsumption suspended')
-            self._run = True
+            self._run = False
             resp.success = True
             resp.message = "Architecture suspended"
         return resp

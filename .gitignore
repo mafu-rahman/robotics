@@ -24,3 +24,5 @@
 /Lab8/ros2_ws/log
 /Lab8/ros2_ws/log
 /Lab8/ros2_ws/build
+*.pyc
+Lab8/ros2_ws/log/latest_build
