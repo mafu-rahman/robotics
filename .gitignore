@@ -20,3 +20,5 @@
 /Lab8/ros2_ws/build
 /Lab8/ros2_ws/install
 /Lab8/ros2_ws/log
+*.env
+/Lab8/ros2_ws/log
