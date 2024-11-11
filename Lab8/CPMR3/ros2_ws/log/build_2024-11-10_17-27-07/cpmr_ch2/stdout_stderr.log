@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch2/setup.py", line 3, in <module>
+    from setuptools import setup
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 166, in <module>
+    monkey.patch_all()
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/monkey.py", line 99, in patch_all
+    patch_for_msvc_specialized_compiler()
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/monkey.py", line 136, in patch_for_msvc_specialized_compiler
+    msvc = import_module('setuptools.msvc')
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/msvc.py", line 22, in <module>
+    import json
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/json/__init__.py", line 106, in <module>
+    from .decoder import JSONDecoder, JSONDecodeError
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1439, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1411, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1548, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1591, in _fill_cache
+KeyboardInterrupt

@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch11/setup.py", line 7, in <module>
+    setup(
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 76, in setup
+    _install_setup_requires(attrs)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 65, in _install_setup_requires
+    dist = MinimalDistribution(attrs)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 55, in __init__
+    super().__init__(filtered)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 460, in __init__
+    for ep in metadata.entry_points(group='distutils.setup_keywords'):
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 1021, in entry_points
+    return SelectableGroups.load(eps).select(**params)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 459, in load
+    ordered = sorted(eps, key=by_group)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 1019, in <genexpr>
+    dist.entry_points for dist in unique(distributions())
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 631, in entry_points
+    return EntryPoints._from_text_for(self.read_text('entry_points.txt'), self)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 927, in read_text
+    return self._path.joinpath(filename).read_text(encoding='utf-8')
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/codecs.py", line 309, in __init__
+    def __init__(self, errors='strict'):
+KeyboardInterrupt

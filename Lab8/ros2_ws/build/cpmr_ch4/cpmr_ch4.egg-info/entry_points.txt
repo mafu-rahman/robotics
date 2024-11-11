@@ -1,2 +1,0 @@
-[console_scripts]
-collect_lidar = cpmr_ch4.collect_lidar:main

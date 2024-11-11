@@ -1,0 +1,34 @@
+[5.402s] Invoking command in '/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_apb': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_apb/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab8/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data
+[5.746s] Traceback (most recent call last):
+[5.746s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 927, in read_text
+[5.768s]     return self._path.joinpath(filename).read_text(encoding='utf-8')
+[5.768s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/pathlib.py", line 1134, in read_text
+[5.770s]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[5.770s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/pathlib.py", line 1119, in open
+[5.770s]     return self._accessor.open(self, mode, buffering, encoding, errors,
+[5.770s] FileNotFoundError: [Errno 2] No such file or directory: '/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/kiwisolver-1.4.7.dist-info/entry_points.txt'
+[5.770s] 
+[5.770s] During handling of the above exception, another exception occurred:
+[5.770s] 
+[5.770s] Traceback (most recent call last):
+[5.770s]   File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_apb/setup.py", line 8, in <module>
+[5.770s]     setup(
+[5.770s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 76, in setup
+[5.770s]     _install_setup_requires(attrs)
+[5.770s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 65, in _install_setup_requires
+[5.772s]     dist = MinimalDistribution(attrs)
+[5.772s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 55, in __init__
+[5.772s]     super().__init__(filtered)
+[5.772s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 460, in __init__
+[5.772s]     for ep in metadata.entry_points(group='distutils.setup_keywords'):
+[5.772s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 1021, in entry_points
+[5.772s]     return SelectableGroups.load(eps).select(**params)
+[5.772s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 459, in load
+[5.773s]     ordered = sorted(eps, key=by_group)
+[5.773s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 1019, in <genexpr>
+[5.773s]     dist.entry_points for dist in unique(distributions())
+[5.773s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 631, in entry_points
+[5.773s]     return EntryPoints._from_text_for(self.read_text('entry_points.txt'), self)
+[5.773s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 927, in read_text
+[5.773s]     return self._path.joinpath(filename).read_text(encoding='utf-8')
+[5.773s] KeyboardInterrupt
