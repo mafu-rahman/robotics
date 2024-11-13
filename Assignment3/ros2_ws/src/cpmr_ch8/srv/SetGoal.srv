@@ -1,0 +1,6 @@
+# Request: x, y coordinates for the goal
+float64 x
+float64 y
+
+---
+# No response

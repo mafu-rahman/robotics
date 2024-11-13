@@ -11,7 +11,9 @@ def generate_launch_description():
     urdf = os.path.join(get_package_share_directory('cpmr_ch8'), 'scout-laser-camera.urdf.xacro')
     robot_desc = xacro.process_file(urdf, mappings={'name' : 'subsumption_robot'}).toxml()
 
-    world_file_path = os.path.expanduser("~/Desktop/robotics/Assignment3/apartment.sdf")
+    #world_file_path = os.path.expanduser("~/Desktop/robotics/Assignment3/apartment.sdf")
+    world_file_path = "apartment.sdf"
+
 
 
     return LaunchDescription([

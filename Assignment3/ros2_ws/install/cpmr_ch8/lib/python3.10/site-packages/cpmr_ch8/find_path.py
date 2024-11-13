@@ -8,6 +8,7 @@ from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist, Pose, Point, Quaternion
 from nav_msgs.msg import Odometry
 from std_srvs.srv import SetBool
+from cpmr_ch8.srv import SetGoal  # Import the custom service
 
 
 import cv2
@@ -198,7 +199,7 @@ def image_to_gazebo_coordinates(path, image_width=WORLD_WIDTH, image_height=WORL
         gazebo_path.append((gazebo_x, gazebo_y))
     return gazebo_path
 
-def gazebo_to_image_coordinates(gazebo_x, gazebo_y, image_width=2800, image_height=3500, scale_factor=100):
+def gazebo_to_image_coordinates(gazebo_x, gazebo_y, image_width=WORLD_WIDTH, image_height=WORLD_HEIGHT, scale_factor=100):
     image_x = (gazebo_x * scale_factor) + image_width / 2 
     image_y = (image_height / 2) - (gazebo_y * scale_factor)
     return (int(image_x), int(image_y))
@@ -208,21 +209,20 @@ class FindPath(Node):
         super().__init__('find_path')
         self.get_logger().info(f'{self.get_name()} created')
         
-        self._goal_x = 0.0
-        self._goal_y = 0.0
+        self._goal_x = 2000
+        self._goal_y = 3000
         self._cur_x = 0.0
         self._cur_y = 0.0
         self._cur_theta = 0.0
         self._current_waypoint_index = 0
 
-        
-        ### World Variables ###
         self._tree, self._edges, self._tree_image = self.create_rrt_world()
         self._waypoints = [(0, 0)]
 
         self._subscriber = self.create_subscription(Odometry, "/odom", self._listener_callback, 1)
         self._publisher = self.create_publisher(Twist, "/cmd_vel", 1)
 
+        #self.create_service(SetGoal, '/set_goal', self._set_goal_callback)
         self.create_service(SetBool, '/startup', self._startup_callback)
         self._run = False
 
@@ -245,7 +245,7 @@ class FindPath(Node):
 
     def process_path(self):  # returns the path in gazebo coordinates
         start = gazebo_to_image_coordinates(self._cur_x, self._cur_y)
-        goal = (2000, 3000)
+        goal = (self._goal_x, self._goal_y)
 
         cv2.circle(self._tree_image, start, 14, (0, 165, 255), -1) #Orange
         cv2.circle(self._tree_image, goal, 14, (255, 192, 203), -1) #Pink
@@ -277,10 +277,11 @@ class FindPath(Node):
         self._cur_y = pose.position.y
         self._cur_theta = self._short_angle(yaw)
 
-        self.get_logger().info(f"x: {self._cur_x} y: {self._cur_y}")        
+        #self.get_logger().info(f"x: {self._cur_x} y: {self._cur_y}")        
 
         if self._run and (self._current_waypoint_index < len(self._waypoints)):
             target_x, target_y = self._waypoints[self._current_waypoint_index]
+            self.get_logger().info(f'{self.get_name()} driving to goal x: {target_x} y: {target_y}')
             self._drive_to_goal(target_x, target_y)
 
     def _short_angle(self, angle):
@@ -306,17 +307,17 @@ class FindPath(Node):
         dist = math.sqrt(x_diff * x_diff + y_diff * y_diff)
 
         if dist > range_tol:
-            self.get_logger().info(f'{self.get_name()} driving to goal x: {goal_x} y: {goal_y}')
+            #self.get_logger().info(f'{self.get_name()} driving to goal x: {goal_x} y: {goal_y}')
             heading = math.atan2(y_diff, x_diff)
             diff = self._short_angle(heading - self._cur_theta)
 
             if abs(diff) > heading_tol:
-                twist.angular.z = self._compute_speed(diff, 0.8, 0.5, 0.2)
+                twist.angular.z = self._compute_speed(diff, 0.6, 0.5, 0.2)
                 # self.get_logger().info(f'{self.get_name()} turning towards goal heading {heading} current {self._cur_theta} diff {diff}')
                 self._publisher.publish(twist)
                 return False
 
-            twist.linear.x = self._compute_speed(dist, 0.8, 0.5, 0.2)
+            twist.linear.x = self._compute_speed(dist, 0.6, 0.3, 0.2)
             self._publisher.publish(twist)
             # self.get_logger().info(f'{self.get_name()} moving forward, distance: {dist}')
             return False
@@ -326,7 +327,6 @@ class FindPath(Node):
 
             if self._current_waypoint_index >= len(self._waypoints):
                 self.get_logger().info('All waypoints reached!')
-                self._run = False
                 return True
             return False
 
@@ -346,6 +346,15 @@ class FindPath(Node):
                 resp.success = True
                 resp.message = "Architecture suspended"
             return resp
+
+    def _set_goal_callback(self, request, response):
+            """Service callback to set the goal coordinates."""
+            self._goal_x = request.x
+            self._goal_y = request.y
+            self.get_logger().info(f"New goal set: x={self._goal_x}, y={self._goal_y}")
+            response.success = True
+            response.message = f"Goal set to: x={self._goal_x}, y={self._goal_y}"
+            return response
 
 def main(args=None):
     rclpy.init(args=args)
