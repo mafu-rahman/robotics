@@ -1,0 +1,20 @@
+[5.418s] Invoking command in '/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch7': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch7/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab8/ros2_ws/install/cpmr_ch7/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch7 build --build-base /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch7/build install --record /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch7/install.log --single-version-externally-managed install_data
+[5.714s] Traceback (most recent call last):
+[5.714s]   File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch7/setup.py", line 3, in <module>
+[5.714s]     from setuptools import setup
+[5.714s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 14, in <module>
+[5.714s]     import setuptools.version
+[5.715s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>
+[5.721s]     import pkg_resources
+[5.721s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3247, in <module>
+[5.724s]     def _initialize_master_working_set():
+[5.724s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3221, in _call_aside
+[5.744s]     f(*args, **kwargs)
+[5.745s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3282, in _initialize_master_working_set
+[5.745s]     list(map(working_set.add_entry, sys.path))
+[5.745s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/pkg_resources/__init__.py", line 620, in add_entry
+[5.745s]     self.add(dist, entry, False)
+[5.745s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/pkg_resources/__init__.py", line 698, in add
+[5.746s]     keys = self.entry_keys.setdefault(entry, [])
+[5.746s] KeyboardInterrupt
+[5.748s] Invoked command in '/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch7' returned '-2': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch7/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab8/ros2_ws/install/cpmr_ch7/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch7 build --build-base /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch7/build install --record /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch7/install.log --single-version-externally-managed install_data

@@ -1,0 +1,43 @@
+[4.748s] Invoking command in '/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/src/cpmr_apb': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data
+[5.770s] running egg_info
+[5.770s] creating ../../build/cpmr_apb/cpmr_apb.egg-info
+[5.836s] writing ../../build/cpmr_apb/cpmr_apb.egg-info/PKG-INFO
+[5.902s] writing dependency_links to ../../build/cpmr_apb/cpmr_apb.egg-info/dependency_links.txt
+[6.025s] writing entry points to ../../build/cpmr_apb/cpmr_apb.egg-info/entry_points.txt
+[6.120s] writing requirements to ../../build/cpmr_apb/cpmr_apb.egg-info/requires.txt
+[6.162s] writing top-level names to ../../build/cpmr_apb/cpmr_apb.egg-info/top_level.txt
+[6.162s] writing manifest file '../../build/cpmr_apb/cpmr_apb.egg-info/SOURCES.txt'
+[6.219s] reading manifest file '../../build/cpmr_apb/cpmr_apb.egg-info/SOURCES.txt'
+[6.219s] writing manifest file '../../build/cpmr_apb/cpmr_apb.egg-info/SOURCES.txt'
+[6.220s] running build
+[6.220s] running build_py
+[6.220s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build
+[6.220s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build/lib
+[6.220s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb
+[6.221s] copying cpmr_apb/depopulate.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb
+[6.221s] copying cpmr_apb/__init__.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb
+[6.221s] copying cpmr_apb/populate.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb
+[6.221s] running install
+[6.224s] running install_lib
+[6.267s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb
+[6.267s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb/depopulate.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb
+[6.268s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb/__init__.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb
+[6.268s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build/lib/cpmr_apb/populate.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb
+[6.269s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb/depopulate.py to depopulate.cpython-310.pyc
+[6.269s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb/__init__.py to __init__.cpython-310.pyc
+[6.269s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb/populate.py to populate.cpython-310.pyc
+[6.270s] running install_data
+[6.270s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/share/ament_index
+[6.270s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/share/ament_index/resource_index
+[6.270s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/share/ament_index/resource_index/packages
+[6.270s] copying resource/cpmr_apb -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/share/ament_index/resource_index/packages
+[6.271s] copying package.xml -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb
+[6.271s] copying launch/gazebo.launch.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb
+[6.271s] copying urdf/blockrobot.urdf -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/share/cpmr_apb
+[6.271s] running install_egg_info
+[6.311s] Copying ../../build/cpmr_apb/cpmr_apb.egg-info to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages/cpmr_apb-3.1.0-py3.10.egg-info
+[6.321s] running install_scripts
+[6.495s] Installing depopulate_world script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/cpmr_apb
+[6.496s] Installing populate_world script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/cpmr_apb
+[6.504s] writing list of installed files to '/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/install.log'
+[6.554s] Invoked command in '/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/src/cpmr_apb' returned '0': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_apb/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_apb build --build-base /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/build install --record /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_apb/install.log --single-version-externally-managed install_data

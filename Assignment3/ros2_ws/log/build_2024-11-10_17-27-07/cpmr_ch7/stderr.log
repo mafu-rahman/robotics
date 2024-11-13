@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch7/setup.py", line 3, in <module>
+    from setuptools import setup
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 14, in <module>
+    import setuptools.version
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3247, in <module>
+    def _initialize_master_working_set():
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3221, in _call_aside
+    f(*args, **kwargs)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/pkg_resources/__init__.py", line 3282, in _initialize_master_working_set
+    list(map(working_set.add_entry, sys.path))
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/pkg_resources/__init__.py", line 620, in add_entry
+    self.add(dist, entry, False)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/pkg_resources/__init__.py", line 698, in add
+    keys = self.entry_keys.setdefault(entry, [])
+KeyboardInterrupt

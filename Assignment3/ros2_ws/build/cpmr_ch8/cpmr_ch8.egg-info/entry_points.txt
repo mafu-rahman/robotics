@@ -1,0 +1,6 @@
+[console_scripts]
+drive_to_goal = cpmr_ch8.drive_to_goal:main
+find_path = cpmr_ch8.find_path:main
+fsm = cpmr_ch8.fsm:main
+subsumption = cpmr_ch8.subsumption2:main
+view_camera = cpmr_ch8.view_camera:main

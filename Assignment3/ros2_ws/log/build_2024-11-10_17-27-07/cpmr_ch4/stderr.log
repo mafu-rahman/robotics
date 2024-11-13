@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch4/setup.py", line 3, in <module>
+    from setuptools import setup
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 16, in <module>
+    from setuptools.dist import Distribution
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 33, in <module>
+    from setuptools.extern import nspektr
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 52, in create_module
+    return self.load_module(spec.name)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 37, in load_module
+    __import__(extant)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/nspektr/__init__.py", line 5, in <module>
+    from setuptools.extern.packaging.requirements import Requirement
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/packaging/requirements.py", line 10, in <module>
+    from setuptools.extern.pyparsing import (  # noqa
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 52, in create_module
+    return self.load_module(spec.name)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 37, in load_module
+    __import__(extant)
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+  File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
+KeyboardInterrupt

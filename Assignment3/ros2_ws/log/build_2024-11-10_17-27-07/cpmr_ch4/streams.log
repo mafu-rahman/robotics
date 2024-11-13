@@ -1,0 +1,35 @@
+[5.425s] Invoking command in '/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch4': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch4/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab8/ros2_ws/install/cpmr_ch4/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch4 build --build-base /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch4/build install --record /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch4/install.log --single-version-externally-managed install_data
+[5.734s] Traceback (most recent call last):
+[5.739s]   File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch4/setup.py", line 3, in <module>
+[5.739s]     from setuptools import setup
+[5.739s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 16, in <module>
+[5.739s]     from setuptools.dist import Distribution
+[5.739s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 33, in <module>
+[5.739s]     from setuptools.extern import nspektr
+[5.739s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[5.739s]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[5.740s]   File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+[5.740s]   File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+[5.740s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 52, in create_module
+[5.742s]     return self.load_module(spec.name)
+[5.742s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 37, in load_module
+[5.742s]     __import__(extant)
+[5.742s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/nspektr/__init__.py", line 5, in <module>
+[5.743s]     from setuptools.extern.packaging.requirements import Requirement
+[5.743s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/packaging/requirements.py", line 10, in <module>
+[5.743s]     from setuptools.extern.pyparsing import (  # noqa
+[5.743s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[5.743s]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[5.743s]   File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+[5.743s]   File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+[5.743s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 52, in create_module
+[5.744s]     return self.load_module(spec.name)
+[5.744s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 37, in load_module
+[5.744s]     __import__(extant)
+[5.744s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[5.744s]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[5.744s]   File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+[5.744s]   File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+[5.744s]   File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+[5.744s]   File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
+[5.744s] KeyboardInterrupt

@@ -1,0 +1,87 @@
+[5.274s] Invoking command in '/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch12': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch12/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab8/ros2_ws/install/cpmr_ch12/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch12 build --build-base /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch12/build install --record /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch12/install.log --single-version-externally-managed install_data
+[5.740s] Traceback (most recent call last):
+[5.741s]   File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch12/setup.py", line 7, in <module>
+[5.741s]     setup(
+[5.741s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 77, in setup
+[5.741s]     return distutils.core.setup(**attrs)
+[5.741s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 109, in setup
+[5.752s]     _setup_distribution = dist = klass(attrs)
+[5.752s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 462, in __init__
+[5.752s]     _Distribution.__init__(
+[5.752s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 293, in __init__
+[5.752s]     self.finalize_options()
+[5.752s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 868, in finalize_options
+[5.753s]     ep(self)
+[5.753s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 888, in _finalize_setup_keywords
+[5.753s]     self._install_dependencies(ep)
+[5.753s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 896, in _install_dependencies
+[5.754s]     for req in nspektr.missing(ep):
+[5.754s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/nspektr/__init__.py", line 77, in traverse
+[5.754s]     item = next(items)
+[5.754s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/nspektr/__init__.py", line 54, in <genexpr>
+[5.754s]     simple = (
+[5.754s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/packaging/requirements.py", line 102, in __init__
+[5.756s]     req = REQUIREMENT.parseString(requirement_string)
+[5.756s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1644, in parseString
+[5.756s]     loc, tokens = self._parse( instring, 0 )
+[5.756s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.756s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.756s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3417, in parseImpl
+[5.756s]     loc, exprtokens = e._parse( instring, loc, doActions )
+[5.756s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.756s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.756s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3552, in parseImpl
+[5.757s]     ret = e._parse( instring, loc, doActions )
+[5.757s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.758s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.758s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3417, in parseImpl
+[5.758s]     loc, exprtokens = e._parse( instring, loc, doActions )
+[5.758s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.758s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.759s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 4005, in parseImpl
+[5.759s]     loc, tokens = self.expr._parse( instring, loc, doActions, callPreParse=False )
+[5.759s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.759s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.760s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3417, in parseImpl
+[5.760s]     loc, exprtokens = e._parse( instring, loc, doActions )
+[5.760s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1428, in _parseNoCache
+[5.760s]     tokens = fn( instring, tokensStart, retTokens )
+[5.760s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1072, in wrapper
+[5.761s]     ret = func(*args[limit[0]:])
+[5.761s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/packaging/requirements.py", line 71, in <lambda>
+[5.761s]     lambda s, l, t: Marker(s[t._original_start : t._original_end])
+[5.761s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/packaging/markers.py", line 278, in __init__
+[5.768s]     self._markers = _coerce_parse_result(MARKER.parseString(marker))
+[5.768s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1644, in parseString
+[5.768s]     loc, tokens = self._parse( instring, 0 )
+[5.768s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.770s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.771s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3417, in parseImpl
+[5.776s]     loc, exprtokens = e._parse( instring, loc, doActions )
+[5.776s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.776s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.776s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3739, in parseImpl
+[5.776s]     return self.expr._parse( instring, loc, doActions, callPreParse=False )
+[5.776s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.776s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.776s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3417, in parseImpl
+[5.776s]     loc, exprtokens = e._parse( instring, loc, doActions )
+[5.776s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.776s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.777s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3941, in parseImpl
+[5.777s]     return super(ZeroOrMore, self).parseImpl(instring, loc, doActions)
+[5.777s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3870, in parseImpl
+[5.777s]     loc, tokens = self_expr_parse( instring, loc, doActions, callPreParse=False )
+[5.777s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.777s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.777s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3400, in parseImpl
+[5.777s]     loc, resultlist = self.exprs[0]._parse( instring, loc, doActions, callPreParse=False )
+[5.777s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1402, in _parseNoCache
+[5.777s]     loc,tokens = self.parseImpl( instring, preloc, doActions )
+[5.777s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 3552, in parseImpl
+[5.777s]     ret = e._parse( instring, loc, doActions )
+[5.777s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1410, in _parseNoCache
+[5.777s]     retTokens = ParseResults( tokens, self.resultsName, asList=self.saveAsList, modal=self.modalResults )
+[5.777s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 388, in __init__
+[5.777s]     self.__tokdict = dict()
+[5.777s] KeyboardInterrupt

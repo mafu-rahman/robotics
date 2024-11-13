@@ -1,0 +1,31 @@
+[5.275s] Invoking command in '/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch5': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch5/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab8/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch5 build --build-base /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch5/build install --record /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch5/install.log --single-version-externally-managed install_data
+[5.724s] Traceback (most recent call last):
+[5.724s]   File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch5/setup.py", line 7, in <module>
+[5.724s]     setup(
+[5.724s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 77, in setup
+[5.724s]     return distutils.core.setup(**attrs)
+[5.725s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 109, in setup
+[5.734s]     _setup_distribution = dist = klass(attrs)
+[5.734s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 462, in __init__
+[5.734s]     _Distribution.__init__(
+[5.734s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 293, in __init__
+[5.735s]     self.finalize_options()
+[5.735s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 864, in finalize_options
+[5.736s]     defined = metadata.entry_points(group=group)
+[5.736s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 1021, in entry_points
+[5.737s]     return SelectableGroups.load(eps).select(**params)
+[5.737s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 459, in load
+[5.737s]     ordered = sorted(eps, key=by_group)
+[5.737s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 1019, in <genexpr>
+[5.739s]     dist.entry_points for dist in unique(distributions())
+[5.739s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 631, in entry_points
+[5.739s]     return EntryPoints._from_text_for(self.read_text('entry_points.txt'), self)
+[5.739s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 927, in read_text
+[5.739s]     return self._path.joinpath(filename).read_text(encoding='utf-8')
+[5.739s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/pathlib.py", line 1134, in read_text
+[5.739s]     with self.open(mode='r', encoding=encoding, errors=errors) as f:
+[5.739s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/pathlib.py", line 1119, in open
+[5.740s]     return self._accessor.open(self, mode, buffering, encoding, errors,
+[5.740s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/codecs.py", line 309, in __init__
+[5.740s]     def __init__(self, errors='strict'):
+[5.740s] KeyboardInterrupt

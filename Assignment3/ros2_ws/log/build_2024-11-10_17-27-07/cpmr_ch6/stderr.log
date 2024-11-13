@@ -1,0 +1,50 @@
+Traceback (most recent call last):
+  File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch6/setup.py", line 3, in <module>
+    from setuptools import setup
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 16, in <module>
+    from setuptools.dist import Distribution
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 33, in <module>
+    from setuptools.extern import nspektr
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 52, in create_module
+    return self.load_module(spec.name)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 37, in load_module
+    __import__(extant)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/nspektr/__init__.py", line 5, in <module>
+    from setuptools.extern.packaging.requirements import Requirement
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/packaging/requirements.py", line 10, in <module>
+    from setuptools.extern.pyparsing import (  # noqa
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 52, in create_module
+    return self.load_module(spec.name)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 37, in load_module
+    __import__(extant)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 4756, in <module>
+    _escapedPunc = Word( _bslash, r"\[]-*.$+^?()~ ", exact=2 ).setParseAction(lambda s,l,t:t[0][1])
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1284, in setParseAction
+    self.parseAction = list(map(_trim_arity, list(fns)))
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1066, in _trim_arity
+    this_line = extract_stack(limit=2)[-1]
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1050, in extract_stack
+    frame_summary = traceback.extract_stack(limit=-offset+limit-1)[offset]
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/traceback.py", line 227, in extract_stack
+    stack = StackSummary.extract(walk_stack(f), limit=limit)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/traceback.py", line 383, in extract
+    f.line
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/traceback.py", line 306, in line
+    self._line = linecache.getline(self.filename, self.lineno)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/linecache.py", line 30, in getline
+    lines = getlines(filename, module_globals)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/linecache.py", line 46, in getlines
+    return updatecache(filename, module_globals)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/linecache.py", line 137, in updatecache
+    lines = fp.readlines()
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/codecs.py", line 319, in decode
+    def decode(self, input, final=False):
+KeyboardInterrupt

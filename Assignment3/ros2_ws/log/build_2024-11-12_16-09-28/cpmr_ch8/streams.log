@@ -1,0 +1,28 @@
+[1.659s] Invoking command in '/Users/mafu/Desktop/robotics/Assignment3/ros2_ws/src/cpmr_ch8': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Assignment3/ros2_ws/build/cpmr_ch8/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch8 build --build-base /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/build/cpmr_ch8/build install --record /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/build/cpmr_ch8/install.log --single-version-externally-managed install_data
+[2.198s] running egg_info
+[2.234s] writing ../../build/cpmr_ch8/cpmr_ch8.egg-info/PKG-INFO
+[2.262s] writing dependency_links to ../../build/cpmr_ch8/cpmr_ch8.egg-info/dependency_links.txt
+[2.349s] writing entry points to ../../build/cpmr_ch8/cpmr_ch8.egg-info/entry_points.txt
+[2.404s] writing requirements to ../../build/cpmr_ch8/cpmr_ch8.egg-info/requires.txt
+[2.432s] writing top-level names to ../../build/cpmr_ch8/cpmr_ch8.egg-info/top_level.txt
+[2.479s] reading manifest file '../../build/cpmr_ch8/cpmr_ch8.egg-info/SOURCES.txt'
+[2.480s] writing manifest file '../../build/cpmr_ch8/cpmr_ch8.egg-info/SOURCES.txt'
+[2.480s] running build
+[2.480s] running build_py
+[2.481s] copying cpmr_ch8/find_path.py -> /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/build/cpmr_ch8/build/lib/cpmr_ch8
+[2.481s] running install
+[2.485s] running install_lib
+[2.523s] copying /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/build/cpmr_ch8/build/lib/cpmr_ch8/find_path.py -> /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages/cpmr_ch8
+[2.523s] byte-compiling /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages/cpmr_ch8/find_path.py to find_path.cpython-310.pyc
+[2.525s] running install_data
+[2.525s] running install_egg_info
+[2.564s] removing '/Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages/cpmr_ch8-3.1.0-py3.10.egg-info' (and everything under it)
+[2.564s] Copying ../../build/cpmr_ch8/cpmr_ch8.egg-info to /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages/cpmr_ch8-3.1.0-py3.10.egg-info
+[2.566s] running install_scripts
+[2.663s] Installing drive_to_goal script to /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/cpmr_ch8
+[2.663s] Installing find_path script to /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/cpmr_ch8
+[2.663s] Installing fsm script to /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/cpmr_ch8
+[2.663s] Installing subsumption script to /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/cpmr_ch8
+[2.663s] Installing view_camera script to /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/cpmr_ch8
+[2.664s] writing list of installed files to '/Users/mafu/Desktop/robotics/Assignment3/ros2_ws/build/cpmr_ch8/install.log'
+[2.689s] Invoked command in '/Users/mafu/Desktop/robotics/Assignment3/ros2_ws/src/cpmr_ch8' returned '0': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Assignment3/ros2_ws/build/cpmr_ch8/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Assignment3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch8 build --build-base /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/build/cpmr_ch8/build install --record /Users/mafu/Desktop/robotics/Assignment3/ros2_ws/build/cpmr_ch8/install.log --single-version-externally-managed install_data

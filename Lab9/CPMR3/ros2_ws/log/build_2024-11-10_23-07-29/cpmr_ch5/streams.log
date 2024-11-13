@@ -1,0 +1,69 @@
+[4.945s] Invoking command in '/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/src/cpmr_ch5': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch5 build --build-base /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build install --record /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/install.log --single-version-externally-managed install_data
+[5.874s] running egg_info
+[5.874s] creating ../../build/cpmr_ch5/cpmr_ch5.egg-info
+[5.935s] writing ../../build/cpmr_ch5/cpmr_ch5.egg-info/PKG-INFO
+[5.998s] writing dependency_links to ../../build/cpmr_ch5/cpmr_ch5.egg-info/dependency_links.txt
+[6.170s] writing entry points to ../../build/cpmr_ch5/cpmr_ch5.egg-info/entry_points.txt
+[6.312s] writing requirements to ../../build/cpmr_ch5/cpmr_ch5.egg-info/requires.txt
+[6.389s] writing top-level names to ../../build/cpmr_ch5/cpmr_ch5.egg-info/top_level.txt
+[6.389s] writing manifest file '../../build/cpmr_ch5/cpmr_ch5.egg-info/SOURCES.txt'
+[6.471s] reading manifest file '../../build/cpmr_ch5/cpmr_ch5.egg-info/SOURCES.txt'
+[6.479s] writing manifest file '../../build/cpmr_ch5/cpmr_ch5.egg-info/SOURCES.txt'
+[6.479s] running build
+[6.479s] running build_py
+[6.479s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build
+[6.479s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib
+[6.479s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[6.479s] copying cpmr_ch5/aruco_target.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[6.479s] copying cpmr_ch5/opencv_camera.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[6.479s] copying cpmr_ch5/view_camera.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[6.480s] copying cpmr_ch5/good_features.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[6.485s] copying cpmr_ch5/__init__.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[6.485s] copying cpmr_ch5/harris_corners.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[6.486s] copying cpmr_ch5/canny_edges.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[6.486s] copying cpmr_ch5/opencv_camera_calibrated.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5
+[6.486s] running install
+[6.487s] running install_lib
+[6.579s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5
+[6.584s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/aruco_target.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5
+[6.584s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/opencv_camera.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5
+[6.585s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/view_camera.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5
+[6.585s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/good_features.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5
+[6.585s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/__init__.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5
+[6.585s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/harris_corners.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5
+[6.585s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/canny_edges.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5
+[6.585s] copying /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build/lib/cpmr_ch5/opencv_camera_calibrated.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5
+[6.586s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5/aruco_target.py to aruco_target.cpython-310.pyc
+[6.587s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5/opencv_camera.py to opencv_camera.cpython-310.pyc
+[6.588s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5/view_camera.py to view_camera.cpython-310.pyc
+[6.588s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5/good_features.py to good_features.cpython-310.pyc
+[6.588s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5/__init__.py to __init__.cpython-310.pyc
+[6.588s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5/harris_corners.py to harris_corners.cpython-310.pyc
+[6.588s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5/canny_edges.py to canny_edges.cpython-310.pyc
+[6.588s] byte-compiling /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5/opencv_camera_calibrated.py to opencv_camera_calibrated.cpython-310.pyc
+[6.588s] running install_data
+[6.588s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/ament_index
+[6.589s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/ament_index/resource_index
+[6.589s] creating /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/ament_index/resource_index/packages
+[6.589s] copying resource/cpmr_ch5 -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/ament_index/resource_index/packages
+[6.589s] copying package.xml -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[6.589s] copying launch/camera-robot.launch.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[6.589s] copying launch/good-features-camera-robot.launch.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[6.589s] copying launch/aruco-robot.launch.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[6.589s] copying launch/view-camera-robot.launch.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[6.589s] copying launch/harris-corners-camera-robot.launch.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[6.591s] copying launch/canny-edges-camera-robot.launch.py -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[6.591s] copying urdf/scout-camera.urdf.xacro -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[6.592s] copying urdf/colors.xacro -> /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/share/cpmr_ch5
+[6.592s] running install_egg_info
+[7.119s] Copying ../../build/cpmr_ch5/cpmr_ch5.egg-info to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages/cpmr_ch5-3.1.0-py3.10.egg-info
+[7.119s] running install_scripts
+[7.119s] Installing aruco_target script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[7.119s] Installing canny_edges script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[7.119s] Installing good_features script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[7.119s] Installing harris_corners script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[7.119s] Installing opencv_camera script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[7.119s] Installing opencv_camera_calibrated script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[7.119s] Installing view_camera script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/cpmr_ch5
+[7.119s] writing list of installed files to '/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/install.log'
+[7.134s] Invoked command in '/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/src/cpmr_ch5' returned '0': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch5/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch5 build --build-base /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/build install --record /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch5/install.log --single-version-externally-managed install_data

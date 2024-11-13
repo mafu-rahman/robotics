@@ -1,0 +1,52 @@
+[5.376s] Invoking command in '/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch6': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch6/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab8/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch6 build --build-base /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch6/build install --record /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch6/install.log --single-version-externally-managed install_data
+[5.719s] Traceback (most recent call last):
+[5.719s]   File "/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch6/setup.py", line 3, in <module>
+[5.719s]     from setuptools import setup
+[5.719s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 16, in <module>
+[5.719s]     from setuptools.dist import Distribution
+[5.719s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 33, in <module>
+[5.727s]     from setuptools.extern import nspektr
+[5.727s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[5.727s]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[5.727s]   File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+[5.728s]   File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+[5.728s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 52, in create_module
+[5.730s]     return self.load_module(spec.name)
+[5.730s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 37, in load_module
+[5.730s]     __import__(extant)
+[5.730s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/nspektr/__init__.py", line 5, in <module>
+[5.730s]     from setuptools.extern.packaging.requirements import Requirement
+[5.730s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/packaging/requirements.py", line 10, in <module>
+[5.732s]     from setuptools.extern.pyparsing import (  # noqa
+[5.732s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[5.732s]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[5.732s]   File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+[5.732s]   File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+[5.732s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 52, in create_module
+[5.732s]     return self.load_module(spec.name)
+[5.733s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/extern/__init__.py", line 37, in load_module
+[5.733s]     __import__(extant)
+[5.733s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 4756, in <module>
+[5.747s]     _escapedPunc = Word( _bslash, r"\[]-*.$+^?()~ ", exact=2 ).setParseAction(lambda s,l,t:t[0][1])
+[5.748s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1284, in setParseAction
+[5.748s]     self.parseAction = list(map(_trim_arity, list(fns)))
+[5.749s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1066, in _trim_arity
+[5.750s]     this_line = extract_stack(limit=2)[-1]
+[5.750s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_vendor/pyparsing.py", line 1050, in extract_stack
+[5.750s]     frame_summary = traceback.extract_stack(limit=-offset+limit-1)[offset]
+[5.750s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/traceback.py", line 227, in extract_stack
+[5.751s]     stack = StackSummary.extract(walk_stack(f), limit=limit)
+[5.751s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/traceback.py", line 383, in extract
+[5.752s]     f.line
+[5.752s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/traceback.py", line 306, in line
+[5.752s]     self._line = linecache.getline(self.filename, self.lineno)
+[5.752s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/linecache.py", line 30, in getline
+[5.752s]     lines = getlines(filename, module_globals)
+[5.752s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/linecache.py", line 46, in getlines
+[5.752s]     return updatecache(filename, module_globals)
+[5.752s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/linecache.py", line 137, in updatecache
+[5.752s]     lines = fp.readlines()
+[5.752s]   File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/codecs.py", line 319, in decode
+[5.752s]     def decode(self, input, final=False):
+[5.752s] KeyboardInterrupt
+[5.754s] Invoked command in '/Users/mafu/Desktop/robotics/Lab8/ros2_ws/src/cpmr_ch6' returned '-2': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch6/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab8/ros2_ws/install/cpmr_ch6/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env __CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0 /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch6 build --build-base /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch6/build install --record /Users/mafu/Desktop/robotics/Lab8/ros2_ws/build/cpmr_ch6/install.log --single-version-externally-managed install_data

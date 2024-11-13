@@ -1,0 +1,5 @@
+[console_scripts]
+fsm = cpmr_ch8.fsm:main
+fsm2 = cpmr_ch8.fsm2:main
+subsumption = cpmr_ch8.subsumption:main
+view_camera = cpmr_ch8.view_camera:main
