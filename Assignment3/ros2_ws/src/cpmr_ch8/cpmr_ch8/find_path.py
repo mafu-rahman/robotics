@@ -8,6 +8,8 @@ from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist, Pose, Point, Quaternion
 from nav_msgs.msg import Odometry
 from std_srvs.srv import SetBool
+from sensor_msgs.msg import LaserScan
+
 
 import cv2
 import json
@@ -22,7 +24,7 @@ BACKGROUND_COLOR = (255, 255, 255)  # White background
 OCCUPIED_COLOR = (0, 0, 0)  # Black for obstacles
 
 ROBOT_RADIUS = 0.5  
-PIXEL_RESOLUTION = 0.1  # Each pixel represents 0.1 meters
+PIXEL_RESOLUTION = 0.05  # Each pixel represents 0.1 meters
 
 def euler_from_quaternion(quaternion):
     """Converts quaternion (w in last place) to euler roll, pitch, yaw"""
@@ -188,7 +190,7 @@ def display_map(name, world):
     cv2.imshow(name, world)
     cv2.waitKey(10)
    
-def image_to_gazebo_coordinates(path, image_width=WORLD_WIDTH, image_height=WORLD_HEIGHT, scale_factor=0.01):
+def image_to_gazebo_coordinates(path, image_width=WORLD_WIDTH, image_height=WORLD_HEIGHT, scale_factor=0.02):
     """Converts image coordinates to Gazebo coordinates."""
     gazebo_path = []
     for image_x, image_y in path:
@@ -197,7 +199,7 @@ def image_to_gazebo_coordinates(path, image_width=WORLD_WIDTH, image_height=WORL
         gazebo_path.append((gazebo_x, gazebo_y))
     return gazebo_path
 
-def gazebo_to_image_coordinates(gazebo_x, gazebo_y, image_width=WORLD_WIDTH, image_height=WORLD_HEIGHT, scale_factor=100):
+def gazebo_to_image_coordinates(gazebo_x, gazebo_y, image_width=WORLD_WIDTH, image_height=WORLD_HEIGHT, scale_factor=50):
     image_x = (gazebo_x * scale_factor) + image_width / 2 
     image_y = (image_height / 2) - (gazebo_y * scale_factor)
     return (int(image_x), int(image_y))
@@ -207,6 +209,7 @@ class FindPath(Node):
         super().__init__('find_path')
         self.get_logger().info(f'{self.get_name()} created')
         
+        self._min_r = 10000
         self._goal_x = 2000
         self._goal_y = 3000
         self._cur_x = 0.0
@@ -215,13 +218,25 @@ class FindPath(Node):
         self._current_waypoint_index = 0
 
         self._tree, self._edges, self._tree_image = self.create_rrt_world()
+        self._path_image = None
         self._waypoints = [(0, 0)]
 
         self._subscriber = self.create_subscription(Odometry, "/odom", self._listener_callback, 1)
+        self.create_subscription(LaserScan, "/scan", self._laser_callback, 1)
+
         self._publisher = self.create_publisher(Twist, "/cmd_vel", 1)
 
         self.create_service(SetBool, '/startup', self._startup_callback)
         self._run = False
+
+    def _avoid_obstacle(self, minr = 0.4):
+            """ if there is an obstacle within mind of the front of the robot, stop and rotate"""
+            if self._min_r < minr:
+                twist = Twist()
+                twist.linear.x = 0.0
+                twist.angular.z = math.pi / 10
+                return twist
+            return None
 
     def create_rrt_world(self):
         world = load_image()
@@ -256,12 +271,12 @@ class FindPath(Node):
             return None
         
         else:
-            path_image = connect_image.copy()
+            self._path_image = connect_image.copy()
             if path:
                 for i in range(len(path) - 1):
-                    cv2.line(path_image, path[i], path[i + 1], (255, 0, 255), 2)  # Magenta line for path
+                    cv2.line(self._path_image, path[i], path[i + 1], (255, 0, 255), 2)  # Magenta line for path
                 self.get_logger().info(f'path created')
-                display_map("path image", path_image)
+                display_map("path image", self._path_image)
                 path = image_to_gazebo_coordinates(path)
 
         return path
@@ -278,8 +293,24 @@ class FindPath(Node):
 
         if self._run and (self._current_waypoint_index < len(self._waypoints)):
             target_x, target_y = self._waypoints[self._current_waypoint_index]
-            self.get_logger().info(f'{self.get_name()} driving to goal x: {target_x} y: {target_y}')
-            self._drive_to_goal(target_x, target_y)
+            
+            cv2.circle(self._path_image, (gazebo_to_image_coordinates(self._cur_x, self._cur_y)), 14, (0, 165, 255), -1) #Orange
+            display_map("path image", self._path_image)
+
+            avoid = self._avoid_obstacle()
+        
+            if avoid is not None:
+                self.get_logger().info(f'avoiding')
+                self._publisher.publish(avoid)
+                return
+            else:
+                self._drive_to_goal(target_x, target_y)
+
+        else:
+            twist = Twist()
+            twist.linear.x = 0.0 
+            twist.angular.z = 0.0
+            self._publisher.publish(twist)
 
     def _short_angle(self, angle):
         """Normalize an angle to be within the range [-pi, pi]."""
@@ -309,12 +340,12 @@ class FindPath(Node):
             diff = self._short_angle(heading - self._cur_theta)
 
             if abs(diff) > heading_tol:
-                twist.angular.z = self._compute_speed(diff, 0.6, 0.5, 0.2)
+                twist.angular.z = self._compute_speed(diff, 0.5, 0.2, 0.2)
                 # self.get_logger().info(f'{self.get_name()} turning towards goal heading {heading} current {self._cur_theta} diff {diff}')
                 self._publisher.publish(twist)
                 return False
 
-            twist.linear.x = self._compute_speed(dist, 0.6, 0.3, 0.2)
+            twist.linear.x = self._compute_speed(dist, 0.5, 0.05, 0.2)
             self._publisher.publish(twist)
             # self.get_logger().info(f'{self.get_name()} moving forward, distance: {dist}')
             return False
@@ -343,6 +374,14 @@ class FindPath(Node):
                 resp.success = True
                 resp.message = "Architecture suspended"
             return resp
+
+    def _laser_callback(self, msg, mind=1.5):
+            min_range = mind * 10
+            for i, r in enumerate(msg.ranges):
+                angle = msg.angle_min + i * msg.angle_increment
+                if (abs(angle) < math.pi/4) and (r < min_range):
+                    min_range = r
+            self._min_r = min_range
 
 def main(args=None):
     rclpy.init(args=args)
