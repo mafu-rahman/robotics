@@ -67,6 +67,11 @@ class Subsumption(Node):
 
     def _startup_callback(self, request, resp):
         self.get_logger().info(f'Got a request {request}')
+
+        # Determine the current time for logging
+        now_log = datetime.now()
+        self.command_log.append((now_log, "_startup_callback"))
+        
         if request.data:
             self.get_logger().info(f'subsumption starting')
             self._run = True

@@ -1,143 +1,267 @@
-import math
-from geometry_msgs.msg import Twist
-from nav_msgs.msg import Odometry
 from enum import Enum
+import math
+import numpy as np
 import rclpy
 from rclpy.node import Node
+from rclpy.parameter import Parameter
+from rcl_interfaces.msg import SetParametersResult
+from nav_msgs.msg import Odometry
+from geometry_msgs.msg import Twist, Pose, Point, Quaternion
+from nav_msgs.msg import Odometry
+from std_srvs.srv import SetBool
+from gazebo_msgs.srv import SpawnEntity, DeleteEntity
+
+
+
+def make_marker(node, id, x0, y0, h, r):
+   CYLINDER_MODEL = """
+       <sdf version="1.6"> 				\
+         <world name="default">                         \
+           <model name="obstacle"> 			\
+             <static>true</static> 			\
+             <link name="all">                        	\
+               <collision name="one">			\
+                 <pose>0 0 {o} 0 0 0</pose>    		\
+                 <geometry>				\
+                   <cylinder>                       	\
+                     <radius>0</radius>            	\
+                     <length>0</length>            	\
+                   </cylinder>   			\
+                  </geometry>				\
+               </collision>				\
+               <visual name="two">			\
+                 <pose>0 0 {o} 0 0 0</pose>    		\
+                 <geometry>				\
+                   <cylinder>                           \
+                     <radius>{r}</radius>               \
+                     <length>{h}</length>               \
+                   </cylinder>                          \
+                 </geometry>				\
+               </visual>				\
+             </link>                                    \
+           </model>					\
+         </world>                                       \
+       </sdf>"""
+
+   client = node.create_client(SpawnEntity, "/spawn_entity")
+   node.get_logger().info("Connecting to /spawn_entity service...")
+   client.wait_for_service()
+   node.get_logger().info("...connected")
+   request = SpawnEntity.Request()
+   request.name = id
+   request.initial_pose.position.x = float(x0)
+   request.initial_pose.position.y = float(y0)
+   request.initial_pose.position.z = float(0)
+   dict = {'h' : h, 'r':r, 'o': h/2}
+   request.xml = CYLINDER_MODEL.format(**dict)
+   node.get_logger().info(f"Making request...")
+   client.call_async(request)
+  
+
+def euler_from_quaternion(quaternion):
+    """
+    Converts quaternion (w in last place) to euler roll, pitch, yaw
+    quaternion = [x, y, z, w]
+    """
+    x = quaternion.x
+    y = quaternion.y
+    z = quaternion.z
+    w = quaternion.w
+
+    sinr_cosp = 2 * (w * x + y * z)
+    cosr_cosp = 1 - 2 * (x * x + y * y)
+    roll = np.arctan2(sinr_cosp, cosr_cosp)
+
+    sinp = 2 * (w * y - z * x)
+    pitch = np.arcsin(sinp)
+
+    siny_cosp = 2 * (w * z + x * y)
+    cosy_cosp = 1 - 2 * (y * y + z * z)
+    yaw = np.arctan2(siny_cosp, cosy_cosp)
+
+    return roll, pitch, yaw
+
 
 class FSM_STATES(Enum):
-    AT_START = 'At Start'
-    MOVING_IN_SQUARE = 'Moving in Square'
-    MOVING_IN_TRIANGLE = 'Moving in Triangle'
+    AT_START = 'At Start',
+    MOVE_SQAURE = 'Moving in Square'
+    MOVE_TRIANGLE = 'Moving in Triangle',
+    RETURNING_FROM_TASK = 'Returning from Task',
     TASK_DONE = 'Task Done'
 
 class FSM(Node):
+
     def __init__(self):
-        super().__init__('fsm_control')
+        super().__init__('FSM')
         self.get_logger().info(f'{self.get_name()} created')
 
         self._subscriber = self.create_subscription(Odometry, "/odom", self._listener_callback, 1)
         self._publisher = self.create_publisher(Twist, "/cmd_vel", 1)
+        self.create_service(SetBool, '/startup', self._startup_callback)
+        self.client = self.create_client(SpawnEntity, "/spawn_entity")
+        self.get_logger().info("Connecting to /spawn_entity service...")
+        self.client.wait_for_service()
+        self.get_logger().info("Connected")
+        self._last_x = 0.0
+        self._last_y = 0.0
+        self._last_id = 0
 
-        # Initial conditions
+        make_marker(self, "t"+str(self._last_id), self._last_x, self._last_y, 0.25, 0.01)
+
+        # the blackboard
         self._cur_x = 0.0
         self._cur_y = 0.0
         self._cur_theta = 0.0
         self._cur_state = FSM_STATES.AT_START
-        self._points_square = [[0, 0], [2, 0], [2, 2], [0, 2]]
-        self._points_triangle = [[0, 0], [-2, 0], [2, -2]]
+        self._start_time = self.get_clock().now().nanoseconds * 1e-9
+
+        self._points_square = [[2, 0, math.pi/2], [2, 2, math.pi/2], [0, 2, -math.pi/2], [0, 0, 0]]
+        self._points_triangle = [[-2, 0, 0], [-1, -2, 0], [0, 0, 0]]
+
         self._point = 0
         self._run = False
 
-    def _listener_callback(self, msg):
-        pose = msg.pose.pose
-        self._cur_x = pose.position.x
-        self._cur_y = pose.position.y
-        roll, pitch, yaw = self.euler_from_quaternion(pose.orientation)
-        self._cur_theta = yaw
-        self._state_machine()
+    def _startup_callback(self, request, resp):
+        self.get_logger().info(f'Got a request {request}')
+        if request.data:
+            self.get_logger().info(f'fsm starting')
+            self._run = True
+            resp.success = True
+            resp.message = "Architecture running"
+        else:
+            self.get_logger().info(f'fsm suspended')
+            self._run = False
+            resp.success = True
+            resp.message = "Architecture suspended"
+        return resp  
 
-    def euler_from_quaternion(self, quaternion):
-        """
-        Converts quaternion to euler roll, pitch, yaw.
-        """
-        x = quaternion.x
-        y = quaternion.y
-        z = quaternion.z
-        w = quaternion.w
-        sinr_cosp = 2 * (w * x + y * z)
-        cosr_cosp = 1 - 2 * (x * x + y * y)
-        roll = math.atan2(sinr_cosp, cosr_cosp)
-
-        sinp = 2 * (w * y - z * x)
-        pitch = math.asin(sinp)
-
-        siny_cosp = 2 * (w * z + x * y)
-        cosy_cosp = 1 - 2 * (y * y + z * z)
-        yaw = math.atan2(siny_cosp, cosy_cosp)
-
-        return roll, pitch, yaw
-
-    def _short_angle(self, angle):
-        """Adjust the angle to be in the range -pi..pi"""
+    def _short_angle(angle):
         if angle > math.pi:
-            angle -= 2 * math.pi
+            angle = angle - 2 * math.pi
         if angle < -math.pi:
-            angle += 2 * math.pi
+            angle = angle + 2 * math.pi
+        assert abs(angle) <= math.pi
         return angle
 
-    def _drive_to_goal(self, goal_x, goal_y, goal_theta):
-        """Move the robot to a specific goal, checking distance and orientation"""
+    def _compute_speed(diff, max_speed, min_speed, gain):
+        speed = abs(diff) * gain
+        speed = min(max_speed, max(min_speed, speed))
+        return math.copysign(speed, diff)
+        
+    def _drive_to_goal(self, goal_x, goal_y, goal_theta,
+                       heading0_tol = 0.15,
+                       range_tol = 0.15,
+                       heading1_tol = 0.15):
+        """Return True iff we are at the goal, otherwise drive there"""
+
         twist = Twist()
+
+        goal_theta = FSM._short_angle(goal_theta) # goal in range -pi .. +pi
 
         x_diff = goal_x - self._cur_x
         y_diff = goal_y - self._cur_y
-        dist = math.sqrt(x_diff ** 2 + y_diff ** 2)
-
-        # Move towards goal position
-        if dist > 0.15:  # Range tolerance
+        dist = math.sqrt(x_diff * x_diff + y_diff * y_diff)
+        if dist > range_tol:
+            self.get_logger().info(f'{self.get_name()} driving to goal with goal distance {dist}')
+            # turn to the goal
             heading = math.atan2(y_diff, x_diff)
-            diff = self._short_angle(heading - self._cur_theta)
-            twist.angular.z = diff * 0.5  # Turn to face goal
-            if abs(diff) < 0.1:
-                twist.linear.x = 0.2  # Move forward
-            self._publisher.publish(twist)
-            return False  # Still moving towards the goal
-        else:
-            # Goal reached, now align with the goal's heading
-            diff_theta = self._short_angle(goal_theta - self._cur_theta)
-            if abs(diff_theta) > 0.15:
-                twist.angular.z = diff_theta * 0.5
+            diff = FSM._short_angle(heading - self._cur_theta)
+            if (abs(diff) > heading0_tol):
+                twist.angular.z = FSM._compute_speed(diff, 0.5, 0.2, 0.2)
+                self.get_logger().info(f'{self.get_name()} turning towards goal heading {heading} current {self._cur_theta} diff {diff} {twist.angular.z}')
                 self._publisher.publish(twist)
-                return False  # Still adjusting orientation
-            self._publisher.publish(Twist())  # Stop moving
-            return True  # Reached the goal
+                self._cur_twist = twist
+                return False
+
+            twist.linear.x = FSM._compute_speed(dist, 0.5, 0.05, 0.5)
+            self._publisher.publish(twist)
+            self.get_logger().info(f'{self.get_name()} a distance {dist}  from target velocity {twist.linear.x}')
+            self._cur_twist = twist
+            return False
+
+        diff = FSM._short_angle(goal_theta - self._cur_theta)
+        if abs(diff) > heading1_tol:
+            twist.angular.z = FSM._compute_speed(diff, 0.5, 0.2, 0.2)
+            self.get_logger().info(f'{self.get_name()} aligning with goal dst {dist} goal_theta {goal_theta} cur_theta {self._cur_theta} diff {diff} {twist.angular.z}')
+            self._publisher.publish(twist)
+            return False
+
+        self.get_logger().info(f'at goal pose')
+        self._publisher.publish(twist)
+        return True
 
     def _do_state_at_start(self):
-        """Start the FSM, initiate movement"""
-        self.get_logger().info(f'In start state')
-        self._cur_state = FSM_STATES.MOVING_IN_SQUARE
-        self._point = 0  # Start at the first square point
-
-    def _do_state_moving_in_square(self):
-        """Move the robot through the square"""
-        if self._drive_to_goal(self._points_square[self._point][0], self._points_square[self._point][1], 0):
-            self._point += 1
+        self.get_logger().info(f'in start state')
+        if self._run:
+            self.get_logger().info(f'Starting...')
+            self._cur_state = FSM_STATES.MOVE_SQAURE
+    
+    def _do_state_move_square(self):
+        self.get_logger().info(f'Moving in square: {self._point}')
+        if self._drive_to_goal(self._points_square[self._point][0], self._points_square[self._point][1], self._points_square[self._point][2]): 
+            self._point = self._point + 1
             if self._point >= len(self._points_square):
-                self._cur_state = FSM_STATES.MOVING_IN_TRIANGLE
+                self._cur_state = FSM_STATES.MOVE_TRIANGLE
                 self._point = 0
 
-    def _do_state_moving_in_triangle(self):
-        """Move the robot through the triangle"""
-        if self._drive_to_goal(self._points_triangle[self._point][0], self._points_triangle[self._point][1], 0):
-            self._point += 1
+    def _do_state_move_triangle(self):
+        self.get_logger().info(f'Moving in triangle: {self._point}')
+        if self._drive_to_goal(self._points_triangle[self._point][0], self._points_triangle[self._point][1], self._points_triangle[self._point][2]): 
+            self._point = self._point + 1
             if self._point >= len(self._points_triangle):
-                self._cur_state = FSM_STATES.TASK_DONE
+                self._cur_state = FSM_STATES.RETURNING_FROM_TASK
+                self._point = 0
+
+    def _do_state_returning_from_task(self):
+        self.get_logger().info(f'returning from task ')
+        if self._drive_to_goal(0, 0, 0):
+            self._publisher.publish(Twist())
+            self._cur_state = FSM_STATES.TASK_DONE
 
     def _do_state_task_done(self):
-        """Finish the task and log it"""
-        self.get_logger().info(f'Task completed')
+        self.get_logger().info(f'{self.get_name()} task done')
 
     def _state_machine(self):
-        """State machine logic"""
         if self._cur_state == FSM_STATES.AT_START:
             self._do_state_at_start()
-        elif self._cur_state == FSM_STATES.MOVING_IN_SQUARE:
-            self._do_state_moving_in_square()
-        elif self._cur_state == FSM_STATES.MOVING_IN_TRIANGLE:
-            self._do_state_moving_in_triangle()
+        elif self._cur_state == FSM_STATES.MOVE_SQAURE:
+            self._do_state_move_square()
+        elif self._cur_state == FSM_STATES.MOVE_TRIANGLE:
+            self._do_state_move_triangle()
+        elif self._cur_state == FSM_STATES.RETURNING_FROM_TASK:
+            self._do_state_returning_from_task()
         elif self._cur_state == FSM_STATES.TASK_DONE:
             self._do_state_task_done()
+        else:
+            self.get_logger().info(f'{self.get_name()} bad state {self._cur_state}')
+
+    def _listener_callback(self, msg):
+        pose = msg.pose.pose
+
+        d2 = (pose.position.x - self._last_x) * (pose.position.x - self._last_x) + (pose.position.y - self._last_y) * (pose.position.y - self._last_y)
+        if d2 > 0.5 * 0.5:
+             self._last_id = self._last_id + 1
+             self._last_x = pose.position.x
+             self._last_y = pose.position.y
+             make_marker(self, "t"+str(self._last_id), self._last_x, self._last_y, 0.25, 0.01)
+
+        roll, pitch, yaw = euler_from_quaternion(pose.orientation)
+        self._cur_x = pose.position.x
+        self._cur_y = pose.position.y
+        self._cur_theta = FSM._short_angle(yaw)
+        self._state_machine()
+
+
 
 def main(args=None):
     rclpy.init(args=args)
     node = FSM()
     try:
         rclpy.spin(node)
+        rclpy.shutdown()
     except KeyboardInterrupt:
         pass
-    finally:
-        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
+

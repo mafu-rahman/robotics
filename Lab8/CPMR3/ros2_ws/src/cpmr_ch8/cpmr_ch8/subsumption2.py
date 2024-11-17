@@ -17,7 +17,7 @@ from datetime import datetime
 
 class Subsumption(Node):
 
-    def _wander(self, max_dtheta = math.pi / 20, max_thetav = math.pi / 10, max_dv = .5, max_v = 1.2):
+    def _wander(self, max_dtheta = math.pi / 20, max_thetav = math.pi / 10, max_dv = .5, max_v = 0.2):
         """wander randomly"""
         twist = Twist()
         v = self._last_twist.linear.x + (2 * random.random() - 1) * max_dv
@@ -47,12 +47,12 @@ class Subsumption(Node):
             return twist
         return None
     
-    def _stop_near_red(self, stop_distance = 1.75):
-        """Stop if both red color and a nearby obstacle are detected"""
-        if self._red_detected and self._min_r < stop_distance:
+    def _stop_near_obstacle(self, stop_distance = 1.75):
+        if self._min_r < stop_distance:
             twist = Twist()
             twist.linear.x = 0.0
             twist.angular.z = 0.0
+            self._run = False
             return twist
         return None
         
@@ -104,15 +104,15 @@ class Subsumption(Node):
         now_log = datetime.now()
 
         # Check each behavior in order of priority
-        stop_near_red = self._stop_near_red()
+        stop_near_obstacle = self._stop_near_obstacle()
         avoid = self._avoid_obstacle()
         red = self._get_red()
         wander = self._wander()
 
         # Highest priority: Stop if near red and an obstacle
-        if stop_near_red is not None:
-            self.get_logger().info(f'Stopping near red object.')
-            self._publisher.publish(stop_near_red)
+        if stop_near_obstacle is not None:
+            self.get_logger().info(f'Stopping near obstacle: {self._min_r}')
+            self._publisher.publish(stop_near_obstacle)
             self.command_log.append((now_log, "stop_near_red"))
             return
 
@@ -151,7 +151,7 @@ class Subsumption(Node):
             for j in range(int(image.shape[1]/2-width), int(image.shape[1]/2+width)):
                 if (image[i][j][2] > 100) and (image[i][j][0] < 50):
                     redcolcount += 1
-        self._redcolcount = redcolcount  # Update red color count
+        self._redcolcount = redcolcount
     
     """Saving the logs to a CSV file."""
     def save_command_log(self, filename):
@@ -173,8 +173,8 @@ def main(args=None):
         pass
     finally:
         # Save the command log before shutting down
-        filepath = os.path.expanduser("~/Desktop/robotics/Lab8/command_log.csv")
-        node.save_command_log(filepath)
+        #filepath = os.path.expanduser("~/Desktop/robotics/Lab8/command_log.csv")
+        #node.save_command_log(filepath)
         rclpy.shutdown()
 
 
