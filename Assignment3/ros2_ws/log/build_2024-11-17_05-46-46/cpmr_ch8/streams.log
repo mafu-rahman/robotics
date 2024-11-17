@@ -1,0 +1,67 @@
+[1.586s] Traceback (most recent call last):
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute
+    loop.run_until_complete(future)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/selectors.py", line 562, in select
+    kev_list = self._selector.control(None, max_ev, timeout)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_ros/task/ament_python/build.py", line 102, in build
+    return await extension.build(additional_hooks=additional_hooks)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/build.py", line 94, in build
+    available_commands = await self._get_available_commands(
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/build.py", line 192, in _get_available_commands
+    output = await check_output(
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/subprocess.py", line 129, in check_output
+    assert not rc, f'Expected {args} to pass: {stderr_data}'
+AssertionError: Expected ['/Users/mafu/miniforge3/envs/ros_env/bin/python3.10', '-W', 'ignore:setup.py install is deprecated', 'setup.py', '--help-commands'] to pass: Traceback (most recent call last):
+  File "/Users/mafu/Desktop/robotics/Assignment3/ros2_ws/src/cpmr_ch8/setup.py", line 7, in <module>
+    setup(
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/__init__.py", line 77, in setup
+    return distutils.core.setup(**attrs)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 135, in setup
+    ok = dist.parse_command_line()
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 481, in parse_command_line
+    if self.handle_display_options(option_order):
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 1164, in handle_display_options
+    return _Distribution.handle_display_options(self, option_order)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 684, in handle_display_options
+    self.print_commands()
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 943, in print_commands
+    return _Distribution.print_commands(self)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 753, in print_commands
+    self.print_command_list(std_commands,
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 721, in print_command_list
+    klass = self.get_command_class(cmd)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/setuptools/dist.py", line 930, in get_command_class
+    eps = metadata.entry_points(group='distutils.commands', name=command)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 1021, in entry_points
+    return SelectableGroups.load(eps).select(**params)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 459, in load
+    ordered = sorted(eps, key=by_group)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 1019, in <genexpr>
+    dist.entry_points for dist in unique(distributions())
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 631, in entry_points
+    return EntryPoints._from_text_for(self.read_text('entry_points.txt'), self)
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/importlib/metadata/__init__.py", line 927, in read_text
+    return self._path.joinpath(filename).read_text(encoding='utf-8')
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+  File "/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/codecs.py", line 309, in __init__
+    def __init__(self, errors='strict'):
+KeyboardInterrupt
+

@@ -16,15 +16,15 @@ import json
 import random
 from datetime import datetime
 
-WORLD_WIDTH = 2800
-WORLD_HEIGHT = 3500
+WORLD_WIDTH = 1000
+WORLD_HEIGHT = 1250
 
-N = 5000  # Number of random samples
+N = 10000  # Number of random samples
 BACKGROUND_COLOR = (255, 255, 255)  # White background
 OCCUPIED_COLOR = (0, 0, 0)  # Black for obstacles
 
 ROBOT_RADIUS = 0.5  
-PIXEL_RESOLUTION = 0.05  # Each pixel represents 0.1 meters
+PIXEL_RESOLUTION = 0.07  # Each pixel represents 0.1 meters
 
 def euler_from_quaternion(quaternion):
     """Converts quaternion (w in last place) to euler roll, pitch, yaw"""
@@ -46,8 +46,7 @@ def euler_from_quaternion(quaternion):
 
     return roll, pitch, yaw
 
-def load_image():    #loads the image and returns dilated the world
-    image_path = 'blueprint_model.jpg'
+def load_image(image_path):    #loads the image and returns dilated the world
     blueprint_img = cv2.imread(image_path)
     
     gray_img = cv2.cvtColor(blueprint_img, cv2.COLOR_BGR2GRAY)
@@ -65,25 +64,6 @@ def load_image():    #loads the image and returns dilated the world
 
     return dilated_world
 
-def seed_random_points(world, num_samples):
-    """Randomly seed the world with points and mark them based on occupancy."""
-
-    world_with_points = world.copy()  # Create a copy of the world image
-    # List to hold points that are not in an obstacle
-    free_points = []
-
-    for _ in range(num_samples):
-        # Generate random (x, y) coordinates
-        x = random.randint(0, WORLD_WIDTH - 1)
-        y = random.randint(0, WORLD_HEIGHT - 1)
-
-        # Check if the point is in an obstacle by seeing if it's black
-        if np.array_equal(world_with_points[y, x], BACKGROUND_COLOR):  # Obstacle check
-            cv2.circle(world_with_points, (x, y), 6, (0, 255, 0), -1)  # Mark as red if in obstacle
-            free_points.append((x, y))  # Add to free points list
-
-    return world_with_points, free_points
-
 def is_line_free(world, point1, point2, step_size=1):
     """Check if the line between two points is free of obstacles."""
     x1, y1 = point1
@@ -94,6 +74,9 @@ def is_line_free(world, point1, point2, step_size=1):
 
     # Calculate the number of steps based on the step size
     num_steps = int(distance / step_size)
+
+    if num_steps == 0:
+        return False
 
     # Calculate the increments for each step
     x_step = (x2 - x1) / num_steps
@@ -112,85 +95,11 @@ def is_line_free(world, point1, point2, step_size=1):
     # If no obstacles were encountered, return True
     return True
 
-def grow_rrt(world, free_points):
-    """Grow the RRT tree by connecting free points."""
-
-    tree_image = world.copy()  # Create a copy of the world image for the tree
-
-    # Choose a random point as the root
-    root = random.choice(free_points)
-    tree = [root]
-    edges = []  # List to store edges between nodes
-
-    for point in free_points:
-        if point == root:
-            continue
-
-        # Find the nearest point in the tree to this point
-        nearest_point = min(tree, key=lambda node: math.dist(node, point))
-
-        # Check if a straight line can connect without crossing obstacles
-        if is_line_free(tree_image, nearest_point, point):
-            cv2.line(tree_image, nearest_point, point, (0, 255, 0), 1)  # Green line for connection
-            tree.append(point)
-            edges.append((nearest_point, point))
-
-    return tree, edges, tree_image
-
-def connect_start_and_goal(world, tree, edges, start, goal):
-    """Attempt to connect the start and goal to the tree."""
-    # Create a copy of the image for visualization
-    connect_image = world.copy()
-    
-    # Attempt to connect start to the tree
-    start_connected = False
-    for node in tree:
-        if is_line_free(world, start, node):
-            edges.append((start, node))
-            start_connected = True
-            cv2.line(connect_image, start, node, (255, 0, 0), 1)  # Blue line for start connection
-            break
-
-    # Attempt to connect goal to the tree
-    goal_connected = False
-    for node in tree:
-        if is_line_free(world, goal, node):
-            edges.append((goal, node))
-            goal_connected = True
-            cv2.line(connect_image, goal, node, (0, 255, 255), 1)  # Yellow line for goal connection
-            break
-
-    return edges, connect_image, start_connected, goal_connected
-
-def find_shortest_path(edges, start, goal):
-    """Find the shortest path in the tree from start to goal using BFS."""
-    from collections import deque, defaultdict
-    
-    # Build an adjacency list for the tree
-    adj_list = defaultdict(list)
-    for u, v in edges:
-        adj_list[u].append(v)
-        adj_list[v].append(u)
-
-    # BFS to find the shortest path
-    queue = deque([[start]])
-    visited = set([start])
-    while queue:
-        path = queue.popleft()
-        node = path[-1]
-        if node == goal:
-            return path
-        for neighbor in adj_list[node]:
-            if neighbor not in visited:
-                visited.add(neighbor)
-                queue.append(path + [neighbor])
-    return None
-
 def display_map(name, world):
     cv2.imshow(name, world)
     cv2.waitKey(10)
    
-def image_to_gazebo_coordinates(path, image_width=WORLD_WIDTH, image_height=WORLD_HEIGHT, scale_factor=0.02):
+def image_to_gazebo_coordinates(path, image_width=WORLD_WIDTH, image_height=WORLD_HEIGHT, scale_factor=0.056):
     """Converts image coordinates to Gazebo coordinates."""
     gazebo_path = []
     for image_x, image_y in path:
@@ -199,118 +108,12 @@ def image_to_gazebo_coordinates(path, image_width=WORLD_WIDTH, image_height=WORL
         gazebo_path.append((gazebo_x, gazebo_y))
     return gazebo_path
 
-def gazebo_to_image_coordinates(gazebo_x, gazebo_y, image_width=WORLD_WIDTH, image_height=WORLD_HEIGHT, scale_factor=50):
+def gazebo_to_image_coordinates(gazebo_x, gazebo_y, image_width=WORLD_WIDTH, image_height=WORLD_HEIGHT, scale_factor=17.86):
     image_x = (gazebo_x * scale_factor) + image_width / 2 
     image_y = (image_height / 2) - (gazebo_y * scale_factor)
     return (int(image_x), int(image_y))
 
 class FindPath(Node):
-    def __init__(self):
-        super().__init__('find_path')
-        self.get_logger().info(f'{self.get_name()} created')
-        
-        self._min_r = 10000
-        self._goal_x = 2000
-        self._goal_y = 3000
-        self._cur_x = 0.0
-        self._cur_y = 0.0
-        self._cur_theta = 0.0
-        self._current_waypoint_index = 0
-
-        self._tree, self._edges, self._tree_image = self.create_rrt_world()
-        self._path_image = None
-        self._waypoints = [(0, 0)]
-
-        self._subscriber = self.create_subscription(Odometry, "/odom", self._listener_callback, 1)
-        self.create_subscription(LaserScan, "/scan", self._laser_callback, 1)
-
-        self._publisher = self.create_publisher(Twist, "/cmd_vel", 1)
-
-        self.create_service(SetBool, '/startup', self._startup_callback)
-        self._run = False
-
-    def _avoid_obstacle(self, minr = 0.4):
-            """ if there is an obstacle within mind of the front of the robot, stop and rotate"""
-            if self._min_r < minr:
-                twist = Twist()
-                twist.linear.x = 0.0
-                twist.angular.z = math.pi / 10
-                return twist
-            return None
-
-    def create_rrt_world(self):
-        world = load_image()
-        self.get_logger().info(f'world map created')
-        #display_map("world", world)
-
-        # Seed random points and retrieve free points
-        world_with_points, free_points = seed_random_points(world, N)
-        self.get_logger().info(f'world map with points created')
-        #display_map("world with points", world_with_points)
-
-        # Grow the RRT tree from the free points and display it
-        tree, edges, tree_image = grow_rrt(world_with_points, free_points)
-        self.get_logger().info(f'trees created')
-        display_map("world", tree_image)
-
-        return tree, edges, tree_image
-
-    def process_path(self):  # returns the path in gazebo coordinates
-        start = gazebo_to_image_coordinates(self._cur_x, self._cur_y)
-        goal = (self._goal_x, self._goal_y)
-
-        cv2.circle(self._tree_image, start, 14, (0, 165, 255), -1) #Orange
-        cv2.circle(self._tree_image, goal, 14, (255, 192, 203), -1) #Pink
-
-        edges, connect_image, start_connected, goal_connected = connect_start_and_goal(self._tree_image, self._tree, self._edges, start, goal)
-        path = find_shortest_path(edges, start, goal)
-
-        if not start_connected or not goal_connected:
-            self.get_logger().info(f"Either start or goal could not be connected to the tree.")
-            self._run = False
-            return None
-        
-        else:
-            self._path_image = connect_image.copy()
-            if path:
-                for i in range(len(path) - 1):
-                    cv2.line(self._path_image, path[i], path[i + 1], (255, 0, 255), 2)  # Magenta line for path
-                self.get_logger().info(f'path created')
-                display_map("path image", self._path_image)
-                path = image_to_gazebo_coordinates(path)
-
-        return path
-
-    def _listener_callback(self, msg):
-        """Callback to update the robot's current position and drive towards the next waypoint."""
-        pose = msg.pose.pose
-        roll, pitch, yaw = euler_from_quaternion(pose.orientation)
-        self._cur_x = pose.position.x
-        self._cur_y = pose.position.y
-        self._cur_theta = self._short_angle(yaw)
-
-        #self.get_logger().info(f"x: {self._cur_x} y: {self._cur_y}")        
-
-        if self._run and (self._current_waypoint_index < len(self._waypoints)):
-            target_x, target_y = self._waypoints[self._current_waypoint_index]
-            
-            cv2.circle(self._path_image, (gazebo_to_image_coordinates(self._cur_x, self._cur_y)), 14, (0, 165, 255), -1) #Orange
-            display_map("path image", self._path_image)
-
-            avoid = self._avoid_obstacle()
-        
-            if avoid is not None:
-                self.get_logger().info(f'avoiding')
-                self._publisher.publish(avoid)
-                return
-            else:
-                self._drive_to_goal(target_x, target_y)
-
-        else:
-            twist = Twist()
-            twist.linear.x = 0.0 
-            twist.angular.z = 0.0
-            self._publisher.publish(twist)
 
     def _short_angle(self, angle):
         """Normalize an angle to be within the range [-pi, pi]."""
@@ -325,6 +128,274 @@ class FindPath(Node):
         speed = abs(diff) * gain
         speed = min(max_speed, max(min_speed, speed))
         return math.copysign(speed, diff)
+    
+    def _laser_callback(self, msg, mind=1.5):
+        min_range = mind * 10
+        for i, r in enumerate(msg.ranges):
+            angle = msg.angle_min + i * msg.angle_increment
+            if (abs(angle) < math.pi/4) and (r < min_range):
+                min_range = r
+        self._min_r = min_range
+
+    def _startup_callback(self, request, resp):
+        self.get_logger().info(f'Got a request {request}')        
+        if request.data:
+            self._waypoints = self.process_path() 
+            if(self._waypoints != []):
+                self.get_logger().info(f'robot starting')
+                self._run = True
+                resp.success = True
+                resp.message = "Architecture running"
+            else:
+                resp.message = "Filed to obtain path. Try again"
+        else:
+            self.get_logger().info(f'robot suspended')
+            self._run = False
+            resp.success = True
+            resp.message = "Architecture suspended"
+            cv2.destroyAllWindows()
+        return resp
+
+    def _avoid_obstacle(self, minr = 0.5):
+        """ if there is an obstacle within mind of the front of the robot, stop and rotate"""
+        if self._min_r < minr:
+            twist = Twist()
+            twist.linear.x = 0.0
+            twist.angular.z = math.pi / 10
+            return twist
+        return None
+
+    def __init__(self):
+        super().__init__('find_path')
+        self.get_logger().info(f'{self.get_name()} created')
+        
+        self._min_r = 10000
+        self._goal_x = 830
+        self._goal_y = 1100
+        self._cur_x = 0.0
+        self._cur_y = 0.0
+        self._cur_theta = 0.0
+        
+        self._waypoints = [(0, 0)]
+        self._current_waypoint_index = 0
+
+        self._subscriber = self.create_subscription(Odometry, "/odom", self._listener_callback, 1)
+        self.create_subscription(LaserScan, "/scan", self._laser_callback, 1)
+
+        self._publisher = self.create_publisher(Twist, "/cmd_vel", 1)
+
+        self.create_service(SetBool, '/startup', self._startup_callback)
+        self._run = False
+
+        self._world = load_image('blueprint_model_resized.jpg')
+
+
+
+    def process_path(self):  # returns the set of waypoints in gazebo coordinates
+        start = gazebo_to_image_coordinates(self._cur_x, self._cur_y)
+        goal = (self._goal_x, self._goal_y)
+
+        cv2.circle(self._world, start, 2, (0, 165, 255), -1) #Orange
+        cv2.circle(self._world, goal, 2, (255, 192, 203), -1) #Pink
+
+        self.get_logger().info(f'calculating path...')
+        #self._world, path = self.grow_rrt(self._world, start, goal, 50)
+        self._world, path = self.grow_rrt_star(self._world, start, goal, 50)
+
+        if path:
+            for i in range(len(path) - 1):
+                cv2.line(self._world, path[i], path[i + 1], (255, 0, 255), 1)  # Magenta line for path
+        display_map("path image", self._world)
+
+        path = image_to_gazebo_coordinates(path)
+        
+        return path
+
+    def grow_rrt(self, world_image, start, goal, d):
+        world = world_image.copy()
+
+        root = start
+        tree = [root]
+        edges = []
+
+        parents = {root: None}  # Dictionary to store parent of each node
+        
+        goal_reached = False
+
+        while not goal_reached:
+            # Random sampling with goal bias
+            if random.random() < 0.1:  # 10% chance to sample the goal
+                new_point = goal
+            else:
+                x = random.randint(0, world.shape[1] - 1)
+                y = random.randint(0, world.shape[0] - 1)
+                new_point = (x, y)
+
+            # Obstacle check
+            if np.array_equal(world[new_point[1], new_point[0]], BACKGROUND_COLOR):
+                # Find the nearest point in the tree to this new point
+                nearest_point = min(tree, key=lambda node: math.dist(node, new_point))
+
+                # Calculate distance and determine if new point should be at distance d
+                distance = math.dist(nearest_point, new_point)
+                if distance > d:
+                    # Calculate new point at distance d from the nearest point
+                    x3 = nearest_point[0] + (new_point[0] - nearest_point[0]) * d / distance
+                    y3 = nearest_point[1] + (new_point[1] - nearest_point[1]) * d / distance
+                    new_point = (int(x3), int(y3))
+
+                # Check if the line from nearest_point to new_point is free of obstacles
+                if is_line_free(world, nearest_point, new_point):
+                    cv2.line(world, nearest_point, new_point, (0, 255, 0), 1)  # Green line for connection
+                    cv2.circle(world, new_point, 1, (0, 255, 0), -1)
+
+                    tree.append(new_point)
+                    edges.append((nearest_point, new_point))
+                    parents[new_point] = nearest_point  # Store the parent of new_point
+
+                    # Check if the goal has been reached
+                    if math.dist(new_point, goal) <= 20:
+                        cv2.line(world, new_point, goal, (0, 255, 0), 1)
+                        print("Goal reached!")
+                        goal_reached = True
+
+                        # Add the goal to the tree and path
+                        tree.append(goal)
+                        parents[goal] = new_point
+
+                        # Backtrack from the goal to start to get the path
+                        path = []
+                        current = goal
+                        while current is not None:
+                            path.append(current)
+                            current = parents[current]
+                        path.reverse()  # Reverse the path to go from start to goal
+
+                        return world, path
+
+        return world, []
+
+    def grow_rrt_star(self, world_image, start, goal, d):
+        radius = 200
+        world = world_image.copy()
+
+        cv2.circle(world, start, 6, (0, 0, 255), -1)
+        cv2.circle(world, goal, 6, (0, 0, 255), -1)
+
+        root = start
+        tree = [root]
+        edges = []
+
+        parents = {root: None}  # Dictionary to store parent of each node
+        costs = {root: 0}
+
+        goal_reached = False
+
+        #for _ in range(N):
+        while not goal_reached:
+            # Random sampling with goal bias
+            if random.random() < 0.3:  # 10% chance to sample the goal
+                new_point = goal
+            else:
+                x = random.randint(0, world.shape[1] - 1)
+                y = random.randint(0, world.shape[0] - 1)
+                new_point = (x, y)
+
+            # Obstacle check
+            if np.array_equal(world[new_point[1], new_point[0]], BACKGROUND_COLOR):
+                # Find the nearest point in the tree to this new point
+                nearest_point = min(tree, key=lambda node: math.dist(node, new_point))
+
+                # Calculate distance and determine if new point should be at distance d
+                distance = math.dist(nearest_point, new_point)
+                if distance > d:
+                    # Calculate new point at distance d from the nearest point
+                    x3 = nearest_point[0] + (new_point[0] - nearest_point[0]) * d / distance
+                    y3 = nearest_point[1] + (new_point[1] - nearest_point[1]) * d / distance
+                    new_point = (int(x3), int(y3))
+
+                # Check if the line from nearest_point to new_point is free of obstacles
+                if is_line_free(world, nearest_point, new_point):
+                    cv2.line(world, nearest_point, new_point, (0, 255, 0), 1)  # Green line for connection
+                    cv2.circle(world, new_point, 2, (0, 255, 0), -1)
+
+                    tree.append(new_point)
+                    edges.append((nearest_point, new_point))
+                    parents[new_point] = nearest_point  # Store the parent of new_point
+                    costs[new_point] = costs[nearest_point] + distance
+
+                    # Rewiring step: Check nearby nodes for potential shorter paths
+                    nearby_nodes = [
+                        node for node in tree
+                        if node != new_point and math.dist(node, new_point) <= radius
+                    ]
+                    for node in nearby_nodes:
+                        potential_cost = costs[new_point] + math.dist(new_point, node)
+                        if potential_cost < costs[node] and is_line_free(world, new_point, node):
+                            # Update parent and cost for the node if a shorter path is found
+                            parents[node] = new_point
+                            costs[node] = potential_cost
+
+                    # Check if the goal has been reached
+                    if math.dist(new_point, goal) <= 20:
+                        cv2.line(world, new_point, goal, (0, 255, 0), 1)
+                        print("Goal reached!")
+                        goal_reached = True
+
+                        # Add the goal to the tree and path
+                        parents[goal] = new_point
+                        costs[goal] = costs[new_point] + math.dist(new_point, goal)
+
+
+                        # Backtrack from the goal to start to get the path
+                        path = []
+                        current = goal
+                        while current is not None:
+                            path.append(current)
+                            current = parents[current]
+                        path.reverse()  # Reverse the path to go from start to goal
+
+                        return world, path
+        return world, []
+
+    def _listener_callback(self, msg):
+        """Callback to update the robot's current position and drive towards the next waypoint."""
+        pose = msg.pose.pose
+        roll, pitch, yaw = euler_from_quaternion(pose.orientation)
+        self._cur_x = pose.position.x
+        self._cur_y = pose.position.y
+        self._cur_theta = self._short_angle(yaw)
+
+        #self.get_logger().info(f"x: {self._cur_x} y: {self._cur_y}")  
+
+        if self._run and (self._current_waypoint_index < len(self._waypoints)):
+            target_x, target_y = self._waypoints[self._current_waypoint_index]
+            
+            cv2.circle(self._world, (gazebo_to_image_coordinates(self._cur_x, self._cur_y)), 1, (0, 0, 255), -1)
+            display_map("path image", self._world) # draw the path live
+
+            #avoid = self._avoid_obstacle()
+            avoid = None
+
+        
+            if avoid is not None:
+                self.get_logger().info(f'avoiding')
+                self._publisher.publish(avoid)
+                return
+            elif self._drive_to_goal(target_x, target_y):
+                 self._current_waypoint_index += 1
+            
+            if self._current_waypoint_index >= len(self._waypoints):
+                self.get_logger().info('All waypoints reached!')
+                self._run = False
+
+        else:
+            twist = Twist()
+            twist.linear.x = 0.0 
+            twist.angular.z = 0.0
+            self._publisher.publish(twist)
+
+    
 
     def _drive_to_goal(self, goal_x, goal_y, heading_tol=0.15, range_tol=0.15):
         """Drive the robot to the target goal."""
@@ -340,48 +411,18 @@ class FindPath(Node):
             diff = self._short_angle(heading - self._cur_theta)
 
             if abs(diff) > heading_tol:
-                twist.angular.z = self._compute_speed(diff, 0.5, 0.2, 0.2)
+                twist.angular.z = self._compute_speed(diff, 0.5, 0.5, 0.2)
                 # self.get_logger().info(f'{self.get_name()} turning towards goal heading {heading} current {self._cur_theta} diff {diff}')
                 self._publisher.publish(twist)
                 return False
 
-            twist.linear.x = self._compute_speed(dist, 0.5, 0.05, 0.2)
+            twist.linear.x = self._compute_speed(dist, 0.7, 0.1, 0.2)
             self._publisher.publish(twist)
             # self.get_logger().info(f'{self.get_name()} moving forward, distance: {dist}')
             return False
         else:
-            self.get_logger().info(f'{self.get_name()} reached waypoint ({goal_x}, {goal_y})') # Reached goal, move to next waypoint
-            self._current_waypoint_index += 1
-
-            if self._current_waypoint_index >= len(self._waypoints):
-                self.get_logger().info('All waypoints reached!')
-                return True
-            return False
-
-    def _startup_callback(self, request, resp):
-            self.get_logger().info(f'Got a request {request}')        
-            if request.data:
-                self._waypoints = self.process_path() 
-                if(self._waypoints != None):
-                    self.get_logger().info(f'robot starting')
-                    self._run = True
-                    resp.success = True
-                    resp.message = "Architecture running"
-
-            else:
-                self.get_logger().info(f'robot suspended')
-                self._run = False
-                resp.success = True
-                resp.message = "Architecture suspended"
-            return resp
-
-    def _laser_callback(self, msg, mind=1.5):
-            min_range = mind * 10
-            for i, r in enumerate(msg.ranges):
-                angle = msg.angle_min + i * msg.angle_increment
-                if (abs(angle) < math.pi/4) and (r < min_range):
-                    min_range = r
-            self._min_r = min_range
+            self.get_logger().info(f'{self.get_name()} reached waypoint ({goal_x}, {goal_y})')
+            return True
 
 def main(args=None):
     rclpy.init(args=args)
