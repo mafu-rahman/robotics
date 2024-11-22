@@ -1,0 +1,24 @@
+[1.138s] Invoking command in '/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/src/cpmr_ch8': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch8/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch8 build --build-base /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch8/build install --record /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch8/install.log --single-version-externally-managed install_data
+[1.637s] running egg_info
+[1.673s] writing ../../build/cpmr_ch8/cpmr_ch8.egg-info/PKG-INFO
+[1.701s] writing dependency_links to ../../build/cpmr_ch8/cpmr_ch8.egg-info/dependency_links.txt
+[1.787s] writing entry points to ../../build/cpmr_ch8/cpmr_ch8.egg-info/entry_points.txt
+[1.841s] writing requirements to ../../build/cpmr_ch8/cpmr_ch8.egg-info/requires.txt
+[1.870s] writing top-level names to ../../build/cpmr_ch8/cpmr_ch8.egg-info/top_level.txt
+[1.918s] reading manifest file '../../build/cpmr_ch8/cpmr_ch8.egg-info/SOURCES.txt'
+[1.919s] writing manifest file '../../build/cpmr_ch8/cpmr_ch8.egg-info/SOURCES.txt'
+[1.919s] running build
+[1.919s] running build_py
+[1.920s] running install
+[1.923s] running install_lib
+[1.962s] running install_data
+[1.962s] running install_egg_info
+[2.000s] removing '/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages/cpmr_ch8-3.1.0-py3.10.egg-info' (and everything under it)
+[2.000s] Copying ../../build/cpmr_ch8/cpmr_ch8.egg-info to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages/cpmr_ch8-3.1.0-py3.10.egg-info
+[2.002s] running install_scripts
+[2.095s] Installing fsm script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch8/lib/cpmr_ch8
+[2.096s] Installing fsm2 script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch8/lib/cpmr_ch8
+[2.096s] Installing subsumption script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch8/lib/cpmr_ch8
+[2.096s] Installing view_camera script to /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch8/lib/cpmr_ch8
+[2.096s] writing list of installed files to '/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch8/install.log'
+[2.116s] Invoked command in '/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/src/cpmr_ch8' returned '0': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch8/prefix_override:/Users/mafu/miniforge3/envs/ros_env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/install/cpmr_ch8/lib/python3.10/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/mafu/miniforge3/envs/ros_env/bin/env /Users/mafu/miniforge3/envs/ros_env/bin/python3.10 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cpmr_ch8 build --build-base /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch8/build install --record /Users/mafu/Desktop/robotics/Lab9/CPMR3/ros2_ws/build/cpmr_ch8/install.log --single-version-externally-managed install_data

@@ -10,7 +10,6 @@ setup.py
 ../../build/cpmr_ch8/cpmr_ch8.egg-info/zip-safe
 cpmr_ch8/__init__.py
 cpmr_ch8/find_path.py
-cpmr_ch8/subsumption.py
 cpmr_ch8/view_camera.py
 launch/robot.launch.py
 resource/cpmr_ch8

@@ -115,8 +115,8 @@ class FSM(Node):
         self._cur_state = FSM_STATES.AT_START
         self._start_time = self.get_clock().now().nanoseconds * 1e-9
 
-        self._points_square = [[2, 0, math.pi/2], [2, 2, math.pi/2], [0, 2, -math.pi/2], [0, 0, 0]]
-        self._points_triangle = [[-2, 0, 0], [-1, -2, 0], [0, 0, 0]]
+        self._points_square = [[2, 0, math.pi/2], [2, 2, math.pi/2], [0, 2, -math.pi/2], [0, 0, -math.pi/2]]
+        self._points_triangle = [[-2, 0, -math.pi/4], [0, -2, math.pi/4], [0, 0, 0]]
 
         self._point = 0
         self._run = False

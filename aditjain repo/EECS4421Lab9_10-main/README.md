@@ -1,2 +1,0 @@
-# EECS4421Lab9_10
-Lab 9 and 10 for EECS4421

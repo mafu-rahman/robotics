@@ -24,7 +24,7 @@ BACKGROUND_COLOR = (255, 255, 255)  # White background
 OCCUPIED_COLOR = (0, 0, 0)  # Black for obstacles
 
 ROBOT_RADIUS = 0.5  
-PIXEL_RESOLUTION = 0.07  # Each pixel represents 0.1 meters
+PIXEL_RESOLUTION = 0.07  # Each pixel represents 0.07 meters
 
 def euler_from_quaternion(quaternion):
     """Converts quaternion (w in last place) to euler roll, pitch, yaw"""
@@ -104,7 +104,7 @@ def image_to_gazebo_coordinates(path, image_width=WORLD_WIDTH, image_height=WORL
     gazebo_path = []
     for image_x, image_y in path:
         gazebo_x = (image_x - image_width / 2) * scale_factor
-        gazebo_y = (image_height / 2 - image_y) * scale_factor  # Invert y-axis and scale
+        gazebo_y = (image_height / 2 - image_y) * scale_factor
         gazebo_path.append((gazebo_x, gazebo_y))
     return gazebo_path
 
@@ -153,7 +153,6 @@ class FindPath(Node):
             self._run = False
             resp.success = True
             resp.message = "Architecture suspended"
-            cv2.destroyAllWindows()
         return resp
 
     def _avoid_obstacle(self, minr = 0.5):
