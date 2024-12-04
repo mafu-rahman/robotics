@@ -22,7 +22,8 @@ def update(dt, boids):
 
     x += v * dt
 
-    and this will scale your velocity based on time. Extend as necessary."""
+    and this will scale your velocity based on time. Extend as necessary.
+    """
 
     # Go through events that are passed to the script by the window.
     for event in pg.event.get():
@@ -80,9 +81,15 @@ def update(dt, boids):
                 num_boids = len(boids)
                 boids.empty()
                 add_boids(boids, num_boids)
+            elif event.key == pg.K_x:
+                # print the max_force, perception, and crowding of the first boid
+                if boids:
+                    first_boid = boids.sprites()[0]
+                    print(f"max_force: {first_boid.max_force}, perception: {first_boid.perception}, crowding: {first_boid.crowding}")
 
     for b in boids:
         b.update(dt, boids)
+
 
 
 def draw(screen, background, boids):
